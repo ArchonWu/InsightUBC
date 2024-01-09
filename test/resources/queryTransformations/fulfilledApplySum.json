@@ -1,0 +1,247 @@
+{
+	"title": "fulfilled apply sum",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "*c*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallSumAudit"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallSumAudit": {
+						"SUM": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "apsc",
+			"overallSumAudit": 33
+		},
+		{
+			"sections_dept": "arbc",
+			"overallSumAudit": 6
+		},
+		{
+			"sections_dept": "arch",
+			"overallSumAudit": 10
+		},
+		{
+			"sections_dept": "arcl",
+			"overallSumAudit": 9
+		},
+		{
+			"sections_dept": "asic",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "atsc",
+			"overallSumAudit": 18
+		},
+		{
+			"sections_dept": "baac",
+			"overallSumAudit": 4
+		},
+		{
+			"sections_dept": "basc",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "bioc",
+			"overallSumAudit": 43
+		},
+		{
+			"sections_dept": "caps",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "ccst",
+			"overallSumAudit": 12
+		},
+		{
+			"sections_dept": "ceen",
+			"overallSumAudit": 3
+		},
+		{
+			"sections_dept": "cell",
+			"overallSumAudit": 12
+		},
+		{
+			"sections_dept": "cens",
+			"overallSumAudit": 14
+		},
+		{
+			"sections_dept": "chbe",
+			"overallSumAudit": 146
+		},
+		{
+			"sections_dept": "chem",
+			"overallSumAudit": 169
+		},
+		{
+			"sections_dept": "chil",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "chin",
+			"overallSumAudit": 280
+		},
+		{
+			"sections_dept": "cics",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "civl",
+			"overallSumAudit": 269
+		},
+		{
+			"sections_dept": "clch",
+			"overallSumAudit": 4
+		},
+		{
+			"sections_dept": "clst",
+			"overallSumAudit": 63
+		},
+		{
+			"sections_dept": "cnps",
+			"overallSumAudit": 50
+		},
+		{
+			"sections_dept": "cnrs",
+			"overallSumAudit": 10
+		},
+		{
+			"sections_dept": "cnto",
+			"overallSumAudit": 29
+		},
+		{
+			"sections_dept": "coec",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "cogs",
+			"overallSumAudit": 12
+		},
+		{
+			"sections_dept": "cohr",
+			"overallSumAudit": 18
+		},
+		{
+			"sections_dept": "comm",
+			"overallSumAudit": 334
+		},
+		{
+			"sections_dept": "cons",
+			"overallSumAudit": 73
+		},
+		{
+			"sections_dept": "cpen",
+			"overallSumAudit": 3
+		},
+		{
+			"sections_dept": "cpsc",
+			"overallSumAudit": 238
+		},
+		{
+			"sections_dept": "crwr",
+			"overallSumAudit": 48
+		},
+		{
+			"sections_dept": "eced",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "econ",
+			"overallSumAudit": 584
+		},
+		{
+			"sections_dept": "edcp",
+			"overallSumAudit": 35
+		},
+		{
+			"sections_dept": "educ",
+			"overallSumAudit": 46
+		},
+		{
+			"sections_dept": "eece",
+			"overallSumAudit": 158
+		},
+		{
+			"sections_dept": "elec",
+			"overallSumAudit": 2
+		},
+		{
+			"sections_dept": "eosc",
+			"overallSumAudit": 183
+		},
+		{
+			"sections_dept": "etec",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "isci",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "larc",
+			"overallSumAudit": 22
+		},
+		{
+			"sections_dept": "mech",
+			"overallSumAudit": 160
+		},
+		{
+			"sections_dept": "micb",
+			"overallSumAudit": 140
+		},
+		{
+			"sections_dept": "musc",
+			"overallSumAudit": 182
+		},
+		{
+			"sections_dept": "nrsc",
+			"overallSumAudit": 32
+		},
+		{
+			"sections_dept": "onco",
+			"overallSumAudit": 8
+		},
+		{
+			"sections_dept": "pcth",
+			"overallSumAudit": 4
+		},
+		{
+			"sections_dept": "psyc",
+			"overallSumAudit": 162
+		},
+		{
+			"sections_dept": "rhsc",
+			"overallSumAudit": 586
+		},
+		{
+			"sections_dept": "scan",
+			"overallSumAudit": 2
+		},
+		{
+			"sections_dept": "scie",
+			"overallSumAudit": 0
+		},
+		{
+			"sections_dept": "soci",
+			"overallSumAudit": 88
+		}
+	]
+}

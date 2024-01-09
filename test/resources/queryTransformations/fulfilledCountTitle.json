@@ -1,0 +1,393 @@
+{
+	"title": "fulfilled count title",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "l*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_fail",
+				"overallCountTitle"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept",
+				"sections_fail"
+			],
+			"APPLY": [
+				{
+					"overallCountTitle": {
+						"COUNT": "sections_title"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "lais",
+			"sections_fail": 0,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "larc",
+			"sections_fail": 1,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "larc",
+			"sections_fail": 0,
+			"overallCountTitle": 33
+		},
+		{
+			"sections_dept": "larc",
+			"sections_fail": 4,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "laso",
+			"sections_fail": 3,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "laso",
+			"sections_fail": 0,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "laso",
+			"sections_fail": 1,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "last",
+			"sections_fail": 0,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "last",
+			"sections_fail": 2,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "last",
+			"sections_fail": 5,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "last",
+			"sections_fail": 1,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 1,
+			"overallCountTitle": 4
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 5,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 0,
+			"overallCountTitle": 6
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 8,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 3,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 9,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 7,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 6,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 19,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "latn",
+			"sections_fail": 2,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "law",
+			"sections_fail": 0,
+			"overallCountTitle": 87
+		},
+		{
+			"sections_dept": "law",
+			"sections_fail": 1,
+			"overallCountTitle": 34
+		},
+		{
+			"sections_dept": "law",
+			"sections_fail": 2,
+			"overallCountTitle": 9
+		},
+		{
+			"sections_dept": "law",
+			"sections_fail": 3,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 8,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 15,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 4,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 1,
+			"overallCountTitle": 9
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 5,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 6,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 11,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 3,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 2,
+			"overallCountTitle": 6
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_fail": 0,
+			"overallCountTitle": 8
+		},
+		{
+			"sections_dept": "libe",
+			"sections_fail": 0,
+			"overallCountTitle": 4
+		},
+		{
+			"sections_dept": "libe",
+			"sections_fail": 1,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "libr",
+			"sections_fail": 0,
+			"overallCountTitle": 34
+		},
+		{
+			"sections_dept": "libr",
+			"sections_fail": 1,
+			"overallCountTitle": 7
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 9,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 10,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 19,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 16,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 8,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 33,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 2,
+			"overallCountTitle": 12
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 12,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 14,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 3,
+			"overallCountTitle": 7
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 11,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 1,
+			"overallCountTitle": 12
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 0,
+			"overallCountTitle": 28
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 5,
+			"overallCountTitle": 4
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 4,
+			"overallCountTitle": 9
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 7,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 25,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 15,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 18,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "ling",
+			"sections_fail": 6,
+			"overallCountTitle": 3
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 0,
+			"overallCountTitle": 29
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 6,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 8,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 3,
+			"overallCountTitle": 4
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 4,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 2,
+			"overallCountTitle": 10
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 5,
+			"overallCountTitle": 2
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 58,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 1,
+			"overallCountTitle": 13
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 34,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 36,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 13,
+			"overallCountTitle": 1
+		},
+		{
+			"sections_dept": "lled",
+			"sections_fail": 19,
+			"overallCountTitle": 1
+		}
+	]
+}

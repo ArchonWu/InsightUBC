@@ -1,0 +1,36 @@
+{
+	"title": "error group apply keys missing",
+	"input": {
+		"WHERE": {},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_name",
+				"rooms_address",
+				"rooms_type",
+				"rooms_furniture",
+				"rooms_seats"
+			],
+			"APPLY": [
+				{
+					"maxLon": {
+						"MAX": "rooms_lon"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_name",
+				"rooms_address",
+				"rooms_type",
+				"rooms_furniture",
+				"rooms_lat",
+				"rooms_lon",
+				"rooms_seats",
+				"maxLon"
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

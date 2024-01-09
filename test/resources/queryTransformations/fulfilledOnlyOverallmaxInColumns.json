@@ -1,0 +1,11691 @@
+{
+	"title": "fulfilled only overallmax in columns",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"overallMaxAudit"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallMaxAudit": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"overallMaxAudit": 94.44
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 89.51
+		},
+		{
+			"overallMaxAudit": 87.14
+		},
+		{
+			"overallMaxAudit": 96.11
+		},
+		{
+			"overallMaxAudit": 91.48
+		},
+		{
+			"overallMaxAudit": 90.18
+		},
+		{
+			"overallMaxAudit": 86.29
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 91.67
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 76.25
+		},
+		{
+			"overallMaxAudit": 74.61
+		},
+		{
+			"overallMaxAudit": 75.35
+		},
+		{
+			"overallMaxAudit": 72.21
+		},
+		{
+			"overallMaxAudit": 75.86
+		},
+		{
+			"overallMaxAudit": 84.67
+		},
+		{
+			"overallMaxAudit": 78.86
+		},
+		{
+			"overallMaxAudit": 78.16
+		},
+		{
+			"overallMaxAudit": 77.36
+		},
+		{
+			"overallMaxAudit": 74.92
+		},
+		{
+			"overallMaxAudit": 77.81
+		},
+		{
+			"overallMaxAudit": 80.07
+		},
+		{
+			"overallMaxAudit": 77.17
+		},
+		{
+			"overallMaxAudit": 76.03
+		},
+		{
+			"overallMaxAudit": 75.7
+		},
+		{
+			"overallMaxAudit": 81.06
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 77.4
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 77.14
+		},
+		{
+			"overallMaxAudit": 74
+		},
+		{
+			"overallMaxAudit": 77.77
+		},
+		{
+			"overallMaxAudit": 79.42
+		},
+		{
+			"overallMaxAudit": 80.86
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 90.92
+		},
+		{
+			"overallMaxAudit": 85.2
+		},
+		{
+			"overallMaxAudit": 88.67
+		},
+		{
+			"overallMaxAudit": 88.25
+		},
+		{
+			"overallMaxAudit": 92.29
+		},
+		{
+			"overallMaxAudit": 88.38
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 86.95
+		},
+		{
+			"overallMaxAudit": 74.3
+		},
+		{
+			"overallMaxAudit": 74.6
+		},
+		{
+			"overallMaxAudit": 69.63
+		},
+		{
+			"overallMaxAudit": 84.29
+		},
+		{
+			"overallMaxAudit": 78.43
+		},
+		{
+			"overallMaxAudit": 89.29
+		},
+		{
+			"overallMaxAudit": 81.27
+		},
+		{
+			"overallMaxAudit": 80.22
+		},
+		{
+			"overallMaxAudit": 87.6
+		},
+		{
+			"overallMaxAudit": 84.11
+		},
+		{
+			"overallMaxAudit": 81.14
+		},
+		{
+			"overallMaxAudit": 83.44
+		},
+		{
+			"overallMaxAudit": 78.2
+		},
+		{
+			"overallMaxAudit": 77.11
+		},
+		{
+			"overallMaxAudit": 77.26
+		},
+		{
+			"overallMaxAudit": 80.38
+		},
+		{
+			"overallMaxAudit": 73.75
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 80.81
+		},
+		{
+			"overallMaxAudit": 82.79
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 81.47
+		},
+		{
+			"overallMaxAudit": 85.15
+		},
+		{
+			"overallMaxAudit": 76.43
+		},
+		{
+			"overallMaxAudit": 77.2
+		},
+		{
+			"overallMaxAudit": 84.92
+		},
+		{
+			"overallMaxAudit": 80.9
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 80.67
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 79.55
+		},
+		{
+			"overallMaxAudit": 84.69
+		},
+		{
+			"overallMaxAudit": 82.4
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 84.9
+		},
+		{
+			"overallMaxAudit": 86.14
+		},
+		{
+			"overallMaxAudit": 80.63
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 80.62
+		},
+		{
+			"overallMaxAudit": 91.86
+		},
+		{
+			"overallMaxAudit": 79.44
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 85.16
+		},
+		{
+			"overallMaxAudit": 81.64
+		},
+		{
+			"overallMaxAudit": 77.99
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 82.08
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 80.86
+		},
+		{
+			"overallMaxAudit": 75.49
+		},
+		{
+			"overallMaxAudit": 74.33
+		},
+		{
+			"overallMaxAudit": 72.76
+		},
+		{
+			"overallMaxAudit": 75.08
+		},
+		{
+			"overallMaxAudit": 76.16
+		},
+		{
+			"overallMaxAudit": 83.94
+		},
+		{
+			"overallMaxAudit": 80.5
+		},
+		{
+			"overallMaxAudit": 85.47
+		},
+		{
+			"overallMaxAudit": 77.01
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 79.7
+		},
+		{
+			"overallMaxAudit": 79.43
+		},
+		{
+			"overallMaxAudit": 87.81
+		},
+		{
+			"overallMaxAudit": 88.94
+		},
+		{
+			"overallMaxAudit": 84.35
+		},
+		{
+			"overallMaxAudit": 80.86
+		},
+		{
+			"overallMaxAudit": 82.47
+		},
+		{
+			"overallMaxAudit": 83.13
+		},
+		{
+			"overallMaxAudit": 79.88
+		},
+		{
+			"overallMaxAudit": 83.23
+		},
+		{
+			"overallMaxAudit": 80.83
+		},
+		{
+			"overallMaxAudit": 83.7
+		},
+		{
+			"overallMaxAudit": 78.25
+		},
+		{
+			"overallMaxAudit": 82.32
+		},
+		{
+			"overallMaxAudit": 89.35
+		},
+		{
+			"overallMaxAudit": 85.55
+		},
+		{
+			"overallMaxAudit": 84.03
+		},
+		{
+			"overallMaxAudit": 83.71
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 81.23
+		},
+		{
+			"overallMaxAudit": 86.08
+		},
+		{
+			"overallMaxAudit": 85.62
+		},
+		{
+			"overallMaxAudit": 84.97
+		},
+		{
+			"overallMaxAudit": 81.09
+		},
+		{
+			"overallMaxAudit": 85.08
+		},
+		{
+			"overallMaxAudit": 81.36
+		},
+		{
+			"overallMaxAudit": 80.54
+		},
+		{
+			"overallMaxAudit": 83.85
+		},
+		{
+			"overallMaxAudit": 83.26
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 84.23
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 81.72
+		},
+		{
+			"overallMaxAudit": 84.94
+		},
+		{
+			"overallMaxAudit": 82.69
+		},
+		{
+			"overallMaxAudit": 84.21
+		},
+		{
+			"overallMaxAudit": 82.84
+		},
+		{
+			"overallMaxAudit": 84.79
+		},
+		{
+			"overallMaxAudit": 86.79
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 82.8
+		},
+		{
+			"overallMaxAudit": 79.51
+		},
+		{
+			"overallMaxAudit": 83.2
+		},
+		{
+			"overallMaxAudit": 85.71
+		},
+		{
+			"overallMaxAudit": 85.47
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 85.15
+		},
+		{
+			"overallMaxAudit": 85.29
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 81.5
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 81.49
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 73.52
+		},
+		{
+			"overallMaxAudit": 69.88
+		},
+		{
+			"overallMaxAudit": 73.4
+		},
+		{
+			"overallMaxAudit": 75.4
+		},
+		{
+			"overallMaxAudit": 74.02
+		},
+		{
+			"overallMaxAudit": 75.05
+		},
+		{
+			"overallMaxAudit": 78.27
+		},
+		{
+			"overallMaxAudit": 79.59
+		},
+		{
+			"overallMaxAudit": 75.92
+		},
+		{
+			"overallMaxAudit": 76.15
+		},
+		{
+			"overallMaxAudit": 80.82
+		},
+		{
+			"overallMaxAudit": 72.89
+		},
+		{
+			"overallMaxAudit": 79.36
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 86.92
+		},
+		{
+			"overallMaxAudit": 85.91
+		},
+		{
+			"overallMaxAudit": 86.7
+		},
+		{
+			"overallMaxAudit": 86.05
+		},
+		{
+			"overallMaxAudit": 88.82
+		},
+		{
+			"overallMaxAudit": 87.06
+		},
+		{
+			"overallMaxAudit": 96.94
+		},
+		{
+			"overallMaxAudit": 88.2
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 81.95
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 85.06
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 84.08
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 75.02
+		},
+		{
+			"overallMaxAudit": 72.09
+		},
+		{
+			"overallMaxAudit": 78.68
+		},
+		{
+			"overallMaxAudit": 80.89
+		},
+		{
+			"overallMaxAudit": 70.26
+		},
+		{
+			"overallMaxAudit": 77.18
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 72.78
+		},
+		{
+			"overallMaxAudit": 82.17
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 79.63
+		},
+		{
+			"overallMaxAudit": 78.26
+		},
+		{
+			"overallMaxAudit": 79.73
+		},
+		{
+			"overallMaxAudit": 77
+		},
+		{
+			"overallMaxAudit": 80.97
+		},
+		{
+			"overallMaxAudit": 80.48
+		},
+		{
+			"overallMaxAudit": 74.79
+		},
+		{
+			"overallMaxAudit": 76.85
+		},
+		{
+			"overallMaxAudit": 80.13
+		},
+		{
+			"overallMaxAudit": 78.52
+		},
+		{
+			"overallMaxAudit": 79.58
+		},
+		{
+			"overallMaxAudit": 74
+		},
+		{
+			"overallMaxAudit": 84.97
+		},
+		{
+			"overallMaxAudit": 82.73
+		},
+		{
+			"overallMaxAudit": 86.55
+		},
+		{
+			"overallMaxAudit": 85.38
+		},
+		{
+			"overallMaxAudit": 84.67
+		},
+		{
+			"overallMaxAudit": 79.73
+		},
+		{
+			"overallMaxAudit": 84.92
+		},
+		{
+			"overallMaxAudit": 86.69
+		},
+		{
+			"overallMaxAudit": 88.63
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 73.53
+		},
+		{
+			"overallMaxAudit": 74.66
+		},
+		{
+			"overallMaxAudit": 75.66
+		},
+		{
+			"overallMaxAudit": 75.98
+		},
+		{
+			"overallMaxAudit": 79.79
+		},
+		{
+			"overallMaxAudit": 84.5
+		},
+		{
+			"overallMaxAudit": 82.31
+		},
+		{
+			"overallMaxAudit": 83.53
+		},
+		{
+			"overallMaxAudit": 78.58
+		},
+		{
+			"overallMaxAudit": 86.11
+		},
+		{
+			"overallMaxAudit": 81.48
+		},
+		{
+			"overallMaxAudit": 83.6
+		},
+		{
+			"overallMaxAudit": 82.15
+		},
+		{
+			"overallMaxAudit": 81.2
+		},
+		{
+			"overallMaxAudit": 78.77
+		},
+		{
+			"overallMaxAudit": 75.11
+		},
+		{
+			"overallMaxAudit": 76.5
+		},
+		{
+			"overallMaxAudit": 71.18
+		},
+		{
+			"overallMaxAudit": 77.48
+		},
+		{
+			"overallMaxAudit": 76.85
+		},
+		{
+			"overallMaxAudit": 79.18
+		},
+		{
+			"overallMaxAudit": 74.03
+		},
+		{
+			"overallMaxAudit": 78.9
+		},
+		{
+			"overallMaxAudit": 75.48
+		},
+		{
+			"overallMaxAudit": 79.46
+		},
+		{
+			"overallMaxAudit": 71.81
+		},
+		{
+			"overallMaxAudit": 75.43
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 74.39
+		},
+		{
+			"overallMaxAudit": 74.47
+		},
+		{
+			"overallMaxAudit": 75.88
+		},
+		{
+			"overallMaxAudit": 80.39
+		},
+		{
+			"overallMaxAudit": 78.79
+		},
+		{
+			"overallMaxAudit": 80.59
+		},
+		{
+			"overallMaxAudit": 78.29
+		},
+		{
+			"overallMaxAudit": 74.85
+		},
+		{
+			"overallMaxAudit": 78.12
+		},
+		{
+			"overallMaxAudit": 79.44
+		},
+		{
+			"overallMaxAudit": 86.24
+		},
+		{
+			"overallMaxAudit": 74.24
+		},
+		{
+			"overallMaxAudit": 81.42
+		},
+		{
+			"overallMaxAudit": 66.79
+		},
+		{
+			"overallMaxAudit": 83.47
+		},
+		{
+			"overallMaxAudit": 79.27
+		},
+		{
+			"overallMaxAudit": 81.8
+		},
+		{
+			"overallMaxAudit": 78.5
+		},
+		{
+			"overallMaxAudit": 77.88
+		},
+		{
+			"overallMaxAudit": 77.34
+		},
+		{
+			"overallMaxAudit": 78.9
+		},
+		{
+			"overallMaxAudit": 72.63
+		},
+		{
+			"overallMaxAudit": 78.6
+		},
+		{
+			"overallMaxAudit": 84.46
+		},
+		{
+			"overallMaxAudit": 77.92
+		},
+		{
+			"overallMaxAudit": 82.3
+		},
+		{
+			"overallMaxAudit": 75.38
+		},
+		{
+			"overallMaxAudit": 74.61
+		},
+		{
+			"overallMaxAudit": 76.33
+		},
+		{
+			"overallMaxAudit": 85.38
+		},
+		{
+			"overallMaxAudit": 83.67
+		},
+		{
+			"overallMaxAudit": 83.18
+		},
+		{
+			"overallMaxAudit": 79.44
+		},
+		{
+			"overallMaxAudit": 80.79
+		},
+		{
+			"overallMaxAudit": 71.27
+		},
+		{
+			"overallMaxAudit": 79.05
+		},
+		{
+			"overallMaxAudit": 80.17
+		},
+		{
+			"overallMaxAudit": 76.89
+		},
+		{
+			"overallMaxAudit": 76.23
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 78.61
+		},
+		{
+			"overallMaxAudit": 78.7
+		},
+		{
+			"overallMaxAudit": 83.23
+		},
+		{
+			"overallMaxAudit": 78.4
+		},
+		{
+			"overallMaxAudit": 83.56
+		},
+		{
+			"overallMaxAudit": 91.4
+		},
+		{
+			"overallMaxAudit": 80.11
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 73.54
+		},
+		{
+			"overallMaxAudit": 69.77
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 83.14
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 79.81
+		},
+		{
+			"overallMaxAudit": 85.17
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 83.67
+		},
+		{
+			"overallMaxAudit": 85.9
+		},
+		{
+			"overallMaxAudit": 91.4
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 89.56
+		},
+		{
+			"overallMaxAudit": 93.91
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 90.38
+		},
+		{
+			"overallMaxAudit": 92.29
+		},
+		{
+			"overallMaxAudit": 88.41
+		},
+		{
+			"overallMaxAudit": 91.08
+		},
+		{
+			"overallMaxAudit": 91.75
+		},
+		{
+			"overallMaxAudit": 89.62
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 87.13
+		},
+		{
+			"overallMaxAudit": 92.45
+		},
+		{
+			"overallMaxAudit": 93.79
+		},
+		{
+			"overallMaxAudit": 93.54
+		},
+		{
+			"overallMaxAudit": 89.83
+		},
+		{
+			"overallMaxAudit": 92.33
+		},
+		{
+			"overallMaxAudit": 93.75
+		},
+		{
+			"overallMaxAudit": 94.44
+		},
+		{
+			"overallMaxAudit": 96.9
+		},
+		{
+			"overallMaxAudit": 87.45
+		},
+		{
+			"overallMaxAudit": 91.27
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 89.74
+		},
+		{
+			"overallMaxAudit": 90.95
+		},
+		{
+			"overallMaxAudit": 91.73
+		},
+		{
+			"overallMaxAudit": 93.75
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 89.39
+		},
+		{
+			"overallMaxAudit": 90.12
+		},
+		{
+			"overallMaxAudit": 93.2
+		},
+		{
+			"overallMaxAudit": 87.73
+		},
+		{
+			"overallMaxAudit": 91.33
+		},
+		{
+			"overallMaxAudit": 90.7
+		},
+		{
+			"overallMaxAudit": 82.98
+		},
+		{
+			"overallMaxAudit": 84.85
+		},
+		{
+			"overallMaxAudit": 81.8
+		},
+		{
+			"overallMaxAudit": 85.49
+		},
+		{
+			"overallMaxAudit": 83.73
+		},
+		{
+			"overallMaxAudit": 83.69
+		},
+		{
+			"overallMaxAudit": 84.69
+		},
+		{
+			"overallMaxAudit": 81.96
+		},
+		{
+			"overallMaxAudit": 83.74
+		},
+		{
+			"overallMaxAudit": 87.24
+		},
+		{
+			"overallMaxAudit": 85.77
+		},
+		{
+			"overallMaxAudit": 84.38
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 86.41
+		},
+		{
+			"overallMaxAudit": 81.69
+		},
+		{
+			"overallMaxAudit": 86.81
+		},
+		{
+			"overallMaxAudit": 83.63
+		},
+		{
+			"overallMaxAudit": 83.15
+		},
+		{
+			"overallMaxAudit": 91.38
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 84.97
+		},
+		{
+			"overallMaxAudit": 87.13
+		},
+		{
+			"overallMaxAudit": 83.71
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 82.84
+		},
+		{
+			"overallMaxAudit": 85.36
+		},
+		{
+			"overallMaxAudit": 82.63
+		},
+		{
+			"overallMaxAudit": 84.26
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 82.25
+		},
+		{
+			"overallMaxAudit": 82.7
+		},
+		{
+			"overallMaxAudit": 88.39
+		},
+		{
+			"overallMaxAudit": 86.96
+		},
+		{
+			"overallMaxAudit": 88.64
+		},
+		{
+			"overallMaxAudit": 83.4
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 85.21
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 85.62
+		},
+		{
+			"overallMaxAudit": 87.64
+		},
+		{
+			"overallMaxAudit": 89.43
+		},
+		{
+			"overallMaxAudit": 88.58
+		},
+		{
+			"overallMaxAudit": 86.89
+		},
+		{
+			"overallMaxAudit": 89.27
+		},
+		{
+			"overallMaxAudit": 87.69
+		},
+		{
+			"overallMaxAudit": 86.36
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 84.11
+		},
+		{
+			"overallMaxAudit": 86.7
+		},
+		{
+			"overallMaxAudit": 84.13
+		},
+		{
+			"overallMaxAudit": 83.7
+		},
+		{
+			"overallMaxAudit": 84.79
+		},
+		{
+			"overallMaxAudit": 82.85
+		},
+		{
+			"overallMaxAudit": 83.48
+		},
+		{
+			"overallMaxAudit": 85.9
+		},
+		{
+			"overallMaxAudit": 84.18
+		},
+		{
+			"overallMaxAudit": 86.83
+		},
+		{
+			"overallMaxAudit": 83.74
+		},
+		{
+			"overallMaxAudit": 83.2
+		},
+		{
+			"overallMaxAudit": 81.8
+		},
+		{
+			"overallMaxAudit": 84.34
+		},
+		{
+			"overallMaxAudit": 84.03
+		},
+		{
+			"overallMaxAudit": 87.7
+		},
+		{
+			"overallMaxAudit": 86.82
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 85.73
+		},
+		{
+			"overallMaxAudit": 85.79
+		},
+		{
+			"overallMaxAudit": 82.45
+		},
+		{
+			"overallMaxAudit": 90.23
+		},
+		{
+			"overallMaxAudit": 88.58
+		},
+		{
+			"overallMaxAudit": 91.47
+		},
+		{
+			"overallMaxAudit": 84.86
+		},
+		{
+			"overallMaxAudit": 82.25
+		},
+		{
+			"overallMaxAudit": 83.9
+		},
+		{
+			"overallMaxAudit": 86.79
+		},
+		{
+			"overallMaxAudit": 79.15
+		},
+		{
+			"overallMaxAudit": 85.3
+		},
+		{
+			"overallMaxAudit": 79.31
+		},
+		{
+			"overallMaxAudit": 87.71
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 86.89
+		},
+		{
+			"overallMaxAudit": 83.35
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 81.96
+		},
+		{
+			"overallMaxAudit": 85.4
+		},
+		{
+			"overallMaxAudit": 84.09
+		},
+		{
+			"overallMaxAudit": 81.71
+		},
+		{
+			"overallMaxAudit": 85.53
+		},
+		{
+			"overallMaxAudit": 84.18
+		},
+		{
+			"overallMaxAudit": 86.04
+		},
+		{
+			"overallMaxAudit": 84.9
+		},
+		{
+			"overallMaxAudit": 87.56
+		},
+		{
+			"overallMaxAudit": 87.55
+		},
+		{
+			"overallMaxAudit": 84.55
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 85.53
+		},
+		{
+			"overallMaxAudit": 84.45
+		},
+		{
+			"overallMaxAudit": 85.62
+		},
+		{
+			"overallMaxAudit": 71.35
+		},
+		{
+			"overallMaxAudit": 73.66
+		},
+		{
+			"overallMaxAudit": 80.72
+		},
+		{
+			"overallMaxAudit": 73.51
+		},
+		{
+			"overallMaxAudit": 75.92
+		},
+		{
+			"overallMaxAudit": 74.3
+		},
+		{
+			"overallMaxAudit": 76.95
+		},
+		{
+			"overallMaxAudit": 77.3
+		},
+		{
+			"overallMaxAudit": 85.7
+		},
+		{
+			"overallMaxAudit": 72.94
+		},
+		{
+			"overallMaxAudit": 89.14
+		},
+		{
+			"overallMaxAudit": 86.57
+		},
+		{
+			"overallMaxAudit": 81.15
+		},
+		{
+			"overallMaxAudit": 82.14
+		},
+		{
+			"overallMaxAudit": 88.19
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 88.2
+		},
+		{
+			"overallMaxAudit": 90.57
+		},
+		{
+			"overallMaxAudit": 87.91
+		},
+		{
+			"overallMaxAudit": 93.45
+		},
+		{
+			"overallMaxAudit": 89.88
+		},
+		{
+			"overallMaxAudit": 87.33
+		},
+		{
+			"overallMaxAudit": 74.37
+		},
+		{
+			"overallMaxAudit": 75.17
+		},
+		{
+			"overallMaxAudit": 83.68
+		},
+		{
+			"overallMaxAudit": 72.31
+		},
+		{
+			"overallMaxAudit": 75.23
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 76.04
+		},
+		{
+			"overallMaxAudit": 82.57
+		},
+		{
+			"overallMaxAudit": 80.23
+		},
+		{
+			"overallMaxAudit": 73.7
+		},
+		{
+			"overallMaxAudit": 71.11
+		},
+		{
+			"overallMaxAudit": 78.3
+		},
+		{
+			"overallMaxAudit": 80.33
+		},
+		{
+			"overallMaxAudit": 75.03
+		},
+		{
+			"overallMaxAudit": 76.95
+		},
+		{
+			"overallMaxAudit": 76.47
+		},
+		{
+			"overallMaxAudit": 71.31
+		},
+		{
+			"overallMaxAudit": 72.42
+		},
+		{
+			"overallMaxAudit": 74.3
+		},
+		{
+			"overallMaxAudit": 74.75
+		},
+		{
+			"overallMaxAudit": 71.49
+		},
+		{
+			"overallMaxAudit": 79.18
+		},
+		{
+			"overallMaxAudit": 81.76
+		},
+		{
+			"overallMaxAudit": 82.57
+		},
+		{
+			"overallMaxAudit": 79.29
+		},
+		{
+			"overallMaxAudit": 83.84
+		},
+		{
+			"overallMaxAudit": 75.56
+		},
+		{
+			"overallMaxAudit": 83.34
+		},
+		{
+			"overallMaxAudit": 72.73
+		},
+		{
+			"overallMaxAudit": 76.88
+		},
+		{
+			"overallMaxAudit": 77.5
+		},
+		{
+			"overallMaxAudit": 79.04
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 78.8
+		},
+		{
+			"overallMaxAudit": 80.57
+		},
+		{
+			"overallMaxAudit": 78.7
+		},
+		{
+			"overallMaxAudit": 84.57
+		},
+		{
+			"overallMaxAudit": 80.65
+		},
+		{
+			"overallMaxAudit": 80.88
+		},
+		{
+			"overallMaxAudit": 84.65
+		},
+		{
+			"overallMaxAudit": 74.66
+		},
+		{
+			"overallMaxAudit": 77.81
+		},
+		{
+			"overallMaxAudit": 72.12
+		},
+		{
+			"overallMaxAudit": 84.73
+		},
+		{
+			"overallMaxAudit": 83.42
+		},
+		{
+			"overallMaxAudit": 82.41
+		},
+		{
+			"overallMaxAudit": 80.62
+		},
+		{
+			"overallMaxAudit": 81.82
+		},
+		{
+			"overallMaxAudit": 84.88
+		},
+		{
+			"overallMaxAudit": 88.91
+		},
+		{
+			"overallMaxAudit": 83.56
+		},
+		{
+			"overallMaxAudit": 92.19
+		},
+		{
+			"overallMaxAudit": 73.54
+		},
+		{
+			"overallMaxAudit": 77.1
+		},
+		{
+			"overallMaxAudit": 78.54
+		},
+		{
+			"overallMaxAudit": 84.11
+		},
+		{
+			"overallMaxAudit": 77.73
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 78.4
+		},
+		{
+			"overallMaxAudit": 86.1
+		},
+		{
+			"overallMaxAudit": 82.92
+		},
+		{
+			"overallMaxAudit": 86.31
+		},
+		{
+			"overallMaxAudit": 85.09
+		},
+		{
+			"overallMaxAudit": 85.47
+		},
+		{
+			"overallMaxAudit": 86.33
+		},
+		{
+			"overallMaxAudit": 82.71
+		},
+		{
+			"overallMaxAudit": 82.73
+		},
+		{
+			"overallMaxAudit": 79.22
+		},
+		{
+			"overallMaxAudit": 81.24
+		},
+		{
+			"overallMaxAudit": 81.13
+		},
+		{
+			"overallMaxAudit": 83.42
+		},
+		{
+			"overallMaxAudit": 85.71
+		},
+		{
+			"overallMaxAudit": 89.62
+		},
+		{
+			"overallMaxAudit": 87.25
+		},
+		{
+			"overallMaxAudit": 85.25
+		},
+		{
+			"overallMaxAudit": 84.03
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 78.33
+		},
+		{
+			"overallMaxAudit": 83.71
+		},
+		{
+			"overallMaxAudit": 83.43
+		},
+		{
+			"overallMaxAudit": 89.82
+		},
+		{
+			"overallMaxAudit": 80.43
+		},
+		{
+			"overallMaxAudit": 91.21
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 86.28
+		},
+		{
+			"overallMaxAudit": 87.11
+		},
+		{
+			"overallMaxAudit": 80.14
+		},
+		{
+			"overallMaxAudit": 86.2
+		},
+		{
+			"overallMaxAudit": 92.1
+		},
+		{
+			"overallMaxAudit": 87.07
+		},
+		{
+			"overallMaxAudit": 86.07
+		},
+		{
+			"overallMaxAudit": 77.97
+		},
+		{
+			"overallMaxAudit": 86.12
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 85.29
+		},
+		{
+			"overallMaxAudit": 94.33
+		},
+		{
+			"overallMaxAudit": 81.32
+		},
+		{
+			"overallMaxAudit": 92.36
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 88.6
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 88.83
+		},
+		{
+			"overallMaxAudit": 82.23
+		},
+		{
+			"overallMaxAudit": 84.09
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 95.15
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 88.04
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 90.71
+		},
+		{
+			"overallMaxAudit": 83.83
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 71
+		},
+		{
+			"overallMaxAudit": 75.88
+		},
+		{
+			"overallMaxAudit": 75.63
+		},
+		{
+			"overallMaxAudit": 76.81
+		},
+		{
+			"overallMaxAudit": 69.27
+		},
+		{
+			"overallMaxAudit": 80.44
+		},
+		{
+			"overallMaxAudit": 79.5
+		},
+		{
+			"overallMaxAudit": 75.78
+		},
+		{
+			"overallMaxAudit": 76.68
+		},
+		{
+			"overallMaxAudit": 70.53
+		},
+		{
+			"overallMaxAudit": 80.88
+		},
+		{
+			"overallMaxAudit": 70.22
+		},
+		{
+			"overallMaxAudit": 70.15
+		},
+		{
+			"overallMaxAudit": 83.49
+		},
+		{
+			"overallMaxAudit": 73.32
+		},
+		{
+			"overallMaxAudit": 76.55
+		},
+		{
+			"overallMaxAudit": 80.68
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 79.56
+		},
+		{
+			"overallMaxAudit": 76.24
+		},
+		{
+			"overallMaxAudit": 69.38
+		},
+		{
+			"overallMaxAudit": 81.36
+		},
+		{
+			"overallMaxAudit": 78.96
+		},
+		{
+			"overallMaxAudit": 72.42
+		},
+		{
+			"overallMaxAudit": 82.17
+		},
+		{
+			"overallMaxAudit": 81.6
+		},
+		{
+			"overallMaxAudit": 74.94
+		},
+		{
+			"overallMaxAudit": 75.67
+		},
+		{
+			"overallMaxAudit": 78.33
+		},
+		{
+			"overallMaxAudit": 82.13
+		},
+		{
+			"overallMaxAudit": 75.76
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 85.08
+		},
+		{
+			"overallMaxAudit": 78.53
+		},
+		{
+			"overallMaxAudit": 81.03
+		},
+		{
+			"overallMaxAudit": 67.96
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 85.76
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 85.89
+		},
+		{
+			"overallMaxAudit": 71.27
+		},
+		{
+			"overallMaxAudit": 88.86
+		},
+		{
+			"overallMaxAudit": 80.71
+		},
+		{
+			"overallMaxAudit": 73.38
+		},
+		{
+			"overallMaxAudit": 86.56
+		},
+		{
+			"overallMaxAudit": 88.31
+		},
+		{
+			"overallMaxAudit": 89.38
+		},
+		{
+			"overallMaxAudit": 87.63
+		},
+		{
+			"overallMaxAudit": 86.63
+		},
+		{
+			"overallMaxAudit": 89.8
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 89.31
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 87.8
+		},
+		{
+			"overallMaxAudit": 93.67
+		},
+		{
+			"overallMaxAudit": 83.31
+		},
+		{
+			"overallMaxAudit": 74.96
+		},
+		{
+			"overallMaxAudit": 85.91
+		},
+		{
+			"overallMaxAudit": 86.86
+		},
+		{
+			"overallMaxAudit": 94.27
+		},
+		{
+			"overallMaxAudit": 89.67
+		},
+		{
+			"overallMaxAudit": 89.8
+		},
+		{
+			"overallMaxAudit": 90.86
+		},
+		{
+			"overallMaxAudit": 92.25
+		},
+		{
+			"overallMaxAudit": 94.4
+		},
+		{
+			"overallMaxAudit": 93.8
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 87.78
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 88.63
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 82.96
+		},
+		{
+			"overallMaxAudit": 87.87
+		},
+		{
+			"overallMaxAudit": 87.7
+		},
+		{
+			"overallMaxAudit": 82.27
+		},
+		{
+			"overallMaxAudit": 77.17
+		},
+		{
+			"overallMaxAudit": 84.05
+		},
+		{
+			"overallMaxAudit": 72.88
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 71.96
+		},
+		{
+			"overallMaxAudit": 72.87
+		},
+		{
+			"overallMaxAudit": 79.16
+		},
+		{
+			"overallMaxAudit": 76.48
+		},
+		{
+			"overallMaxAudit": 75.58
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 75.95
+		},
+		{
+			"overallMaxAudit": 77.78
+		},
+		{
+			"overallMaxAudit": 77.74
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 79.24
+		},
+		{
+			"overallMaxAudit": 89.05
+		},
+		{
+			"overallMaxAudit": 83.86
+		},
+		{
+			"overallMaxAudit": 79.03
+		},
+		{
+			"overallMaxAudit": 84.3
+		},
+		{
+			"overallMaxAudit": 84.79
+		},
+		{
+			"overallMaxAudit": 83.31
+		},
+		{
+			"overallMaxAudit": 84.09
+		},
+		{
+			"overallMaxAudit": 77.46
+		},
+		{
+			"overallMaxAudit": 79.71
+		},
+		{
+			"overallMaxAudit": 78.91
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 86.53
+		},
+		{
+			"overallMaxAudit": 85.25
+		},
+		{
+			"overallMaxAudit": 86.29
+		},
+		{
+			"overallMaxAudit": 81.31
+		},
+		{
+			"overallMaxAudit": 75.49
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 86.99
+		},
+		{
+			"overallMaxAudit": 87.84
+		},
+		{
+			"overallMaxAudit": 71.91
+		},
+		{
+			"overallMaxAudit": 77.41
+		},
+		{
+			"overallMaxAudit": 85.93
+		},
+		{
+			"overallMaxAudit": 84.08
+		},
+		{
+			"overallMaxAudit": 82.37
+		},
+		{
+			"overallMaxAudit": 87.27
+		},
+		{
+			"overallMaxAudit": 87.75
+		},
+		{
+			"overallMaxAudit": 88.22
+		},
+		{
+			"overallMaxAudit": 84.57
+		},
+		{
+			"overallMaxAudit": 87.33
+		},
+		{
+			"overallMaxAudit": 94.75
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 95.54
+		},
+		{
+			"overallMaxAudit": 95.31
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 91.8
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 86.92
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 90.5
+		},
+		{
+			"overallMaxAudit": 90.45
+		},
+		{
+			"overallMaxAudit": 92.75
+		},
+		{
+			"overallMaxAudit": 72.49
+		},
+		{
+			"overallMaxAudit": 63.97
+		},
+		{
+			"overallMaxAudit": 78.59
+		},
+		{
+			"overallMaxAudit": 76.29
+		},
+		{
+			"overallMaxAudit": 77.74
+		},
+		{
+			"overallMaxAudit": 81.25
+		},
+		{
+			"overallMaxAudit": 76.81
+		},
+		{
+			"overallMaxAudit": 69.47
+		},
+		{
+			"overallMaxAudit": 79.6
+		},
+		{
+			"overallMaxAudit": 70.24
+		},
+		{
+			"overallMaxAudit": 76.45
+		},
+		{
+			"overallMaxAudit": 75.35
+		},
+		{
+			"overallMaxAudit": 69.85
+		},
+		{
+			"overallMaxAudit": 70.7
+		},
+		{
+			"overallMaxAudit": 75.56
+		},
+		{
+			"overallMaxAudit": 79.25
+		},
+		{
+			"overallMaxAudit": 73.47
+		},
+		{
+			"overallMaxAudit": 78.92
+		},
+		{
+			"overallMaxAudit": 67.39
+		},
+		{
+			"overallMaxAudit": 85.82
+		},
+		{
+			"overallMaxAudit": 76.97
+		},
+		{
+			"overallMaxAudit": 81.31
+		},
+		{
+			"overallMaxAudit": 74.06
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 69.34
+		},
+		{
+			"overallMaxAudit": 68.65
+		},
+		{
+			"overallMaxAudit": 68.53
+		},
+		{
+			"overallMaxAudit": 70.68
+		},
+		{
+			"overallMaxAudit": 74.92
+		},
+		{
+			"overallMaxAudit": 75.75
+		},
+		{
+			"overallMaxAudit": 75.96
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 78.9
+		},
+		{
+			"overallMaxAudit": 73.11
+		},
+		{
+			"overallMaxAudit": 76.88
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 75.68
+		},
+		{
+			"overallMaxAudit": 81.83
+		},
+		{
+			"overallMaxAudit": 88.8
+		},
+		{
+			"overallMaxAudit": 87.8
+		},
+		{
+			"overallMaxAudit": 77.5
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 85.87
+		},
+		{
+			"overallMaxAudit": 80.25
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 76.29
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 83.73
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 86.15
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 89.67
+		},
+		{
+			"overallMaxAudit": 92.57
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 88.64
+		},
+		{
+			"overallMaxAudit": 86.82
+		},
+		{
+			"overallMaxAudit": 91.6
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 86.78
+		},
+		{
+			"overallMaxAudit": 88.17
+		},
+		{
+			"overallMaxAudit": 86.91
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 89.14
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 84.24
+		},
+		{
+			"overallMaxAudit": 82.58
+		},
+		{
+			"overallMaxAudit": 76.06
+		},
+		{
+			"overallMaxAudit": 83.83
+		},
+		{
+			"overallMaxAudit": 82.22
+		},
+		{
+			"overallMaxAudit": 78.47
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 82.8
+		},
+		{
+			"overallMaxAudit": 80.56
+		},
+		{
+			"overallMaxAudit": 81.35
+		},
+		{
+			"overallMaxAudit": 82.33
+		},
+		{
+			"overallMaxAudit": 84.5
+		},
+		{
+			"overallMaxAudit": 81.5
+		},
+		{
+			"overallMaxAudit": 82.17
+		},
+		{
+			"overallMaxAudit": 81.91
+		},
+		{
+			"overallMaxAudit": 81.45
+		},
+		{
+			"overallMaxAudit": 76.57
+		},
+		{
+			"overallMaxAudit": 82.9
+		},
+		{
+			"overallMaxAudit": 82.95
+		},
+		{
+			"overallMaxAudit": 86.13
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 79.32
+		},
+		{
+			"overallMaxAudit": 80.08
+		},
+		{
+			"overallMaxAudit": 77.32
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 78.29
+		},
+		{
+			"overallMaxAudit": 76.4
+		},
+		{
+			"overallMaxAudit": 70.61
+		},
+		{
+			"overallMaxAudit": 79.16
+		},
+		{
+			"overallMaxAudit": 81.6
+		},
+		{
+			"overallMaxAudit": 76.03
+		},
+		{
+			"overallMaxAudit": 78.73
+		},
+		{
+			"overallMaxAudit": 78.18
+		},
+		{
+			"overallMaxAudit": 79.6
+		},
+		{
+			"overallMaxAudit": 79.86
+		},
+		{
+			"overallMaxAudit": 79.03
+		},
+		{
+			"overallMaxAudit": 83.54
+		},
+		{
+			"overallMaxAudit": 89.68
+		},
+		{
+			"overallMaxAudit": 79.95
+		},
+		{
+			"overallMaxAudit": 87.74
+		},
+		{
+			"overallMaxAudit": 84.63
+		},
+		{
+			"overallMaxAudit": 75.88
+		},
+		{
+			"overallMaxAudit": 78.22
+		},
+		{
+			"overallMaxAudit": 80.73
+		},
+		{
+			"overallMaxAudit": 80.47
+		},
+		{
+			"overallMaxAudit": 79.41
+		},
+		{
+			"overallMaxAudit": 81.2
+		},
+		{
+			"overallMaxAudit": 90.11
+		},
+		{
+			"overallMaxAudit": 86.45
+		},
+		{
+			"overallMaxAudit": 76.73
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 78.13
+		},
+		{
+			"overallMaxAudit": 81.43
+		},
+		{
+			"overallMaxAudit": 78.18
+		},
+		{
+			"overallMaxAudit": 82.61
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 77.22
+		},
+		{
+			"overallMaxAudit": 87.39
+		},
+		{
+			"overallMaxAudit": 79.41
+		},
+		{
+			"overallMaxAudit": 80.38
+		},
+		{
+			"overallMaxAudit": 77.28
+		},
+		{
+			"overallMaxAudit": 90.44
+		},
+		{
+			"overallMaxAudit": 80.1
+		},
+		{
+			"overallMaxAudit": 82.56
+		},
+		{
+			"overallMaxAudit": 86.68
+		},
+		{
+			"overallMaxAudit": 82.13
+		},
+		{
+			"overallMaxAudit": 82.43
+		},
+		{
+			"overallMaxAudit": 87.22
+		},
+		{
+			"overallMaxAudit": 83.16
+		},
+		{
+			"overallMaxAudit": 85.67
+		},
+		{
+			"overallMaxAudit": 84.78
+		},
+		{
+			"overallMaxAudit": 83.46
+		},
+		{
+			"overallMaxAudit": 83.17
+		},
+		{
+			"overallMaxAudit": 86.73
+		},
+		{
+			"overallMaxAudit": 80.46
+		},
+		{
+			"overallMaxAudit": 91.06
+		},
+		{
+			"overallMaxAudit": 85.22
+		},
+		{
+			"overallMaxAudit": 83.97
+		},
+		{
+			"overallMaxAudit": 90.22
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 84.19
+		},
+		{
+			"overallMaxAudit": 90.26
+		},
+		{
+			"overallMaxAudit": 90.39
+		},
+		{
+			"overallMaxAudit": 88.76
+		},
+		{
+			"overallMaxAudit": 85.03
+		},
+		{
+			"overallMaxAudit": 91.46
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 84.99
+		},
+		{
+			"overallMaxAudit": 88.15
+		},
+		{
+			"overallMaxAudit": 89.89
+		},
+		{
+			"overallMaxAudit": 92.67
+		},
+		{
+			"overallMaxAudit": 87.97
+		},
+		{
+			"overallMaxAudit": 96.27
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 91.56
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 86.92
+		},
+		{
+			"overallMaxAudit": 91.32
+		},
+		{
+			"overallMaxAudit": 86.03
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 85.79
+		},
+		{
+			"overallMaxAudit": 88.73
+		},
+		{
+			"overallMaxAudit": 88.44
+		},
+		{
+			"overallMaxAudit": 83.87
+		},
+		{
+			"overallMaxAudit": 85.35
+		},
+		{
+			"overallMaxAudit": 90.2
+		},
+		{
+			"overallMaxAudit": 85.93
+		},
+		{
+			"overallMaxAudit": 88.48
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 80.6
+		},
+		{
+			"overallMaxAudit": 88.83
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 83.92
+		},
+		{
+			"overallMaxAudit": 85.71
+		},
+		{
+			"overallMaxAudit": 81.71
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 83.42
+		},
+		{
+			"overallMaxAudit": 88.38
+		},
+		{
+			"overallMaxAudit": 90.06
+		},
+		{
+			"overallMaxAudit": 84.5
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 92.3
+		},
+		{
+			"overallMaxAudit": 79.5
+		},
+		{
+			"overallMaxAudit": 78.33
+		},
+		{
+			"overallMaxAudit": 73
+		},
+		{
+			"overallMaxAudit": 81.02
+		},
+		{
+			"overallMaxAudit": 75.45
+		},
+		{
+			"overallMaxAudit": 74.11
+		},
+		{
+			"overallMaxAudit": 72.42
+		},
+		{
+			"overallMaxAudit": 79.27
+		},
+		{
+			"overallMaxAudit": 79.33
+		},
+		{
+			"overallMaxAudit": 71.9
+		},
+		{
+			"overallMaxAudit": 82.06
+		},
+		{
+			"overallMaxAudit": 80.23
+		},
+		{
+			"overallMaxAudit": 76.17
+		},
+		{
+			"overallMaxAudit": 77.05
+		},
+		{
+			"overallMaxAudit": 78.2
+		},
+		{
+			"overallMaxAudit": 81.68
+		},
+		{
+			"overallMaxAudit": 76.49
+		},
+		{
+			"overallMaxAudit": 80.02
+		},
+		{
+			"overallMaxAudit": 77.79
+		},
+		{
+			"overallMaxAudit": 76.66
+		},
+		{
+			"overallMaxAudit": 74.9
+		},
+		{
+			"overallMaxAudit": 78.09
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 79.56
+		},
+		{
+			"overallMaxAudit": 70.5
+		},
+		{
+			"overallMaxAudit": 77.03
+		},
+		{
+			"overallMaxAudit": 80.17
+		},
+		{
+			"overallMaxAudit": 78.81
+		},
+		{
+			"overallMaxAudit": 79.58
+		},
+		{
+			"overallMaxAudit": 85.08
+		},
+		{
+			"overallMaxAudit": 82.81
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 91.8
+		},
+		{
+			"overallMaxAudit": 92.91
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 91.13
+		},
+		{
+			"overallMaxAudit": 92.1
+		},
+		{
+			"overallMaxAudit": 89.7
+		},
+		{
+			"overallMaxAudit": 91.17
+		},
+		{
+			"overallMaxAudit": 95.78
+		},
+		{
+			"overallMaxAudit": 95.36
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 91.71
+		},
+		{
+			"overallMaxAudit": 99.19
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 96.33
+		},
+		{
+			"overallMaxAudit": 95.36
+		},
+		{
+			"overallMaxAudit": 93.7
+		},
+		{
+			"overallMaxAudit": 78.23
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 89.13
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 84.67
+		},
+		{
+			"overallMaxAudit": 89.42
+		},
+		{
+			"overallMaxAudit": 74.15
+		},
+		{
+			"overallMaxAudit": 75.6
+		},
+		{
+			"overallMaxAudit": 82.77
+		},
+		{
+			"overallMaxAudit": 81.79
+		},
+		{
+			"overallMaxAudit": 77.25
+		},
+		{
+			"overallMaxAudit": 74.88
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 79.73
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 73.07
+		},
+		{
+			"overallMaxAudit": 80.1
+		},
+		{
+			"overallMaxAudit": 78.9
+		},
+		{
+			"overallMaxAudit": 81.04
+		},
+		{
+			"overallMaxAudit": 82.43
+		},
+		{
+			"overallMaxAudit": 90.46
+		},
+		{
+			"overallMaxAudit": 82.76
+		},
+		{
+			"overallMaxAudit": 79.77
+		},
+		{
+			"overallMaxAudit": 82.12
+		},
+		{
+			"overallMaxAudit": 83.26
+		},
+		{
+			"overallMaxAudit": 80.74
+		},
+		{
+			"overallMaxAudit": 80.26
+		},
+		{
+			"overallMaxAudit": 80.6
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 79.48
+		},
+		{
+			"overallMaxAudit": 73.3
+		},
+		{
+			"overallMaxAudit": 74.44
+		},
+		{
+			"overallMaxAudit": 78.31
+		},
+		{
+			"overallMaxAudit": 82.88
+		},
+		{
+			"overallMaxAudit": 80.05
+		},
+		{
+			"overallMaxAudit": 82.64
+		},
+		{
+			"overallMaxAudit": 81.58
+		},
+		{
+			"overallMaxAudit": 78.75
+		},
+		{
+			"overallMaxAudit": 82.52
+		},
+		{
+			"overallMaxAudit": 79.37
+		},
+		{
+			"overallMaxAudit": 78.24
+		},
+		{
+			"overallMaxAudit": 83.57
+		},
+		{
+			"overallMaxAudit": 77.86
+		},
+		{
+			"overallMaxAudit": 80.18
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 83.52
+		},
+		{
+			"overallMaxAudit": 79.17
+		},
+		{
+			"overallMaxAudit": 82.35
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 82.09
+		},
+		{
+			"overallMaxAudit": 79.04
+		},
+		{
+			"overallMaxAudit": 85.78
+		},
+		{
+			"overallMaxAudit": 79.71
+		},
+		{
+			"overallMaxAudit": 79.6
+		},
+		{
+			"overallMaxAudit": 80.72
+		},
+		{
+			"overallMaxAudit": 78.93
+		},
+		{
+			"overallMaxAudit": 80.97
+		},
+		{
+			"overallMaxAudit": 80.9
+		},
+		{
+			"overallMaxAudit": 84.37
+		},
+		{
+			"overallMaxAudit": 79.35
+		},
+		{
+			"overallMaxAudit": 80.81
+		},
+		{
+			"overallMaxAudit": 80.91
+		},
+		{
+			"overallMaxAudit": 87.05
+		},
+		{
+			"overallMaxAudit": 81.78
+		},
+		{
+			"overallMaxAudit": 81.82
+		},
+		{
+			"overallMaxAudit": 79.02
+		},
+		{
+			"overallMaxAudit": 85.85
+		},
+		{
+			"overallMaxAudit": 78.47
+		},
+		{
+			"overallMaxAudit": 81.9
+		},
+		{
+			"overallMaxAudit": 86.1
+		},
+		{
+			"overallMaxAudit": 83.12
+		},
+		{
+			"overallMaxAudit": 86.86
+		},
+		{
+			"overallMaxAudit": 83.95
+		},
+		{
+			"overallMaxAudit": 81.24
+		},
+		{
+			"overallMaxAudit": 81.29
+		},
+		{
+			"overallMaxAudit": 81.13
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 80.94
+		},
+		{
+			"overallMaxAudit": 80.9
+		},
+		{
+			"overallMaxAudit": 86.1
+		},
+		{
+			"overallMaxAudit": 83.69
+		},
+		{
+			"overallMaxAudit": 79.1
+		},
+		{
+			"overallMaxAudit": 83.54
+		},
+		{
+			"overallMaxAudit": 78.17
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 87.11
+		},
+		{
+			"overallMaxAudit": 85.17
+		},
+		{
+			"overallMaxAudit": 81.11
+		},
+		{
+			"overallMaxAudit": 81.5
+		},
+		{
+			"overallMaxAudit": 79.85
+		},
+		{
+			"overallMaxAudit": 79.37
+		},
+		{
+			"overallMaxAudit": 80.25
+		},
+		{
+			"overallMaxAudit": 83.67
+		},
+		{
+			"overallMaxAudit": 81.8
+		},
+		{
+			"overallMaxAudit": 81.32
+		},
+		{
+			"overallMaxAudit": 82.29
+		},
+		{
+			"overallMaxAudit": 76.43
+		},
+		{
+			"overallMaxAudit": 83.7
+		},
+		{
+			"overallMaxAudit": 80.03
+		},
+		{
+			"overallMaxAudit": 81.85
+		},
+		{
+			"overallMaxAudit": 73.9
+		},
+		{
+			"overallMaxAudit": 83.08
+		},
+		{
+			"overallMaxAudit": 83.46
+		},
+		{
+			"overallMaxAudit": 78.82
+		},
+		{
+			"overallMaxAudit": 79.27
+		},
+		{
+			"overallMaxAudit": 80.93
+		},
+		{
+			"overallMaxAudit": 81.48
+		},
+		{
+			"overallMaxAudit": 84.84
+		},
+		{
+			"overallMaxAudit": 80.59
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 83.74
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 82.64
+		},
+		{
+			"overallMaxAudit": 82.16
+		},
+		{
+			"overallMaxAudit": 84.86
+		},
+		{
+			"overallMaxAudit": 86.02
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 87.51
+		},
+		{
+			"overallMaxAudit": 80.35
+		},
+		{
+			"overallMaxAudit": 82.25
+		},
+		{
+			"overallMaxAudit": 80.4
+		},
+		{
+			"overallMaxAudit": 80.6
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 86.39
+		},
+		{
+			"overallMaxAudit": 80.46
+		},
+		{
+			"overallMaxAudit": 88.6
+		},
+		{
+			"overallMaxAudit": 94.75
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 88.18
+		},
+		{
+			"overallMaxAudit": 86.84
+		},
+		{
+			"overallMaxAudit": 90.39
+		},
+		{
+			"overallMaxAudit": 84.66
+		},
+		{
+			"overallMaxAudit": 75.06
+		},
+		{
+			"overallMaxAudit": 79.94
+		},
+		{
+			"overallMaxAudit": 81.29
+		},
+		{
+			"overallMaxAudit": 76.28
+		},
+		{
+			"overallMaxAudit": 77.54
+		},
+		{
+			"overallMaxAudit": 80.11
+		},
+		{
+			"overallMaxAudit": 90.21
+		},
+		{
+			"overallMaxAudit": 84.96
+		},
+		{
+			"overallMaxAudit": 77.31
+		},
+		{
+			"overallMaxAudit": 84.43
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 82.47
+		},
+		{
+			"overallMaxAudit": 82.3
+		},
+		{
+			"overallMaxAudit": 79.25
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 73.81
+		},
+		{
+			"overallMaxAudit": 76.56
+		},
+		{
+			"overallMaxAudit": 78.42
+		},
+		{
+			"overallMaxAudit": 76.32
+		},
+		{
+			"overallMaxAudit": 81.44
+		},
+		{
+			"overallMaxAudit": 80.87
+		},
+		{
+			"overallMaxAudit": 69.41
+		},
+		{
+			"overallMaxAudit": 86.9
+		},
+		{
+			"overallMaxAudit": 84.76
+		},
+		{
+			"overallMaxAudit": 71.13
+		},
+		{
+			"overallMaxAudit": 79.35
+		},
+		{
+			"overallMaxAudit": 73.42
+		},
+		{
+			"overallMaxAudit": 75.94
+		},
+		{
+			"overallMaxAudit": 77.13
+		},
+		{
+			"overallMaxAudit": 81.28
+		},
+		{
+			"overallMaxAudit": 77.24
+		},
+		{
+			"overallMaxAudit": 86.32
+		},
+		{
+			"overallMaxAudit": 85.92
+		},
+		{
+			"overallMaxAudit": 85.46
+		},
+		{
+			"overallMaxAudit": 84.56
+		},
+		{
+			"overallMaxAudit": 86.15
+		},
+		{
+			"overallMaxAudit": 81.76
+		},
+		{
+			"overallMaxAudit": 86.47
+		},
+		{
+			"overallMaxAudit": 75.82
+		},
+		{
+			"overallMaxAudit": 71.45
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 79.46
+		},
+		{
+			"overallMaxAudit": 77.62
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 84.39
+		},
+		{
+			"overallMaxAudit": 85.13
+		},
+		{
+			"overallMaxAudit": 82.27
+		},
+		{
+			"overallMaxAudit": 82.58
+		},
+		{
+			"overallMaxAudit": 76.87
+		},
+		{
+			"overallMaxAudit": 88.39
+		},
+		{
+			"overallMaxAudit": 73.38
+		},
+		{
+			"overallMaxAudit": 78.34
+		},
+		{
+			"overallMaxAudit": 82.66
+		},
+		{
+			"overallMaxAudit": 81.18
+		},
+		{
+			"overallMaxAudit": 81.82
+		},
+		{
+			"overallMaxAudit": 80.18
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 73.37
+		},
+		{
+			"overallMaxAudit": 81.18
+		},
+		{
+			"overallMaxAudit": 86.04
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 79.88
+		},
+		{
+			"overallMaxAudit": 78.3
+		},
+		{
+			"overallMaxAudit": 77.68
+		},
+		{
+			"overallMaxAudit": 80.55
+		},
+		{
+			"overallMaxAudit": 80.62
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 86.33
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 86.2
+		},
+		{
+			"overallMaxAudit": 94.5
+		},
+		{
+			"overallMaxAudit": 91.79
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 89.09
+		},
+		{
+			"overallMaxAudit": 83.36
+		},
+		{
+			"overallMaxAudit": 87.78
+		},
+		{
+			"overallMaxAudit": 90.71
+		},
+		{
+			"overallMaxAudit": 91.22
+		},
+		{
+			"overallMaxAudit": 91.22
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 88.68
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 82.83
+		},
+		{
+			"overallMaxAudit": 78.71
+		},
+		{
+			"overallMaxAudit": 83.27
+		},
+		{
+			"overallMaxAudit": 78.95
+		},
+		{
+			"overallMaxAudit": 87.12
+		},
+		{
+			"overallMaxAudit": 85.08
+		},
+		{
+			"overallMaxAudit": 82.88
+		},
+		{
+			"overallMaxAudit": 79.86
+		},
+		{
+			"overallMaxAudit": 83.08
+		},
+		{
+			"overallMaxAudit": 85.65
+		},
+		{
+			"overallMaxAudit": 80.83
+		},
+		{
+			"overallMaxAudit": 95.7
+		},
+		{
+			"overallMaxAudit": 98
+		},
+		{
+			"overallMaxAudit": 89.27
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 83.89
+		},
+		{
+			"overallMaxAudit": 87.51
+		},
+		{
+			"overallMaxAudit": 86.04
+		},
+		{
+			"overallMaxAudit": 84.85
+		},
+		{
+			"overallMaxAudit": 82.49
+		},
+		{
+			"overallMaxAudit": 81.05
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 83.14
+		},
+		{
+			"overallMaxAudit": 81.5
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 94.33
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 83.25
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 91.82
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 85.46
+		},
+		{
+			"overallMaxAudit": 89.69
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 83.92
+		},
+		{
+			"overallMaxAudit": 90.83
+		},
+		{
+			"overallMaxAudit": 90.42
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.4
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 80.5
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 87.33
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 90.5
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.04
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 84.04
+		},
+		{
+			"overallMaxAudit": 83.41
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 83.41
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 92.13
+		},
+		{
+			"overallMaxAudit": 81.92
+		},
+		{
+			"overallMaxAudit": 90.08
+		},
+		{
+			"overallMaxAudit": 87.1
+		},
+		{
+			"overallMaxAudit": 86.12
+		},
+		{
+			"overallMaxAudit": 93.72
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 82.25
+		},
+		{
+			"overallMaxAudit": 91.3
+		},
+		{
+			"overallMaxAudit": 92.17
+		},
+		{
+			"overallMaxAudit": 79.5
+		},
+		{
+			"overallMaxAudit": 84.42
+		},
+		{
+			"overallMaxAudit": 87.81
+		},
+		{
+			"overallMaxAudit": 75.25
+		},
+		{
+			"overallMaxAudit": 93.72
+		},
+		{
+			"overallMaxAudit": 91.93
+		},
+		{
+			"overallMaxAudit": 92.87
+		},
+		{
+			"overallMaxAudit": 80.3
+		},
+		{
+			"overallMaxAudit": 93.71
+		},
+		{
+			"overallMaxAudit": 87.45
+		},
+		{
+			"overallMaxAudit": 83.62
+		},
+		{
+			"overallMaxAudit": 90.81
+		},
+		{
+			"overallMaxAudit": 76.68
+		},
+		{
+			"overallMaxAudit": 79.99
+		},
+		{
+			"overallMaxAudit": 76.09
+		},
+		{
+			"overallMaxAudit": 74.92
+		},
+		{
+			"overallMaxAudit": 78.93
+		},
+		{
+			"overallMaxAudit": 76.55
+		},
+		{
+			"overallMaxAudit": 77.83
+		},
+		{
+			"overallMaxAudit": 83.11
+		},
+		{
+			"overallMaxAudit": 79.41
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 83.53
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 89.64
+		},
+		{
+			"overallMaxAudit": 76.74
+		},
+		{
+			"overallMaxAudit": 78.35
+		},
+		{
+			"overallMaxAudit": 82.2
+		},
+		{
+			"overallMaxAudit": 76.72
+		},
+		{
+			"overallMaxAudit": 74.73
+		},
+		{
+			"overallMaxAudit": 79.85
+		},
+		{
+			"overallMaxAudit": 74.31
+		},
+		{
+			"overallMaxAudit": 72.91
+		},
+		{
+			"overallMaxAudit": 85.78
+		},
+		{
+			"overallMaxAudit": 85.23
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 73.84
+		},
+		{
+			"overallMaxAudit": 76.96
+		},
+		{
+			"overallMaxAudit": 80.53
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 80.12
+		},
+		{
+			"overallMaxAudit": 77.65
+		},
+		{
+			"overallMaxAudit": 78.3
+		},
+		{
+			"overallMaxAudit": 71.59
+		},
+		{
+			"overallMaxAudit": 73.38
+		},
+		{
+			"overallMaxAudit": 78.28
+		},
+		{
+			"overallMaxAudit": 78.93
+		},
+		{
+			"overallMaxAudit": 78.19
+		},
+		{
+			"overallMaxAudit": 75.87
+		},
+		{
+			"overallMaxAudit": 78.53
+		},
+		{
+			"overallMaxAudit": 77.67
+		},
+		{
+			"overallMaxAudit": 85.98
+		},
+		{
+			"overallMaxAudit": 79.94
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 91.08
+		},
+		{
+			"overallMaxAudit": 78.64
+		},
+		{
+			"overallMaxAudit": 90.68
+		},
+		{
+			"overallMaxAudit": 79.26
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 77.04
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 81.33
+		},
+		{
+			"overallMaxAudit": 79.59
+		},
+		{
+			"overallMaxAudit": 86.19
+		},
+		{
+			"overallMaxAudit": 80.66
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 79.67
+		},
+		{
+			"overallMaxAudit": 77.98
+		},
+		{
+			"overallMaxAudit": 77.94
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 74.06
+		},
+		{
+			"overallMaxAudit": 87.89
+		},
+		{
+			"overallMaxAudit": 91.6
+		},
+		{
+			"overallMaxAudit": 89.54
+		},
+		{
+			"overallMaxAudit": 86.1
+		},
+		{
+			"overallMaxAudit": 88.27
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 86.8
+		},
+		{
+			"overallMaxAudit": 93.52
+		},
+		{
+			"overallMaxAudit": 85.91
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 87.58
+		},
+		{
+			"overallMaxAudit": 85.18
+		},
+		{
+			"overallMaxAudit": 90.21
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 93.33
+		},
+		{
+			"overallMaxAudit": 86.4
+		},
+		{
+			"overallMaxAudit": 84.65
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 86.57
+		},
+		{
+			"overallMaxAudit": 93.47
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 85.47
+		},
+		{
+			"overallMaxAudit": 88.78
+		},
+		{
+			"overallMaxAudit": 91.79
+		},
+		{
+			"overallMaxAudit": 89.74
+		},
+		{
+			"overallMaxAudit": 91.84
+		},
+		{
+			"overallMaxAudit": 91.86
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 89.11
+		},
+		{
+			"overallMaxAudit": 89.9
+		},
+		{
+			"overallMaxAudit": 88.43
+		},
+		{
+			"overallMaxAudit": 90.24
+		},
+		{
+			"overallMaxAudit": 92.96
+		},
+		{
+			"overallMaxAudit": 95.58
+		},
+		{
+			"overallMaxAudit": 88.71
+		},
+		{
+			"overallMaxAudit": 91.48
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 93.04
+		},
+		{
+			"overallMaxAudit": 93.3
+		},
+		{
+			"overallMaxAudit": 85.77
+		},
+		{
+			"overallMaxAudit": 86.24
+		},
+		{
+			"overallMaxAudit": 93.56
+		},
+		{
+			"overallMaxAudit": 91.27
+		},
+		{
+			"overallMaxAudit": 92.45
+		},
+		{
+			"overallMaxAudit": 82.68
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 87.56
+		},
+		{
+			"overallMaxAudit": 90.56
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 93.2
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 90.64
+		},
+		{
+			"overallMaxAudit": 93.25
+		},
+		{
+			"overallMaxAudit": 94.86
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 94.17
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 90.06
+		},
+		{
+			"overallMaxAudit": 88.57
+		},
+		{
+			"overallMaxAudit": 95.78
+		},
+		{
+			"overallMaxAudit": 88.41
+		},
+		{
+			"overallMaxAudit": 93.44
+		},
+		{
+			"overallMaxAudit": 93.4
+		},
+		{
+			"overallMaxAudit": 86.78
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 96.46
+		},
+		{
+			"overallMaxAudit": 92.73
+		},
+		{
+			"overallMaxAudit": 90.87
+		},
+		{
+			"overallMaxAudit": 91.81
+		},
+		{
+			"overallMaxAudit": 88.71
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 86.42
+		},
+		{
+			"overallMaxAudit": 84.11
+		},
+		{
+			"overallMaxAudit": 88.62
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 93.78
+		},
+		{
+			"overallMaxAudit": 90.6
+		},
+		{
+			"overallMaxAudit": 90.11
+		},
+		{
+			"overallMaxAudit": 89.78
+		},
+		{
+			"overallMaxAudit": 92.2
+		},
+		{
+			"overallMaxAudit": 90.5
+		},
+		{
+			"overallMaxAudit": 91.45
+		},
+		{
+			"overallMaxAudit": 92.83
+		},
+		{
+			"overallMaxAudit": 88.7
+		},
+		{
+			"overallMaxAudit": 94.06
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 78.82
+		},
+		{
+			"overallMaxAudit": 69
+		},
+		{
+			"overallMaxAudit": 81.7
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 88.83
+		},
+		{
+			"overallMaxAudit": 83.57
+		},
+		{
+			"overallMaxAudit": 65.33
+		},
+		{
+			"overallMaxAudit": 76.01
+		},
+		{
+			"overallMaxAudit": 69.69
+		},
+		{
+			"overallMaxAudit": 69.97
+		},
+		{
+			"overallMaxAudit": 97.5
+		},
+		{
+			"overallMaxAudit": 93.6
+		},
+		{
+			"overallMaxAudit": 90.88
+		},
+		{
+			"overallMaxAudit": 80.2
+		},
+		{
+			"overallMaxAudit": 84.95
+		},
+		{
+			"overallMaxAudit": 82.88
+		},
+		{
+			"overallMaxAudit": 83.74
+		},
+		{
+			"overallMaxAudit": 87.18
+		},
+		{
+			"overallMaxAudit": 92.6
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 93.8
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 91.63
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 98.75
+		},
+		{
+			"overallMaxAudit": 87.53
+		},
+		{
+			"overallMaxAudit": 90.58
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 94.71
+		},
+		{
+			"overallMaxAudit": 91.13
+		},
+		{
+			"overallMaxAudit": 91.29
+		},
+		{
+			"overallMaxAudit": 84.63
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 82.17
+		},
+		{
+			"overallMaxAudit": 85.83
+		},
+		{
+			"overallMaxAudit": 85.23
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 91.67
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 87.86
+		},
+		{
+			"overallMaxAudit": 93.58
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 91.86
+		},
+		{
+			"overallMaxAudit": 89.47
+		},
+		{
+			"overallMaxAudit": 91.33
+		},
+		{
+			"overallMaxAudit": 91.6
+		},
+		{
+			"overallMaxAudit": 73.28
+		},
+		{
+			"overallMaxAudit": 74.27
+		},
+		{
+			"overallMaxAudit": 75.02
+		},
+		{
+			"overallMaxAudit": 82.12
+		},
+		{
+			"overallMaxAudit": 93.93
+		},
+		{
+			"overallMaxAudit": 66.02
+		},
+		{
+			"overallMaxAudit": 64.64
+		},
+		{
+			"overallMaxAudit": 91.83
+		},
+		{
+			"overallMaxAudit": 75.28
+		},
+		{
+			"overallMaxAudit": 86.81
+		},
+		{
+			"overallMaxAudit": 89.68
+		},
+		{
+			"overallMaxAudit": 70.21
+		},
+		{
+			"overallMaxAudit": 80.34
+		},
+		{
+			"overallMaxAudit": 75.72
+		},
+		{
+			"overallMaxAudit": 69.01
+		},
+		{
+			"overallMaxAudit": 64.28
+		},
+		{
+			"overallMaxAudit": 74.07
+		},
+		{
+			"overallMaxAudit": 73.59
+		},
+		{
+			"overallMaxAudit": 66.19
+		},
+		{
+			"overallMaxAudit": 76.36
+		},
+		{
+			"overallMaxAudit": 77.43
+		},
+		{
+			"overallMaxAudit": 86.83
+		},
+		{
+			"overallMaxAudit": 86.56
+		},
+		{
+			"overallMaxAudit": 83.16
+		},
+		{
+			"overallMaxAudit": 76.48
+		},
+		{
+			"overallMaxAudit": 72.4
+		},
+		{
+			"overallMaxAudit": 75.82
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 78.07
+		},
+		{
+			"overallMaxAudit": 73.38
+		},
+		{
+			"overallMaxAudit": 65.83
+		},
+		{
+			"overallMaxAudit": 78.69
+		},
+		{
+			"overallMaxAudit": 74.06
+		},
+		{
+			"overallMaxAudit": 80.88
+		},
+		{
+			"overallMaxAudit": 79.25
+		},
+		{
+			"overallMaxAudit": 75.31
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 78.68
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 74.38
+		},
+		{
+			"overallMaxAudit": 73.62
+		},
+		{
+			"overallMaxAudit": 69.39
+		},
+		{
+			"overallMaxAudit": 69.11
+		},
+		{
+			"overallMaxAudit": 72.88
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 52.67
+		},
+		{
+			"overallMaxAudit": 81.53
+		},
+		{
+			"overallMaxAudit": 73.11
+		},
+		{
+			"overallMaxAudit": 79.5
+		},
+		{
+			"overallMaxAudit": 79.33
+		},
+		{
+			"overallMaxAudit": 86.31
+		},
+		{
+			"overallMaxAudit": 87.32
+		},
+		{
+			"overallMaxAudit": 84.88
+		},
+		{
+			"overallMaxAudit": 89.54
+		},
+		{
+			"overallMaxAudit": 82.65
+		},
+		{
+			"overallMaxAudit": 79.99
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 84.19
+		},
+		{
+			"overallMaxAudit": 82.04
+		},
+		{
+			"overallMaxAudit": 82.45
+		},
+		{
+			"overallMaxAudit": 84.1
+		},
+		{
+			"overallMaxAudit": 84.85
+		},
+		{
+			"overallMaxAudit": 85.39
+		},
+		{
+			"overallMaxAudit": 84.44
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 85.64
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 79.78
+		},
+		{
+			"overallMaxAudit": 82.96
+		},
+		{
+			"overallMaxAudit": 77.68
+		},
+		{
+			"overallMaxAudit": 76.7
+		},
+		{
+			"overallMaxAudit": 86.09
+		},
+		{
+			"overallMaxAudit": 80.69
+		},
+		{
+			"overallMaxAudit": 68.33
+		},
+		{
+			"overallMaxAudit": 86.26
+		},
+		{
+			"overallMaxAudit": 86.27
+		},
+		{
+			"overallMaxAudit": 82.71
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 81.25
+		},
+		{
+			"overallMaxAudit": 84.86
+		},
+		{
+			"overallMaxAudit": 77.04
+		},
+		{
+			"overallMaxAudit": 84.32
+		},
+		{
+			"overallMaxAudit": 82.35
+		},
+		{
+			"overallMaxAudit": 77.45
+		},
+		{
+			"overallMaxAudit": 76.67
+		},
+		{
+			"overallMaxAudit": 82.43
+		},
+		{
+			"overallMaxAudit": 79.46
+		},
+		{
+			"overallMaxAudit": 88.65
+		},
+		{
+			"overallMaxAudit": 78.88
+		},
+		{
+			"overallMaxAudit": 79.57
+		},
+		{
+			"overallMaxAudit": 78.38
+		},
+		{
+			"overallMaxAudit": 79.71
+		},
+		{
+			"overallMaxAudit": 87.6
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 81.61
+		},
+		{
+			"overallMaxAudit": 77.93
+		},
+		{
+			"overallMaxAudit": 85.41
+		},
+		{
+			"overallMaxAudit": 76.87
+		},
+		{
+			"overallMaxAudit": 77.29
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 80.21
+		},
+		{
+			"overallMaxAudit": 89.68
+		},
+		{
+			"overallMaxAudit": 83.03
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 80.97
+		},
+		{
+			"overallMaxAudit": 79.94
+		},
+		{
+			"overallMaxAudit": 81.43
+		},
+		{
+			"overallMaxAudit": 81.39
+		},
+		{
+			"overallMaxAudit": 79.24
+		},
+		{
+			"overallMaxAudit": 77.68
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 80.23
+		},
+		{
+			"overallMaxAudit": 84.43
+		},
+		{
+			"overallMaxAudit": 83.63
+		},
+		{
+			"overallMaxAudit": 76.76
+		},
+		{
+			"overallMaxAudit": 87.38
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 85.73
+		},
+		{
+			"overallMaxAudit": 82.21
+		},
+		{
+			"overallMaxAudit": 81.44
+		},
+		{
+			"overallMaxAudit": 85.58
+		},
+		{
+			"overallMaxAudit": 85.69
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 83.88
+		},
+		{
+			"overallMaxAudit": 83.58
+		},
+		{
+			"overallMaxAudit": 83.93
+		},
+		{
+			"overallMaxAudit": 84.29
+		},
+		{
+			"overallMaxAudit": 83.03
+		},
+		{
+			"overallMaxAudit": 87.29
+		},
+		{
+			"overallMaxAudit": 83.94
+		},
+		{
+			"overallMaxAudit": 85.81
+		},
+		{
+			"overallMaxAudit": 84.44
+		},
+		{
+			"overallMaxAudit": 89.17
+		},
+		{
+			"overallMaxAudit": 83.23
+		},
+		{
+			"overallMaxAudit": 90.62
+		},
+		{
+			"overallMaxAudit": 79.67
+		},
+		{
+			"overallMaxAudit": 86.37
+		},
+		{
+			"overallMaxAudit": 75.52
+		},
+		{
+			"overallMaxAudit": 75.1
+		},
+		{
+			"overallMaxAudit": 82.82
+		},
+		{
+			"overallMaxAudit": 74.95
+		},
+		{
+			"overallMaxAudit": 77.55
+		},
+		{
+			"overallMaxAudit": 83.93
+		},
+		{
+			"overallMaxAudit": 75.13
+		},
+		{
+			"overallMaxAudit": 73.57
+		},
+		{
+			"overallMaxAudit": 75.68
+		},
+		{
+			"overallMaxAudit": 75.95
+		},
+		{
+			"overallMaxAudit": 78.91
+		},
+		{
+			"overallMaxAudit": 80.82
+		},
+		{
+			"overallMaxAudit": 80.76
+		},
+		{
+			"overallMaxAudit": 85.38
+		},
+		{
+			"overallMaxAudit": 76.3
+		},
+		{
+			"overallMaxAudit": 82.38
+		},
+		{
+			"overallMaxAudit": 80.52
+		},
+		{
+			"overallMaxAudit": 80.27
+		},
+		{
+			"overallMaxAudit": 83.44
+		},
+		{
+			"overallMaxAudit": 79.98
+		},
+		{
+			"overallMaxAudit": 75.5
+		},
+		{
+			"overallMaxAudit": 73.63
+		},
+		{
+			"overallMaxAudit": 76.46
+		},
+		{
+			"overallMaxAudit": 80.72
+		},
+		{
+			"overallMaxAudit": 81.78
+		},
+		{
+			"overallMaxAudit": 81.19
+		},
+		{
+			"overallMaxAudit": 75.32
+		},
+		{
+			"overallMaxAudit": 81.69
+		},
+		{
+			"overallMaxAudit": 77.05
+		},
+		{
+			"overallMaxAudit": 79.27
+		},
+		{
+			"overallMaxAudit": 83.29
+		},
+		{
+			"overallMaxAudit": 83.95
+		},
+		{
+			"overallMaxAudit": 79.93
+		},
+		{
+			"overallMaxAudit": 80.8
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 74.67
+		},
+		{
+			"overallMaxAudit": 76.23
+		},
+		{
+			"overallMaxAudit": 71.96
+		},
+		{
+			"overallMaxAudit": 82.42
+		},
+		{
+			"overallMaxAudit": 83.17
+		},
+		{
+			"overallMaxAudit": 85.15
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 79.06
+		},
+		{
+			"overallMaxAudit": 73.66
+		},
+		{
+			"overallMaxAudit": 83.2
+		},
+		{
+			"overallMaxAudit": 77.1
+		},
+		{
+			"overallMaxAudit": 77.43
+		},
+		{
+			"overallMaxAudit": 83.4
+		},
+		{
+			"overallMaxAudit": 81.07
+		},
+		{
+			"overallMaxAudit": 86.83
+		},
+		{
+			"overallMaxAudit": 84.56
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 84.57
+		},
+		{
+			"overallMaxAudit": 87.57
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 83.1
+		},
+		{
+			"overallMaxAudit": 83.64
+		},
+		{
+			"overallMaxAudit": 85.58
+		},
+		{
+			"overallMaxAudit": 85.94
+		},
+		{
+			"overallMaxAudit": 77.74
+		},
+		{
+			"overallMaxAudit": 81.52
+		},
+		{
+			"overallMaxAudit": 90.4
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 90.2
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 92.75
+		},
+		{
+			"overallMaxAudit": 90.2
+		},
+		{
+			"overallMaxAudit": 93.47
+		},
+		{
+			"overallMaxAudit": 91.8
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 83.83
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 86.18
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 89.17
+		},
+		{
+			"overallMaxAudit": 86.33
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 81.83
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 68.86
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 96.9
+		},
+		{
+			"overallMaxAudit": 94.48
+		},
+		{
+			"overallMaxAudit": 93.69
+		},
+		{
+			"overallMaxAudit": 95.27
+		},
+		{
+			"overallMaxAudit": 88.32
+		},
+		{
+			"overallMaxAudit": 94.08
+		},
+		{
+			"overallMaxAudit": 94.23
+		},
+		{
+			"overallMaxAudit": 95.22
+		},
+		{
+			"overallMaxAudit": 95.5
+		},
+		{
+			"overallMaxAudit": 95.67
+		},
+		{
+			"overallMaxAudit": 98.7
+		},
+		{
+			"overallMaxAudit": 94.86
+		},
+		{
+			"overallMaxAudit": 96.21
+		},
+		{
+			"overallMaxAudit": 95.47
+		},
+		{
+			"overallMaxAudit": 94.08
+		},
+		{
+			"overallMaxAudit": 98.8
+		},
+		{
+			"overallMaxAudit": 90.32
+		},
+		{
+			"overallMaxAudit": 95.11
+		},
+		{
+			"overallMaxAudit": 93.88
+		},
+		{
+			"overallMaxAudit": 92.7
+		},
+		{
+			"overallMaxAudit": 88.82
+		},
+		{
+			"overallMaxAudit": 96.23
+		},
+		{
+			"overallMaxAudit": 92.11
+		},
+		{
+			"overallMaxAudit": 94.2
+		},
+		{
+			"overallMaxAudit": 95.41
+		},
+		{
+			"overallMaxAudit": 98.45
+		},
+		{
+			"overallMaxAudit": 95.83
+		},
+		{
+			"overallMaxAudit": 93.23
+		},
+		{
+			"overallMaxAudit": 96.33
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 93.86
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 94.56
+		},
+		{
+			"overallMaxAudit": 97.78
+		},
+		{
+			"overallMaxAudit": 93.08
+		},
+		{
+			"overallMaxAudit": 89.18
+		},
+		{
+			"overallMaxAudit": 94.67
+		},
+		{
+			"overallMaxAudit": 97.69
+		},
+		{
+			"overallMaxAudit": 93.67
+		},
+		{
+			"overallMaxAudit": 95.31
+		},
+		{
+			"overallMaxAudit": 95.17
+		},
+		{
+			"overallMaxAudit": 92.92
+		},
+		{
+			"overallMaxAudit": 94.25
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 87.21
+		},
+		{
+			"overallMaxAudit": 85.68
+		},
+		{
+			"overallMaxAudit": 91.9
+		},
+		{
+			"overallMaxAudit": 91.2
+		},
+		{
+			"overallMaxAudit": 92.63
+		},
+		{
+			"overallMaxAudit": 95.9
+		},
+		{
+			"overallMaxAudit": 93.59
+		},
+		{
+			"overallMaxAudit": 94.75
+		},
+		{
+			"overallMaxAudit": 91.38
+		},
+		{
+			"overallMaxAudit": 91.36
+		},
+		{
+			"overallMaxAudit": 97.09
+		},
+		{
+			"overallMaxAudit": 97.67
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 94.69
+		},
+		{
+			"overallMaxAudit": 93.25
+		},
+		{
+			"overallMaxAudit": 94.88
+		},
+		{
+			"overallMaxAudit": 93.11
+		},
+		{
+			"overallMaxAudit": 94.29
+		},
+		{
+			"overallMaxAudit": 92.3
+		},
+		{
+			"overallMaxAudit": 89.93
+		},
+		{
+			"overallMaxAudit": 96.47
+		},
+		{
+			"overallMaxAudit": 89.41
+		},
+		{
+			"overallMaxAudit": 94.42
+		},
+		{
+			"overallMaxAudit": 95.63
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 95.96
+		},
+		{
+			"overallMaxAudit": 91.35
+		},
+		{
+			"overallMaxAudit": 79.89
+		},
+		{
+			"overallMaxAudit": 73.85
+		},
+		{
+			"overallMaxAudit": 70.3
+		},
+		{
+			"overallMaxAudit": 81.74
+		},
+		{
+			"overallMaxAudit": 88.89
+		},
+		{
+			"overallMaxAudit": 80.71
+		},
+		{
+			"overallMaxAudit": 88.05
+		},
+		{
+			"overallMaxAudit": 96.4
+		},
+		{
+			"overallMaxAudit": 85.88
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 89.52
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 89.81
+		},
+		{
+			"overallMaxAudit": 82.07
+		},
+		{
+			"overallMaxAudit": 87.31
+		},
+		{
+			"overallMaxAudit": 81.11
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 90.86
+		},
+		{
+			"overallMaxAudit": 91.14
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 79.74
+		},
+		{
+			"overallMaxAudit": 82.71
+		},
+		{
+			"overallMaxAudit": 79.32
+		},
+		{
+			"overallMaxAudit": 80.73
+		},
+		{
+			"overallMaxAudit": 77.34
+		},
+		{
+			"overallMaxAudit": 81.78
+		},
+		{
+			"overallMaxAudit": 85.13
+		},
+		{
+			"overallMaxAudit": 85.38
+		},
+		{
+			"overallMaxAudit": 83.56
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 80.06
+		},
+		{
+			"overallMaxAudit": 81.85
+		},
+		{
+			"overallMaxAudit": 84.86
+		},
+		{
+			"overallMaxAudit": 78.73
+		},
+		{
+			"overallMaxAudit": 79.57
+		},
+		{
+			"overallMaxAudit": 78.67
+		},
+		{
+			"overallMaxAudit": 77.72
+		},
+		{
+			"overallMaxAudit": 76.41
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 76.21
+		},
+		{
+			"overallMaxAudit": 78.55
+		},
+		{
+			"overallMaxAudit": 79.15
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 73
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 82.2
+		},
+		{
+			"overallMaxAudit": 80.96
+		},
+		{
+			"overallMaxAudit": 82.14
+		},
+		{
+			"overallMaxAudit": 86.57
+		},
+		{
+			"overallMaxAudit": 81.33
+		},
+		{
+			"overallMaxAudit": 81.36
+		},
+		{
+			"overallMaxAudit": 73
+		},
+		{
+			"overallMaxAudit": 82.52
+		},
+		{
+			"overallMaxAudit": 76.04
+		},
+		{
+			"overallMaxAudit": 77.25
+		},
+		{
+			"overallMaxAudit": 79.64
+		},
+		{
+			"overallMaxAudit": 74.89
+		},
+		{
+			"overallMaxAudit": 78.58
+		},
+		{
+			"overallMaxAudit": 77.45
+		},
+		{
+			"overallMaxAudit": 75.6
+		},
+		{
+			"overallMaxAudit": 84.44
+		},
+		{
+			"overallMaxAudit": 93.05
+		},
+		{
+			"overallMaxAudit": 75.25
+		},
+		{
+			"overallMaxAudit": 82.27
+		},
+		{
+			"overallMaxAudit": 79.54
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 86.11
+		},
+		{
+			"overallMaxAudit": 80.06
+		},
+		{
+			"overallMaxAudit": 85.29
+		},
+		{
+			"overallMaxAudit": 79.58
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 86.21
+		},
+		{
+			"overallMaxAudit": 81.18
+		},
+		{
+			"overallMaxAudit": 86.89
+		},
+		{
+			"overallMaxAudit": 87.6
+		},
+		{
+			"overallMaxAudit": 67
+		},
+		{
+			"overallMaxAudit": 84.28
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 87.82
+		},
+		{
+			"overallMaxAudit": 84.82
+		},
+		{
+			"overallMaxAudit": 82.93
+		},
+		{
+			"overallMaxAudit": 81.38
+		},
+		{
+			"overallMaxAudit": 82.68
+		},
+		{
+			"overallMaxAudit": 85.74
+		},
+		{
+			"overallMaxAudit": 89.71
+		},
+		{
+			"overallMaxAudit": 87.22
+		},
+		{
+			"overallMaxAudit": 84.7
+		},
+		{
+			"overallMaxAudit": 91.36
+		},
+		{
+			"overallMaxAudit": 85.67
+		},
+		{
+			"overallMaxAudit": 80.1
+		},
+		{
+			"overallMaxAudit": 76.83
+		},
+		{
+			"overallMaxAudit": 76.41
+		},
+		{
+			"overallMaxAudit": 79.82
+		},
+		{
+			"overallMaxAudit": 77.18
+		},
+		{
+			"overallMaxAudit": 84.78
+		},
+		{
+			"overallMaxAudit": 80.28
+		},
+		{
+			"overallMaxAudit": 72.25
+		},
+		{
+			"overallMaxAudit": 83.11
+		},
+		{
+			"overallMaxAudit": 90.68
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 87.09
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 88.29
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 86.29
+		},
+		{
+			"overallMaxAudit": 85.25
+		},
+		{
+			"overallMaxAudit": 86.94
+		},
+		{
+			"overallMaxAudit": 84.38
+		},
+		{
+			"overallMaxAudit": 87.57
+		},
+		{
+			"overallMaxAudit": 80.51
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 79.9
+		},
+		{
+			"overallMaxAudit": 75.98
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 82.77
+		},
+		{
+			"overallMaxAudit": 70.21
+		},
+		{
+			"overallMaxAudit": 75.53
+		},
+		{
+			"overallMaxAudit": 76.7
+		},
+		{
+			"overallMaxAudit": 90.44
+		},
+		{
+			"overallMaxAudit": 78.25
+		},
+		{
+			"overallMaxAudit": 78.91
+		},
+		{
+			"overallMaxAudit": 79.2
+		},
+		{
+			"overallMaxAudit": 75.96
+		},
+		{
+			"overallMaxAudit": 79.9
+		},
+		{
+			"overallMaxAudit": 82.98
+		},
+		{
+			"overallMaxAudit": 83.14
+		},
+		{
+			"overallMaxAudit": 82.78
+		},
+		{
+			"overallMaxAudit": 79.85
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 82.47
+		},
+		{
+			"overallMaxAudit": 83.17
+		},
+		{
+			"overallMaxAudit": 88.47
+		},
+		{
+			"overallMaxAudit": 80.79
+		},
+		{
+			"overallMaxAudit": 80.47
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 88.13
+		},
+		{
+			"overallMaxAudit": 80.48
+		},
+		{
+			"overallMaxAudit": 87.32
+		},
+		{
+			"overallMaxAudit": 81.32
+		},
+		{
+			"overallMaxAudit": 86.54
+		},
+		{
+			"overallMaxAudit": 81.92
+		},
+		{
+			"overallMaxAudit": 79.47
+		},
+		{
+			"overallMaxAudit": 79.41
+		},
+		{
+			"overallMaxAudit": 76.56
+		},
+		{
+			"overallMaxAudit": 81.07
+		},
+		{
+			"overallMaxAudit": 77.1
+		},
+		{
+			"overallMaxAudit": 79.84
+		},
+		{
+			"overallMaxAudit": 84.2
+		},
+		{
+			"overallMaxAudit": 80.47
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 81.8
+		},
+		{
+			"overallMaxAudit": 79.85
+		},
+		{
+			"overallMaxAudit": 76.94
+		},
+		{
+			"overallMaxAudit": 74.18
+		},
+		{
+			"overallMaxAudit": 82.23
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 76.27
+		},
+		{
+			"overallMaxAudit": 81.44
+		},
+		{
+			"overallMaxAudit": 78.15
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 76.33
+		},
+		{
+			"overallMaxAudit": 75.77
+		},
+		{
+			"overallMaxAudit": 76.23
+		},
+		{
+			"overallMaxAudit": 75.7
+		},
+		{
+			"overallMaxAudit": 84.08
+		},
+		{
+			"overallMaxAudit": 78.74
+		},
+		{
+			"overallMaxAudit": 78.18
+		},
+		{
+			"overallMaxAudit": 78.81
+		},
+		{
+			"overallMaxAudit": 77
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 83.93
+		},
+		{
+			"overallMaxAudit": 70.46
+		},
+		{
+			"overallMaxAudit": 83.54
+		},
+		{
+			"overallMaxAudit": 72.77
+		},
+		{
+			"overallMaxAudit": 76.08
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 81.7
+		},
+		{
+			"overallMaxAudit": 78.39
+		},
+		{
+			"overallMaxAudit": 87.91
+		},
+		{
+			"overallMaxAudit": 89.12
+		},
+		{
+			"overallMaxAudit": 84.7
+		},
+		{
+			"overallMaxAudit": 78.5
+		},
+		{
+			"overallMaxAudit": 78.82
+		},
+		{
+			"overallMaxAudit": 76.81
+		},
+		{
+			"overallMaxAudit": 76.24
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 88.6
+		},
+		{
+			"overallMaxAudit": 85.57
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 80.97
+		},
+		{
+			"overallMaxAudit": 86.73
+		},
+		{
+			"overallMaxAudit": 80.39
+		},
+		{
+			"overallMaxAudit": 77.3
+		},
+		{
+			"overallMaxAudit": 91.17
+		},
+		{
+			"overallMaxAudit": 76.96
+		},
+		{
+			"overallMaxAudit": 78.98
+		},
+		{
+			"overallMaxAudit": 68.59
+		},
+		{
+			"overallMaxAudit": 75.54
+		},
+		{
+			"overallMaxAudit": 78.82
+		},
+		{
+			"overallMaxAudit": 90.13
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 77.09
+		},
+		{
+			"overallMaxAudit": 72.66
+		},
+		{
+			"overallMaxAudit": 78.6
+		},
+		{
+			"overallMaxAudit": 85.3
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 81.15
+		},
+		{
+			"overallMaxAudit": 78.44
+		},
+		{
+			"overallMaxAudit": 84.91
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 83.66
+		},
+		{
+			"overallMaxAudit": 80.4
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 87.75
+		},
+		{
+			"overallMaxAudit": 88.29
+		},
+		{
+			"overallMaxAudit": 89.86
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 92.22
+		},
+		{
+			"overallMaxAudit": 87.36
+		},
+		{
+			"overallMaxAudit": 85.87
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 90.18
+		},
+		{
+			"overallMaxAudit": 86.18
+		},
+		{
+			"overallMaxAudit": 93.17
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 89.57
+		},
+		{
+			"overallMaxAudit": 89.27
+		},
+		{
+			"overallMaxAudit": 86.83
+		},
+		{
+			"overallMaxAudit": 84.18
+		},
+		{
+			"overallMaxAudit": 86.87
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 87.14
+		},
+		{
+			"overallMaxAudit": 87.09
+		},
+		{
+			"overallMaxAudit": 92.27
+		},
+		{
+			"overallMaxAudit": 96.36
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 85.3
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 91.17
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 75.13
+		},
+		{
+			"overallMaxAudit": 68.33
+		},
+		{
+			"overallMaxAudit": 72.53
+		},
+		{
+			"overallMaxAudit": 72.54
+		},
+		{
+			"overallMaxAudit": 73.36
+		},
+		{
+			"overallMaxAudit": 75.03
+		},
+		{
+			"overallMaxAudit": 69.38
+		},
+		{
+			"overallMaxAudit": 73.46
+		},
+		{
+			"overallMaxAudit": 74.56
+		},
+		{
+			"overallMaxAudit": 80.46
+		},
+		{
+			"overallMaxAudit": 75.42
+		},
+		{
+			"overallMaxAudit": 73.41
+		},
+		{
+			"overallMaxAudit": 76.93
+		},
+		{
+			"overallMaxAudit": 75.78
+		},
+		{
+			"overallMaxAudit": 77.73
+		},
+		{
+			"overallMaxAudit": 79.72
+		},
+		{
+			"overallMaxAudit": 77.35
+		},
+		{
+			"overallMaxAudit": 80.52
+		},
+		{
+			"overallMaxAudit": 79.02
+		},
+		{
+			"overallMaxAudit": 76.09
+		},
+		{
+			"overallMaxAudit": 75.1
+		},
+		{
+			"overallMaxAudit": 79.06
+		},
+		{
+			"overallMaxAudit": 79.67
+		},
+		{
+			"overallMaxAudit": 82.69
+		},
+		{
+			"overallMaxAudit": 77.5
+		},
+		{
+			"overallMaxAudit": 77.63
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 88.17
+		},
+		{
+			"overallMaxAudit": 76.18
+		},
+		{
+			"overallMaxAudit": 70.31
+		},
+		{
+			"overallMaxAudit": 75.19
+		},
+		{
+			"overallMaxAudit": 72.81
+		},
+		{
+			"overallMaxAudit": 75.93
+		},
+		{
+			"overallMaxAudit": 73.89
+		},
+		{
+			"overallMaxAudit": 82.32
+		},
+		{
+			"overallMaxAudit": 80.94
+		},
+		{
+			"overallMaxAudit": 83.79
+		},
+		{
+			"overallMaxAudit": 73.41
+		},
+		{
+			"overallMaxAudit": 79.07
+		},
+		{
+			"overallMaxAudit": 75.52
+		},
+		{
+			"overallMaxAudit": 76.16
+		},
+		{
+			"overallMaxAudit": 78.09
+		},
+		{
+			"overallMaxAudit": 76.74
+		},
+		{
+			"overallMaxAudit": 74.75
+		},
+		{
+			"overallMaxAudit": 75.97
+		},
+		{
+			"overallMaxAudit": 76.37
+		},
+		{
+			"overallMaxAudit": 72.64
+		},
+		{
+			"overallMaxAudit": 71.2
+		},
+		{
+			"overallMaxAudit": 75.41
+		},
+		{
+			"overallMaxAudit": 70.17
+		},
+		{
+			"overallMaxAudit": 74.38
+		},
+		{
+			"overallMaxAudit": 74.91
+		},
+		{
+			"overallMaxAudit": 72.72
+		},
+		{
+			"overallMaxAudit": 76.77
+		},
+		{
+			"overallMaxAudit": 73.99
+		},
+		{
+			"overallMaxAudit": 74.05
+		},
+		{
+			"overallMaxAudit": 74.32
+		},
+		{
+			"overallMaxAudit": 74.22
+		},
+		{
+			"overallMaxAudit": 74.96
+		},
+		{
+			"overallMaxAudit": 79.49
+		},
+		{
+			"overallMaxAudit": 74.9
+		},
+		{
+			"overallMaxAudit": 81.06
+		},
+		{
+			"overallMaxAudit": 85.72
+		},
+		{
+			"overallMaxAudit": 67.03
+		},
+		{
+			"overallMaxAudit": 72.55
+		},
+		{
+			"overallMaxAudit": 71.15
+		},
+		{
+			"overallMaxAudit": 73.52
+		},
+		{
+			"overallMaxAudit": 81.55
+		},
+		{
+			"overallMaxAudit": 77.52
+		},
+		{
+			"overallMaxAudit": 78.12
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 78.25
+		},
+		{
+			"overallMaxAudit": 78.57
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 77.16
+		},
+		{
+			"overallMaxAudit": 79.1
+		},
+		{
+			"overallMaxAudit": 81.25
+		},
+		{
+			"overallMaxAudit": 79.72
+		},
+		{
+			"overallMaxAudit": 84.63
+		},
+		{
+			"overallMaxAudit": 83.45
+		},
+		{
+			"overallMaxAudit": 78.9
+		},
+		{
+			"overallMaxAudit": 74.88
+		},
+		{
+			"overallMaxAudit": 85.83
+		},
+		{
+			"overallMaxAudit": 86.72
+		},
+		{
+			"overallMaxAudit": 85.43
+		},
+		{
+			"overallMaxAudit": 77
+		},
+		{
+			"overallMaxAudit": 75.29
+		},
+		{
+			"overallMaxAudit": 87.27
+		},
+		{
+			"overallMaxAudit": 86.71
+		},
+		{
+			"overallMaxAudit": 87.33
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 88.21
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 88.04
+		},
+		{
+			"overallMaxAudit": 88.24
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 84.13
+		},
+		{
+			"overallMaxAudit": 82.49
+		},
+		{
+			"overallMaxAudit": 84.49
+		},
+		{
+			"overallMaxAudit": 86.42
+		},
+		{
+			"overallMaxAudit": 84.68
+		},
+		{
+			"overallMaxAudit": 79.69
+		},
+		{
+			"overallMaxAudit": 82.75
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 87.43
+		},
+		{
+			"overallMaxAudit": 82.06
+		},
+		{
+			"overallMaxAudit": 84.18
+		},
+		{
+			"overallMaxAudit": 86.25
+		},
+		{
+			"overallMaxAudit": 78.14
+		},
+		{
+			"overallMaxAudit": 86.69
+		},
+		{
+			"overallMaxAudit": 87.27
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 86.81
+		},
+		{
+			"overallMaxAudit": 92.25
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 83.19
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 88.92
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 84.76
+		},
+		{
+			"overallMaxAudit": 82.33
+		},
+		{
+			"overallMaxAudit": 82.09
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 85.53
+		},
+		{
+			"overallMaxAudit": 93.04
+		},
+		{
+			"overallMaxAudit": 81.79
+		},
+		{
+			"overallMaxAudit": 79.05
+		},
+		{
+			"overallMaxAudit": 84.43
+		},
+		{
+			"overallMaxAudit": 80.75
+		},
+		{
+			"overallMaxAudit": 81.25
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 83.19
+		},
+		{
+			"overallMaxAudit": 81.69
+		},
+		{
+			"overallMaxAudit": 83.63
+		},
+		{
+			"overallMaxAudit": 84.14
+		},
+		{
+			"overallMaxAudit": 79.46
+		},
+		{
+			"overallMaxAudit": 80.43
+		},
+		{
+			"overallMaxAudit": 76.97
+		},
+		{
+			"overallMaxAudit": 80.03
+		},
+		{
+			"overallMaxAudit": 79.68
+		},
+		{
+			"overallMaxAudit": 81.91
+		},
+		{
+			"overallMaxAudit": 84.45
+		},
+		{
+			"overallMaxAudit": 83.64
+		},
+		{
+			"overallMaxAudit": 73.21
+		},
+		{
+			"overallMaxAudit": 88.32
+		},
+		{
+			"overallMaxAudit": 83.03
+		},
+		{
+			"overallMaxAudit": 78.55
+		},
+		{
+			"overallMaxAudit": 80.13
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 80.96
+		},
+		{
+			"overallMaxAudit": 84.95
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 89.13
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 88.73
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 86.63
+		},
+		{
+			"overallMaxAudit": 82.58
+		},
+		{
+			"overallMaxAudit": 71.5
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 83.57
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 81.65
+		},
+		{
+			"overallMaxAudit": 94.5
+		},
+		{
+			"overallMaxAudit": 85.67
+		},
+		{
+			"overallMaxAudit": 80.84
+		},
+		{
+			"overallMaxAudit": 90.48
+		},
+		{
+			"overallMaxAudit": 86.24
+		},
+		{
+			"overallMaxAudit": 95.29
+		},
+		{
+			"overallMaxAudit": 84.48
+		},
+		{
+			"overallMaxAudit": 85.26
+		},
+		{
+			"overallMaxAudit": 93.07
+		},
+		{
+			"overallMaxAudit": 93.22
+		},
+		{
+			"overallMaxAudit": 70.55
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 83.11
+		},
+		{
+			"overallMaxAudit": 76.4
+		},
+		{
+			"overallMaxAudit": 75.95
+		},
+		{
+			"overallMaxAudit": 76.56
+		},
+		{
+			"overallMaxAudit": 75.24
+		},
+		{
+			"overallMaxAudit": 71.88
+		},
+		{
+			"overallMaxAudit": 74.65
+		},
+		{
+			"overallMaxAudit": 73.47
+		},
+		{
+			"overallMaxAudit": 77.43
+		},
+		{
+			"overallMaxAudit": 81.03
+		},
+		{
+			"overallMaxAudit": 74.71
+		},
+		{
+			"overallMaxAudit": 78.05
+		},
+		{
+			"overallMaxAudit": 76.48
+		},
+		{
+			"overallMaxAudit": 76.11
+		},
+		{
+			"overallMaxAudit": 74
+		},
+		{
+			"overallMaxAudit": 75.26
+		},
+		{
+			"overallMaxAudit": 74.06
+		},
+		{
+			"overallMaxAudit": 77.69
+		},
+		{
+			"overallMaxAudit": 75.57
+		},
+		{
+			"overallMaxAudit": 76.81
+		},
+		{
+			"overallMaxAudit": 73.25
+		},
+		{
+			"overallMaxAudit": 78.19
+		},
+		{
+			"overallMaxAudit": 78.89
+		},
+		{
+			"overallMaxAudit": 73.23
+		},
+		{
+			"overallMaxAudit": 76.59
+		},
+		{
+			"overallMaxAudit": 83.15
+		},
+		{
+			"overallMaxAudit": 74.12
+		},
+		{
+			"overallMaxAudit": 74.87
+		},
+		{
+			"overallMaxAudit": 74.55
+		},
+		{
+			"overallMaxAudit": 71.55
+		},
+		{
+			"overallMaxAudit": 72.15
+		},
+		{
+			"overallMaxAudit": 75.54
+		},
+		{
+			"overallMaxAudit": 76.38
+		},
+		{
+			"overallMaxAudit": 75.74
+		},
+		{
+			"overallMaxAudit": 71.35
+		},
+		{
+			"overallMaxAudit": 74.04
+		},
+		{
+			"overallMaxAudit": 78.63
+		},
+		{
+			"overallMaxAudit": 77.88
+		},
+		{
+			"overallMaxAudit": 76.48
+		},
+		{
+			"overallMaxAudit": 76.73
+		},
+		{
+			"overallMaxAudit": 77.36
+		},
+		{
+			"overallMaxAudit": 76.07
+		},
+		{
+			"overallMaxAudit": 77.11
+		},
+		{
+			"overallMaxAudit": 74.02
+		},
+		{
+			"overallMaxAudit": 74.94
+		},
+		{
+			"overallMaxAudit": 71.66
+		},
+		{
+			"overallMaxAudit": 78.98
+		},
+		{
+			"overallMaxAudit": 79.19
+		},
+		{
+			"overallMaxAudit": 77.93
+		},
+		{
+			"overallMaxAudit": 77.43
+		},
+		{
+			"overallMaxAudit": 76.58
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 78.39
+		},
+		{
+			"overallMaxAudit": 77.87
+		},
+		{
+			"overallMaxAudit": 77.56
+		},
+		{
+			"overallMaxAudit": 77.6
+		},
+		{
+			"overallMaxAudit": 76.67
+		},
+		{
+			"overallMaxAudit": 78.73
+		},
+		{
+			"overallMaxAudit": 71.58
+		},
+		{
+			"overallMaxAudit": 78.34
+		},
+		{
+			"overallMaxAudit": 79.02
+		},
+		{
+			"overallMaxAudit": 83.91
+		},
+		{
+			"overallMaxAudit": 78.4
+		},
+		{
+			"overallMaxAudit": 85.09
+		},
+		{
+			"overallMaxAudit": 78.52
+		},
+		{
+			"overallMaxAudit": 75.68
+		},
+		{
+			"overallMaxAudit": 73.24
+		},
+		{
+			"overallMaxAudit": 74.1
+		},
+		{
+			"overallMaxAudit": 82.35
+		},
+		{
+			"overallMaxAudit": 85.09
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 87.29
+		},
+		{
+			"overallMaxAudit": 82.57
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 88.13
+		},
+		{
+			"overallMaxAudit": 87.75
+		},
+		{
+			"overallMaxAudit": 91.33
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 75.36
+		},
+		{
+			"overallMaxAudit": 82.81
+		},
+		{
+			"overallMaxAudit": 82.16
+		},
+		{
+			"overallMaxAudit": 83.92
+		},
+		{
+			"overallMaxAudit": 89.06
+		},
+		{
+			"overallMaxAudit": 78.97
+		},
+		{
+			"overallMaxAudit": 75.67
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 85.4
+		},
+		{
+			"overallMaxAudit": 90.44
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 82.38
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 87.92
+		},
+		{
+			"overallMaxAudit": 79.92
+		},
+		{
+			"overallMaxAudit": 82.33
+		},
+		{
+			"overallMaxAudit": 80.67
+		},
+		{
+			"overallMaxAudit": 81.82
+		},
+		{
+			"overallMaxAudit": 79.71
+		},
+		{
+			"overallMaxAudit": 79.18
+		},
+		{
+			"overallMaxAudit": 84.75
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 83.25
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 74.5
+		},
+		{
+			"overallMaxAudit": 69
+		},
+		{
+			"overallMaxAudit": 72
+		},
+		{
+			"overallMaxAudit": 83.67
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 84.94
+		},
+		{
+			"overallMaxAudit": 76.25
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 82.2
+		},
+		{
+			"overallMaxAudit": 77.58
+		},
+		{
+			"overallMaxAudit": 80.1
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 81.71
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 85.18
+		},
+		{
+			"overallMaxAudit": 71.67
+		},
+		{
+			"overallMaxAudit": 81.13
+		},
+		{
+			"overallMaxAudit": 77.21
+		},
+		{
+			"overallMaxAudit": 77.47
+		},
+		{
+			"overallMaxAudit": 79.63
+		},
+		{
+			"overallMaxAudit": 79.53
+		},
+		{
+			"overallMaxAudit": 79.48
+		},
+		{
+			"overallMaxAudit": 79.08
+		},
+		{
+			"overallMaxAudit": 77.76
+		},
+		{
+			"overallMaxAudit": 78.63
+		},
+		{
+			"overallMaxAudit": 77.47
+		},
+		{
+			"overallMaxAudit": 75.63
+		},
+		{
+			"overallMaxAudit": 79.7
+		},
+		{
+			"overallMaxAudit": 74.59
+		},
+		{
+			"overallMaxAudit": 78.24
+		},
+		{
+			"overallMaxAudit": 77.2
+		},
+		{
+			"overallMaxAudit": 76.8
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 86.95
+		},
+		{
+			"overallMaxAudit": 81.58
+		},
+		{
+			"overallMaxAudit": 75.65
+		},
+		{
+			"overallMaxAudit": 77
+		},
+		{
+			"overallMaxAudit": 81.31
+		},
+		{
+			"overallMaxAudit": 85.37
+		},
+		{
+			"overallMaxAudit": 78.5
+		},
+		{
+			"overallMaxAudit": 78.71
+		},
+		{
+			"overallMaxAudit": 89.93
+		},
+		{
+			"overallMaxAudit": 87.69
+		},
+		{
+			"overallMaxAudit": 87.59
+		},
+		{
+			"overallMaxAudit": 74.5
+		},
+		{
+			"overallMaxAudit": 80.25
+		},
+		{
+			"overallMaxAudit": 79.01
+		},
+		{
+			"overallMaxAudit": 85.29
+		},
+		{
+			"overallMaxAudit": 77.04
+		},
+		{
+			"overallMaxAudit": 82.73
+		},
+		{
+			"overallMaxAudit": 77.96
+		},
+		{
+			"overallMaxAudit": 77.82
+		},
+		{
+			"overallMaxAudit": 78.51
+		},
+		{
+			"overallMaxAudit": 84.57
+		},
+		{
+			"overallMaxAudit": 81.34
+		},
+		{
+			"overallMaxAudit": 83.94
+		},
+		{
+			"overallMaxAudit": 85.89
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 77.33
+		},
+		{
+			"overallMaxAudit": 80.98
+		},
+		{
+			"overallMaxAudit": 86.18
+		},
+		{
+			"overallMaxAudit": 75.91
+		},
+		{
+			"overallMaxAudit": 79.48
+		},
+		{
+			"overallMaxAudit": 83.36
+		},
+		{
+			"overallMaxAudit": 91.07
+		},
+		{
+			"overallMaxAudit": 91.7
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 83.03
+		},
+		{
+			"overallMaxAudit": 83.58
+		},
+		{
+			"overallMaxAudit": 90.19
+		},
+		{
+			"overallMaxAudit": 80.61
+		},
+		{
+			"overallMaxAudit": 81.86
+		},
+		{
+			"overallMaxAudit": 82.49
+		},
+		{
+			"overallMaxAudit": 80.63
+		},
+		{
+			"overallMaxAudit": 93.37
+		},
+		{
+			"overallMaxAudit": 76.35
+		},
+		{
+			"overallMaxAudit": 94.42
+		},
+		{
+			"overallMaxAudit": 78.63
+		},
+		{
+			"overallMaxAudit": 81.74
+		},
+		{
+			"overallMaxAudit": 87.62
+		},
+		{
+			"overallMaxAudit": 78.77
+		},
+		{
+			"overallMaxAudit": 90.68
+		},
+		{
+			"overallMaxAudit": 91.3
+		},
+		{
+			"overallMaxAudit": 77.7
+		},
+		{
+			"overallMaxAudit": 76.05
+		},
+		{
+			"overallMaxAudit": 83.43
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 80.73
+		},
+		{
+			"overallMaxAudit": 91.88
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 96.06
+		},
+		{
+			"overallMaxAudit": 81.42
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 84.86
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 94.92
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 90.88
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 82.56
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 75.61
+		},
+		{
+			"overallMaxAudit": 79.45
+		},
+		{
+			"overallMaxAudit": 86.71
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 87.56
+		},
+		{
+			"overallMaxAudit": 82.84
+		},
+		{
+			"overallMaxAudit": 82.58
+		},
+		{
+			"overallMaxAudit": 87.89
+		},
+		{
+			"overallMaxAudit": 83.46
+		},
+		{
+			"overallMaxAudit": 81.58
+		},
+		{
+			"overallMaxAudit": 83.82
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 86.69
+		},
+		{
+			"overallMaxAudit": 83.06
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 86.79
+		},
+		{
+			"overallMaxAudit": 86.64
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 81.79
+		},
+		{
+			"overallMaxAudit": 82.89
+		},
+		{
+			"overallMaxAudit": 82.91
+		},
+		{
+			"overallMaxAudit": 86.47
+		},
+		{
+			"overallMaxAudit": 83.29
+		},
+		{
+			"overallMaxAudit": 83.19
+		},
+		{
+			"overallMaxAudit": 84.69
+		},
+		{
+			"overallMaxAudit": 84.2
+		},
+		{
+			"overallMaxAudit": 83.38
+		},
+		{
+			"overallMaxAudit": 92.07
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 92.8
+		},
+		{
+			"overallMaxAudit": 85.84
+		},
+		{
+			"overallMaxAudit": 83.27
+		},
+		{
+			"overallMaxAudit": 85.69
+		},
+		{
+			"overallMaxAudit": 78.72
+		},
+		{
+			"overallMaxAudit": 80.78
+		},
+		{
+			"overallMaxAudit": 84.58
+		},
+		{
+			"overallMaxAudit": 84.29
+		},
+		{
+			"overallMaxAudit": 80.38
+		},
+		{
+			"overallMaxAudit": 78.77
+		},
+		{
+			"overallMaxAudit": 76.22
+		},
+		{
+			"overallMaxAudit": 79.05
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 75.05
+		},
+		{
+			"overallMaxAudit": 75.58
+		},
+		{
+			"overallMaxAudit": 75.32
+		},
+		{
+			"overallMaxAudit": 75.48
+		},
+		{
+			"overallMaxAudit": 75.52
+		},
+		{
+			"overallMaxAudit": 74.84
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 74.07
+		},
+		{
+			"overallMaxAudit": 84.67
+		},
+		{
+			"overallMaxAudit": 79.86
+		},
+		{
+			"overallMaxAudit": 80.37
+		},
+		{
+			"overallMaxAudit": 75.21
+		},
+		{
+			"overallMaxAudit": 82.36
+		},
+		{
+			"overallMaxAudit": 85.53
+		},
+		{
+			"overallMaxAudit": 78.83
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 80.89
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 74.04
+		},
+		{
+			"overallMaxAudit": 74.28
+		},
+		{
+			"overallMaxAudit": 78.93
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 75.63
+		},
+		{
+			"overallMaxAudit": 78.8
+		},
+		{
+			"overallMaxAudit": 78.38
+		},
+		{
+			"overallMaxAudit": 80.39
+		},
+		{
+			"overallMaxAudit": 78.75
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 74.72
+		},
+		{
+			"overallMaxAudit": 77.78
+		},
+		{
+			"overallMaxAudit": 78.43
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 75.64
+		},
+		{
+			"overallMaxAudit": 77.12
+		},
+		{
+			"overallMaxAudit": 84.21
+		},
+		{
+			"overallMaxAudit": 75.89
+		},
+		{
+			"overallMaxAudit": 76.2
+		},
+		{
+			"overallMaxAudit": 74.81
+		},
+		{
+			"overallMaxAudit": 83.09
+		},
+		{
+			"overallMaxAudit": 78.06
+		},
+		{
+			"overallMaxAudit": 75.96
+		},
+		{
+			"overallMaxAudit": 81.06
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 80.25
+		},
+		{
+			"overallMaxAudit": 74.17
+		},
+		{
+			"overallMaxAudit": 80.7
+		},
+		{
+			"overallMaxAudit": 77.86
+		},
+		{
+			"overallMaxAudit": 78.5
+		},
+		{
+			"overallMaxAudit": 75.12
+		},
+		{
+			"overallMaxAudit": 84.33
+		},
+		{
+			"overallMaxAudit": 73.84
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 78.33
+		},
+		{
+			"overallMaxAudit": 78.56
+		},
+		{
+			"overallMaxAudit": 76.6
+		},
+		{
+			"overallMaxAudit": 76.39
+		},
+		{
+			"overallMaxAudit": 74.64
+		},
+		{
+			"overallMaxAudit": 80.21
+		},
+		{
+			"overallMaxAudit": 82.08
+		},
+		{
+			"overallMaxAudit": 78.94
+		},
+		{
+			"overallMaxAudit": 78.7
+		},
+		{
+			"overallMaxAudit": 74.07
+		},
+		{
+			"overallMaxAudit": 80.9
+		},
+		{
+			"overallMaxAudit": 81.9
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 77.64
+		},
+		{
+			"overallMaxAudit": 81.07
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 77.88
+		},
+		{
+			"overallMaxAudit": 81.4
+		},
+		{
+			"overallMaxAudit": 85.4
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 81.88
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 77.5
+		},
+		{
+			"overallMaxAudit": 78
+		},
+		{
+			"overallMaxAudit": 81.75
+		},
+		{
+			"overallMaxAudit": 84.1
+		},
+		{
+			"overallMaxAudit": 78.28
+		},
+		{
+			"overallMaxAudit": 82.9
+		},
+		{
+			"overallMaxAudit": 89.3
+		},
+		{
+			"overallMaxAudit": 74.86
+		},
+		{
+			"overallMaxAudit": 85.44
+		},
+		{
+			"overallMaxAudit": 90.83
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 87.46
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 88.52
+		},
+		{
+			"overallMaxAudit": 91.26
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 92.26
+		},
+		{
+			"overallMaxAudit": 88.03
+		},
+		{
+			"overallMaxAudit": 86.68
+		},
+		{
+			"overallMaxAudit": 85.18
+		},
+		{
+			"overallMaxAudit": 83.14
+		},
+		{
+			"overallMaxAudit": 83.76
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 86.21
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 86.68
+		},
+		{
+			"overallMaxAudit": 83.43
+		},
+		{
+			"overallMaxAudit": 86.78
+		},
+		{
+			"overallMaxAudit": 84.38
+		},
+		{
+			"overallMaxAudit": 91.63
+		},
+		{
+			"overallMaxAudit": 87.13
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 86.09
+		},
+		{
+			"overallMaxAudit": 86.91
+		},
+		{
+			"overallMaxAudit": 84.22
+		},
+		{
+			"overallMaxAudit": 88.45
+		},
+		{
+			"overallMaxAudit": 87.29
+		},
+		{
+			"overallMaxAudit": 86.53
+		},
+		{
+			"overallMaxAudit": 91.23
+		},
+		{
+			"overallMaxAudit": 84.56
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 83.88
+		},
+		{
+			"overallMaxAudit": 89.45
+		},
+		{
+			"overallMaxAudit": 96.1
+		},
+		{
+			"overallMaxAudit": 88.14
+		},
+		{
+			"overallMaxAudit": 91.24
+		},
+		{
+			"overallMaxAudit": 91.6
+		},
+		{
+			"overallMaxAudit": 85.13
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 88.67
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 83.51
+		},
+		{
+			"overallMaxAudit": 82.32
+		},
+		{
+			"overallMaxAudit": 77.28
+		},
+		{
+			"overallMaxAudit": 78.67
+		},
+		{
+			"overallMaxAudit": 79.76
+		},
+		{
+			"overallMaxAudit": 78.3
+		},
+		{
+			"overallMaxAudit": 81.95
+		},
+		{
+			"overallMaxAudit": 82.4
+		},
+		{
+			"overallMaxAudit": 77.46
+		},
+		{
+			"overallMaxAudit": 74.72
+		},
+		{
+			"overallMaxAudit": 79.71
+		},
+		{
+			"overallMaxAudit": 78.64
+		},
+		{
+			"overallMaxAudit": 79.11
+		},
+		{
+			"overallMaxAudit": 85.39
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 85.18
+		},
+		{
+			"overallMaxAudit": 88.57
+		},
+		{
+			"overallMaxAudit": 79.7
+		},
+		{
+			"overallMaxAudit": 83.77
+		},
+		{
+			"overallMaxAudit": 88.8
+		},
+		{
+			"overallMaxAudit": 80.95
+		},
+		{
+			"overallMaxAudit": 89.3
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 87.4
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 88.83
+		},
+		{
+			"overallMaxAudit": 92.25
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 80.38
+		},
+		{
+			"overallMaxAudit": 79.44
+		},
+		{
+			"overallMaxAudit": 78.87
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 77.27
+		},
+		{
+			"overallMaxAudit": 80.43
+		},
+		{
+			"overallMaxAudit": 79.28
+		},
+		{
+			"overallMaxAudit": 83.07
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 84.9
+		},
+		{
+			"overallMaxAudit": 80.89
+		},
+		{
+			"overallMaxAudit": 84.61
+		},
+		{
+			"overallMaxAudit": 91.68
+		},
+		{
+			"overallMaxAudit": 91.26
+		},
+		{
+			"overallMaxAudit": 87.39
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 91.2
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 88.44
+		},
+		{
+			"overallMaxAudit": 86.64
+		},
+		{
+			"overallMaxAudit": 89.2
+		},
+		{
+			"overallMaxAudit": 93.2
+		},
+		{
+			"overallMaxAudit": 90.1
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 74.85
+		},
+		{
+			"overallMaxAudit": 78.93
+		},
+		{
+			"overallMaxAudit": 74.85
+		},
+		{
+			"overallMaxAudit": 81.36
+		},
+		{
+			"overallMaxAudit": 78.69
+		},
+		{
+			"overallMaxAudit": 69.94
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 81.29
+		},
+		{
+			"overallMaxAudit": 70
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 76.12
+		},
+		{
+			"overallMaxAudit": 81.23
+		},
+		{
+			"overallMaxAudit": 74.48
+		},
+		{
+			"overallMaxAudit": 78.03
+		},
+		{
+			"overallMaxAudit": 83.19
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 75.79
+		},
+		{
+			"overallMaxAudit": 74.26
+		},
+		{
+			"overallMaxAudit": 78.25
+		},
+		{
+			"overallMaxAudit": 82.63
+		},
+		{
+			"overallMaxAudit": 87.71
+		},
+		{
+			"overallMaxAudit": 77.46
+		},
+		{
+			"overallMaxAudit": 91.1
+		},
+		{
+			"overallMaxAudit": 80.08
+		},
+		{
+			"overallMaxAudit": 81.94
+		},
+		{
+			"overallMaxAudit": 66.26
+		},
+		{
+			"overallMaxAudit": 71.5
+		},
+		{
+			"overallMaxAudit": 76.73
+		},
+		{
+			"overallMaxAudit": 78.11
+		},
+		{
+			"overallMaxAudit": 74.01
+		},
+		{
+			"overallMaxAudit": 69.62
+		},
+		{
+			"overallMaxAudit": 78.12
+		},
+		{
+			"overallMaxAudit": 74.84
+		},
+		{
+			"overallMaxAudit": 69.91
+		},
+		{
+			"overallMaxAudit": 75.78
+		},
+		{
+			"overallMaxAudit": 76.93
+		},
+		{
+			"overallMaxAudit": 81.61
+		},
+		{
+			"overallMaxAudit": 76.58
+		},
+		{
+			"overallMaxAudit": 73.53
+		},
+		{
+			"overallMaxAudit": 75.54
+		},
+		{
+			"overallMaxAudit": 72.75
+		},
+		{
+			"overallMaxAudit": 76.18
+		},
+		{
+			"overallMaxAudit": 74.28
+		},
+		{
+			"overallMaxAudit": 78.69
+		},
+		{
+			"overallMaxAudit": 85.92
+		},
+		{
+			"overallMaxAudit": 75.74
+		},
+		{
+			"overallMaxAudit": 77.67
+		},
+		{
+			"overallMaxAudit": 72.26
+		},
+		{
+			"overallMaxAudit": 74.74
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 76.46
+		},
+		{
+			"overallMaxAudit": 80.72
+		},
+		{
+			"overallMaxAudit": 87.64
+		},
+		{
+			"overallMaxAudit": 84.16
+		},
+		{
+			"overallMaxAudit": 86.73
+		},
+		{
+			"overallMaxAudit": 89.89
+		},
+		{
+			"overallMaxAudit": 88.8
+		},
+		{
+			"overallMaxAudit": 90.57
+		},
+		{
+			"overallMaxAudit": 91.38
+		},
+		{
+			"overallMaxAudit": 84.08
+		},
+		{
+			"overallMaxAudit": 80.8
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 91.33
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 88.6
+		},
+		{
+			"overallMaxAudit": 90.43
+		},
+		{
+			"overallMaxAudit": 76.38
+		},
+		{
+			"overallMaxAudit": 76.59
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 87.8
+		},
+		{
+			"overallMaxAudit": 93.8
+		},
+		{
+			"overallMaxAudit": 96.44
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 92.63
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 92.4
+		},
+		{
+			"overallMaxAudit": 95.67
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 96.25
+		},
+		{
+			"overallMaxAudit": 91.56
+		},
+		{
+			"overallMaxAudit": 93.11
+		},
+		{
+			"overallMaxAudit": 97.25
+		},
+		{
+			"overallMaxAudit": 99.78
+		},
+		{
+			"overallMaxAudit": 97.48
+		},
+		{
+			"overallMaxAudit": 95.56
+		},
+		{
+			"overallMaxAudit": 91.75
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 97.09
+		},
+		{
+			"overallMaxAudit": 94.67
+		},
+		{
+			"overallMaxAudit": 96.83
+		},
+		{
+			"overallMaxAudit": 92.08
+		},
+		{
+			"overallMaxAudit": 92.3
+		},
+		{
+			"overallMaxAudit": 91.14
+		},
+		{
+			"overallMaxAudit": 94.33
+		},
+		{
+			"overallMaxAudit": 90.24
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 96.33
+		},
+		{
+			"overallMaxAudit": 77.17
+		},
+		{
+			"overallMaxAudit": 77.39
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 76.64
+		},
+		{
+			"overallMaxAudit": 74.89
+		},
+		{
+			"overallMaxAudit": 74.46
+		},
+		{
+			"overallMaxAudit": 77.11
+		},
+		{
+			"overallMaxAudit": 75.56
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 77.63
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 80.41
+		},
+		{
+			"overallMaxAudit": 81.34
+		},
+		{
+			"overallMaxAudit": 76.73
+		},
+		{
+			"overallMaxAudit": 75.75
+		},
+		{
+			"overallMaxAudit": 76.56
+		},
+		{
+			"overallMaxAudit": 83.55
+		},
+		{
+			"overallMaxAudit": 74.21
+		},
+		{
+			"overallMaxAudit": 77.97
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 83.82
+		},
+		{
+			"overallMaxAudit": 83.56
+		},
+		{
+			"overallMaxAudit": 81.39
+		},
+		{
+			"overallMaxAudit": 75.91
+		},
+		{
+			"overallMaxAudit": 82.1
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 85.51
+		},
+		{
+			"overallMaxAudit": 78.48
+		},
+		{
+			"overallMaxAudit": 84.1
+		},
+		{
+			"overallMaxAudit": 84.03
+		},
+		{
+			"overallMaxAudit": 84.38
+		},
+		{
+			"overallMaxAudit": 86.47
+		},
+		{
+			"overallMaxAudit": 89.71
+		},
+		{
+			"overallMaxAudit": 85
+		},
+		{
+			"overallMaxAudit": 80.96
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 86.27
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 85.66
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 89.22
+		},
+		{
+			"overallMaxAudit": 83.25
+		},
+		{
+			"overallMaxAudit": 80.32
+		},
+		{
+			"overallMaxAudit": 82.93
+		},
+		{
+			"overallMaxAudit": 85.15
+		},
+		{
+			"overallMaxAudit": 77.61
+		},
+		{
+			"overallMaxAudit": 87.7
+		},
+		{
+			"overallMaxAudit": 81.18
+		},
+		{
+			"overallMaxAudit": 80.25
+		},
+		{
+			"overallMaxAudit": 84.53
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 82.83
+		},
+		{
+			"overallMaxAudit": 87.35
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 85.03
+		},
+		{
+			"overallMaxAudit": 76.88
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 83.67
+		},
+		{
+			"overallMaxAudit": 79.28
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 83.86
+		},
+		{
+			"overallMaxAudit": 87.33
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 87.92
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 88.38
+		},
+		{
+			"overallMaxAudit": 87.58
+		},
+		{
+			"overallMaxAudit": 92.59
+		},
+		{
+			"overallMaxAudit": 92.43
+		},
+		{
+			"overallMaxAudit": 74.5
+		},
+		{
+			"overallMaxAudit": 90.17
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 91.32
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 88.17
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 86.33
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 85.13
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 90.5
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 77
+		},
+		{
+			"overallMaxAudit": 81.53
+		},
+		{
+			"overallMaxAudit": 83.07
+		},
+		{
+			"overallMaxAudit": 82.54
+		},
+		{
+			"overallMaxAudit": 81.43
+		},
+		{
+			"overallMaxAudit": 87.47
+		},
+		{
+			"overallMaxAudit": 93.25
+		},
+		{
+			"overallMaxAudit": 91.83
+		},
+		{
+			"overallMaxAudit": 90.52
+		},
+		{
+			"overallMaxAudit": 94.7
+		},
+		{
+			"overallMaxAudit": 92.14
+		},
+		{
+			"overallMaxAudit": 89.92
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 86.33
+		},
+		{
+			"overallMaxAudit": 90.68
+		},
+		{
+			"overallMaxAudit": 93.08
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 90.8
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 93.29
+		},
+		{
+			"overallMaxAudit": 87.4
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 86.38
+		},
+		{
+			"overallMaxAudit": 75.36
+		},
+		{
+			"overallMaxAudit": 68.24
+		},
+		{
+			"overallMaxAudit": 79.69
+		},
+		{
+			"overallMaxAudit": 78.6
+		},
+		{
+			"overallMaxAudit": 76.61
+		},
+		{
+			"overallMaxAudit": 79.01
+		},
+		{
+			"overallMaxAudit": 77.32
+		},
+		{
+			"overallMaxAudit": 83.53
+		},
+		{
+			"overallMaxAudit": 74.24
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 77.44
+		},
+		{
+			"overallMaxAudit": 80.98
+		},
+		{
+			"overallMaxAudit": 77.71
+		},
+		{
+			"overallMaxAudit": 84.21
+		},
+		{
+			"overallMaxAudit": 78.38
+		},
+		{
+			"overallMaxAudit": 87.26
+		},
+		{
+			"overallMaxAudit": 77.54
+		},
+		{
+			"overallMaxAudit": 83.34
+		},
+		{
+			"overallMaxAudit": 84.3
+		},
+		{
+			"overallMaxAudit": 82.04
+		},
+		{
+			"overallMaxAudit": 87.65
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 89.95
+		},
+		{
+			"overallMaxAudit": 90.39
+		},
+		{
+			"overallMaxAudit": 86.06
+		},
+		{
+			"overallMaxAudit": 89.4
+		},
+		{
+			"overallMaxAudit": 78.74
+		},
+		{
+			"overallMaxAudit": 91.79
+		},
+		{
+			"overallMaxAudit": 80.2
+		},
+		{
+			"overallMaxAudit": 92.12
+		},
+		{
+			"overallMaxAudit": 87.77
+		},
+		{
+			"overallMaxAudit": 86.79
+		},
+		{
+			"overallMaxAudit": 94.17
+		},
+		{
+			"overallMaxAudit": 93.6
+		},
+		{
+			"overallMaxAudit": 89.18
+		},
+		{
+			"overallMaxAudit": 96.5
+		},
+		{
+			"overallMaxAudit": 89.76
+		},
+		{
+			"overallMaxAudit": 94.08
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 89.15
+		},
+		{
+			"overallMaxAudit": 93.75
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 83.29
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 91.79
+		},
+		{
+			"overallMaxAudit": 85.44
+		},
+		{
+			"overallMaxAudit": 89.46
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 92.29
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.98
+		},
+		{
+			"overallMaxAudit": 85.19
+		},
+		{
+			"overallMaxAudit": 77.71
+		},
+		{
+			"overallMaxAudit": 79.82
+		},
+		{
+			"overallMaxAudit": 76.64
+		},
+		{
+			"overallMaxAudit": 82.97
+		},
+		{
+			"overallMaxAudit": 76.71
+		},
+		{
+			"overallMaxAudit": 78.62
+		},
+		{
+			"overallMaxAudit": 80.21
+		},
+		{
+			"overallMaxAudit": 76.55
+		},
+		{
+			"overallMaxAudit": 88.86
+		},
+		{
+			"overallMaxAudit": 96.59
+		},
+		{
+			"overallMaxAudit": 84.05
+		},
+		{
+			"overallMaxAudit": 84.45
+		},
+		{
+			"overallMaxAudit": 73.38
+		},
+		{
+			"overallMaxAudit": 75.33
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 85.98
+		},
+		{
+			"overallMaxAudit": 73.21
+		},
+		{
+			"overallMaxAudit": 84.56
+		},
+		{
+			"overallMaxAudit": 82.27
+		},
+		{
+			"overallMaxAudit": 85.13
+		},
+		{
+			"overallMaxAudit": 89.29
+		},
+		{
+			"overallMaxAudit": 91.56
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 77.89
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 85.81
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 72.29
+		},
+		{
+			"overallMaxAudit": 85.11
+		},
+		{
+			"overallMaxAudit": 87.72
+		},
+		{
+			"overallMaxAudit": 86.83
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 95.6
+		},
+		{
+			"overallMaxAudit": 90.52
+		},
+		{
+			"overallMaxAudit": 90.69
+		},
+		{
+			"overallMaxAudit": 85.09
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 89.17
+		},
+		{
+			"overallMaxAudit": 89.4
+		},
+		{
+			"overallMaxAudit": 74.61
+		},
+		{
+			"overallMaxAudit": 77.47
+		},
+		{
+			"overallMaxAudit": 73.36
+		},
+		{
+			"overallMaxAudit": 71.21
+		},
+		{
+			"overallMaxAudit": 67.98
+		},
+		{
+			"overallMaxAudit": 69.34
+		},
+		{
+			"overallMaxAudit": 75.09
+		},
+		{
+			"overallMaxAudit": 83.33
+		},
+		{
+			"overallMaxAudit": 80.74
+		},
+		{
+			"overallMaxAudit": 88.36
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 69.48
+		},
+		{
+			"overallMaxAudit": 83.03
+		},
+		{
+			"overallMaxAudit": 65.68
+		},
+		{
+			"overallMaxAudit": 66.07
+		},
+		{
+			"overallMaxAudit": 85.56
+		},
+		{
+			"overallMaxAudit": 70.89
+		},
+		{
+			"overallMaxAudit": 75.14
+		},
+		{
+			"overallMaxAudit": 80.88
+		},
+		{
+			"overallMaxAudit": 75.34
+		},
+		{
+			"overallMaxAudit": 77.77
+		},
+		{
+			"overallMaxAudit": 80.04
+		},
+		{
+			"overallMaxAudit": 80.88
+		},
+		{
+			"overallMaxAudit": 78.11
+		},
+		{
+			"overallMaxAudit": 72.31
+		},
+		{
+			"overallMaxAudit": 78.72
+		},
+		{
+			"overallMaxAudit": 80.89
+		},
+		{
+			"overallMaxAudit": 82.53
+		},
+		{
+			"overallMaxAudit": 80.87
+		},
+		{
+			"overallMaxAudit": 82.31
+		},
+		{
+			"overallMaxAudit": 82.13
+		},
+		{
+			"overallMaxAudit": 77.33
+		},
+		{
+			"overallMaxAudit": 74.67
+		},
+		{
+			"overallMaxAudit": 78.91
+		},
+		{
+			"overallMaxAudit": 75.36
+		},
+		{
+			"overallMaxAudit": 82.43
+		},
+		{
+			"overallMaxAudit": 88.42
+		},
+		{
+			"overallMaxAudit": 82.13
+		},
+		{
+			"overallMaxAudit": 79.77
+		},
+		{
+			"overallMaxAudit": 92.89
+		},
+		{
+			"overallMaxAudit": 86.63
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 90.83
+		},
+		{
+			"overallMaxAudit": 96.25
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 90.14
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 75.15
+		},
+		{
+			"overallMaxAudit": 77.64
+		},
+		{
+			"overallMaxAudit": 94.25
+		},
+		{
+			"overallMaxAudit": 80.82
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 77.22
+		},
+		{
+			"overallMaxAudit": 75.86
+		},
+		{
+			"overallMaxAudit": 72.53
+		},
+		{
+			"overallMaxAudit": 85.28
+		},
+		{
+			"overallMaxAudit": 87.06
+		},
+		{
+			"overallMaxAudit": 86.9
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 88.8
+		},
+		{
+			"overallMaxAudit": 93.35
+		},
+		{
+			"overallMaxAudit": 90.19
+		},
+		{
+			"overallMaxAudit": 88.13
+		},
+		{
+			"overallMaxAudit": 86.7
+		},
+		{
+			"overallMaxAudit": 77.19
+		},
+		{
+			"overallMaxAudit": 75.14
+		},
+		{
+			"overallMaxAudit": 76.16
+		},
+		{
+			"overallMaxAudit": 72.63
+		},
+		{
+			"overallMaxAudit": 88.75
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 91.8
+		},
+		{
+			"overallMaxAudit": 76.78
+		},
+		{
+			"overallMaxAudit": 81.24
+		},
+		{
+			"overallMaxAudit": 92.63
+		},
+		{
+			"overallMaxAudit": 81.19
+		},
+		{
+			"overallMaxAudit": 81.15
+		},
+		{
+			"overallMaxAudit": 88.68
+		},
+		{
+			"overallMaxAudit": 87.36
+		},
+		{
+			"overallMaxAudit": 85.45
+		},
+		{
+			"overallMaxAudit": 87.57
+		},
+		{
+			"overallMaxAudit": 93.45
+		},
+		{
+			"overallMaxAudit": 86.13
+		},
+		{
+			"overallMaxAudit": 85.6
+		},
+		{
+			"overallMaxAudit": 75.26
+		},
+		{
+			"overallMaxAudit": 82.81
+		},
+		{
+			"overallMaxAudit": 82.5
+		},
+		{
+			"overallMaxAudit": 77.4
+		},
+		{
+			"overallMaxAudit": 87.4
+		},
+		{
+			"overallMaxAudit": 88.73
+		},
+		{
+			"overallMaxAudit": 85.31
+		},
+		{
+			"overallMaxAudit": 92.67
+		},
+		{
+			"overallMaxAudit": 76.1
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 95.67
+		},
+		{
+			"overallMaxAudit": 88.89
+		},
+		{
+			"overallMaxAudit": 90.08
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 89.63
+		},
+		{
+			"overallMaxAudit": 96.5
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 85.87
+		},
+		{
+			"overallMaxAudit": 83.23
+		},
+		{
+			"overallMaxAudit": 89.92
+		},
+		{
+			"overallMaxAudit": 91.57
+		},
+		{
+			"overallMaxAudit": 81.38
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 88.27
+		},
+		{
+			"overallMaxAudit": 79.16
+		},
+		{
+			"overallMaxAudit": 77.45
+		},
+		{
+			"overallMaxAudit": 76.66
+		},
+		{
+			"overallMaxAudit": 86.05
+		},
+		{
+			"overallMaxAudit": 71.68
+		},
+		{
+			"overallMaxAudit": 73.75
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 86.03
+		},
+		{
+			"overallMaxAudit": 86.26
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 87.02
+		},
+		{
+			"overallMaxAudit": 85.02
+		},
+		{
+			"overallMaxAudit": 88.44
+		},
+		{
+			"overallMaxAudit": 84.72
+		},
+		{
+			"overallMaxAudit": 94.15
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 87.84
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 85.4
+		},
+		{
+			"overallMaxAudit": 92.62
+		},
+		{
+			"overallMaxAudit": 88.36
+		},
+		{
+			"overallMaxAudit": 91.83
+		},
+		{
+			"overallMaxAudit": 93.41
+		},
+		{
+			"overallMaxAudit": 88.65
+		},
+		{
+			"overallMaxAudit": 85.9
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 86.43
+		},
+		{
+			"overallMaxAudit": 87.7
+		},
+		{
+			"overallMaxAudit": 90.65
+		},
+		{
+			"overallMaxAudit": 90.06
+		},
+		{
+			"overallMaxAudit": 91.47
+		},
+		{
+			"overallMaxAudit": 90.88
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 98.71
+		},
+		{
+			"overallMaxAudit": 94.21
+		},
+		{
+			"overallMaxAudit": 88.39
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 92.33
+		},
+		{
+			"overallMaxAudit": 89.63
+		},
+		{
+			"overallMaxAudit": 90.63
+		},
+		{
+			"overallMaxAudit": 83.93
+		},
+		{
+			"overallMaxAudit": 89.78
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 89.43
+		},
+		{
+			"overallMaxAudit": 90.81
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 98.58
+		},
+		{
+			"overallMaxAudit": 85.2
+		},
+		{
+			"overallMaxAudit": 97.33
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 89.17
+		},
+		{
+			"overallMaxAudit": 88.71
+		},
+		{
+			"overallMaxAudit": 89.14
+		},
+		{
+			"overallMaxAudit": 87.25
+		},
+		{
+			"overallMaxAudit": 83.13
+		},
+		{
+			"overallMaxAudit": 83.88
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 93.07
+		},
+		{
+			"overallMaxAudit": 83.7
+		},
+		{
+			"overallMaxAudit": 83.96
+		},
+		{
+			"overallMaxAudit": 80.14
+		},
+		{
+			"overallMaxAudit": 82.75
+		},
+		{
+			"overallMaxAudit": 84.25
+		},
+		{
+			"overallMaxAudit": 82.67
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 85.54
+		},
+		{
+			"overallMaxAudit": 87.81
+		},
+		{
+			"overallMaxAudit": 88.81
+		},
+		{
+			"overallMaxAudit": 82.47
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 85.87
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 84.78
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 82.2
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 85.76
+		},
+		{
+			"overallMaxAudit": 92.58
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 91.55
+		},
+		{
+			"overallMaxAudit": 93.5
+		},
+		{
+			"overallMaxAudit": 82.98
+		},
+		{
+			"overallMaxAudit": 90.93
+		},
+		{
+			"overallMaxAudit": 86.93
+		},
+		{
+			"overallMaxAudit": 86.17
+		},
+		{
+			"overallMaxAudit": 86.36
+		},
+		{
+			"overallMaxAudit": 89.17
+		},
+		{
+			"overallMaxAudit": 91.8
+		},
+		{
+			"overallMaxAudit": 88.6
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 91.22
+		},
+		{
+			"overallMaxAudit": 92.2
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 82.4
+		},
+		{
+			"overallMaxAudit": 79.2
+		},
+		{
+			"overallMaxAudit": 89.2
+		},
+		{
+			"overallMaxAudit": 86.41
+		},
+		{
+			"overallMaxAudit": 90.26
+		},
+		{
+			"overallMaxAudit": 90.45
+		},
+		{
+			"overallMaxAudit": 82.09
+		},
+		{
+			"overallMaxAudit": 88.68
+		},
+		{
+			"overallMaxAudit": 82.83
+		},
+		{
+			"overallMaxAudit": 82.93
+		},
+		{
+			"overallMaxAudit": 85.64
+		},
+		{
+			"overallMaxAudit": 81.74
+		},
+		{
+			"overallMaxAudit": 76.22
+		},
+		{
+			"overallMaxAudit": 86.22
+		},
+		{
+			"overallMaxAudit": 77.95
+		},
+		{
+			"overallMaxAudit": 85.07
+		},
+		{
+			"overallMaxAudit": 75.9
+		},
+		{
+			"overallMaxAudit": 89.26
+		},
+		{
+			"overallMaxAudit": 85.64
+		},
+		{
+			"overallMaxAudit": 91.16
+		},
+		{
+			"overallMaxAudit": 86.6
+		},
+		{
+			"overallMaxAudit": 95.07
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 92.28
+		},
+		{
+			"overallMaxAudit": 91.88
+		},
+		{
+			"overallMaxAudit": 78.47
+		},
+		{
+			"overallMaxAudit": 83.84
+		},
+		{
+			"overallMaxAudit": 82.49
+		},
+		{
+			"overallMaxAudit": 74.99
+		},
+		{
+			"overallMaxAudit": 91.2
+		},
+		{
+			"overallMaxAudit": 85.11
+		},
+		{
+			"overallMaxAudit": 83.69
+		},
+		{
+			"overallMaxAudit": 83.74
+		},
+		{
+			"overallMaxAudit": 77.63
+		},
+		{
+			"overallMaxAudit": 79.52
+		},
+		{
+			"overallMaxAudit": 85.62
+		},
+		{
+			"overallMaxAudit": 82.04
+		},
+		{
+			"overallMaxAudit": 91.63
+		},
+		{
+			"overallMaxAudit": 85.29
+		},
+		{
+			"overallMaxAudit": 84.89
+		},
+		{
+			"overallMaxAudit": 88.54
+		},
+		{
+			"overallMaxAudit": 77.62
+		},
+		{
+			"overallMaxAudit": 86.49
+		},
+		{
+			"overallMaxAudit": 76.91
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 81.87
+		},
+		{
+			"overallMaxAudit": 78.05
+		},
+		{
+			"overallMaxAudit": 91.02
+		},
+		{
+			"overallMaxAudit": 88.13
+		},
+		{
+			"overallMaxAudit": 91.56
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 90.43
+		},
+		{
+			"overallMaxAudit": 85.25
+		},
+		{
+			"overallMaxAudit": 81.86
+		},
+		{
+			"overallMaxAudit": 85.8
+		},
+		{
+			"overallMaxAudit": 93
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 86.29
+		},
+		{
+			"overallMaxAudit": 76.57
+		},
+		{
+			"overallMaxAudit": 80.14
+		},
+		{
+			"overallMaxAudit": 74.53
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 76.57
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 78.09
+		},
+		{
+			"overallMaxAudit": 76.89
+		},
+		{
+			"overallMaxAudit": 74.58
+		},
+		{
+			"overallMaxAudit": 82.7
+		},
+		{
+			"overallMaxAudit": 74
+		},
+		{
+			"overallMaxAudit": 84.69
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 91
+		},
+		{
+			"overallMaxAudit": 80.75
+		},
+		{
+			"overallMaxAudit": 81.65
+		},
+		{
+			"overallMaxAudit": 75.97
+		},
+		{
+			"overallMaxAudit": 84.78
+		},
+		{
+			"overallMaxAudit": 94.23
+		},
+		{
+			"overallMaxAudit": 92.06
+		},
+		{
+			"overallMaxAudit": 88.76
+		},
+		{
+			"overallMaxAudit": 85.89
+		},
+		{
+			"overallMaxAudit": 91.89
+		},
+		{
+			"overallMaxAudit": 87.91
+		},
+		{
+			"overallMaxAudit": 85.14
+		},
+		{
+			"overallMaxAudit": 85.37
+		},
+		{
+			"overallMaxAudit": 92.04
+		},
+		{
+			"overallMaxAudit": 88.28
+		},
+		{
+			"overallMaxAudit": 90.61
+		},
+		{
+			"overallMaxAudit": 85.72
+		},
+		{
+			"overallMaxAudit": 89.2
+		},
+		{
+			"overallMaxAudit": 86.47
+		},
+		{
+			"overallMaxAudit": 87.84
+		},
+		{
+			"overallMaxAudit": 87.99
+		},
+		{
+			"overallMaxAudit": 84.2
+		},
+		{
+			"overallMaxAudit": 87.23
+		},
+		{
+			"overallMaxAudit": 95.37
+		},
+		{
+			"overallMaxAudit": 78.82
+		},
+		{
+			"overallMaxAudit": 80.14
+		},
+		{
+			"overallMaxAudit": 80.18
+		},
+		{
+			"overallMaxAudit": 79.89
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 82.39
+		},
+		{
+			"overallMaxAudit": 72.75
+		},
+		{
+			"overallMaxAudit": 88.25
+		},
+		{
+			"overallMaxAudit": 90.25
+		},
+		{
+			"overallMaxAudit": 85.48
+		},
+		{
+			"overallMaxAudit": 85.82
+		},
+		{
+			"overallMaxAudit": 75.04
+		},
+		{
+			"overallMaxAudit": 68.41
+		},
+		{
+			"overallMaxAudit": 86.57
+		},
+		{
+			"overallMaxAudit": 83.41
+		},
+		{
+			"overallMaxAudit": 81.5
+		},
+		{
+			"overallMaxAudit": 75.76
+		},
+		{
+			"overallMaxAudit": 89.65
+		},
+		{
+			"overallMaxAudit": 81.65
+		},
+		{
+			"overallMaxAudit": 81.77
+		},
+		{
+			"overallMaxAudit": 82.76
+		},
+		{
+			"overallMaxAudit": 88.05
+		},
+		{
+			"overallMaxAudit": 78.16
+		},
+		{
+			"overallMaxAudit": 86.14
+		},
+		{
+			"overallMaxAudit": 76.91
+		},
+		{
+			"overallMaxAudit": 82.25
+		},
+		{
+			"overallMaxAudit": 81.1
+		},
+		{
+			"overallMaxAudit": 77.89
+		},
+		{
+			"overallMaxAudit": 72.57
+		},
+		{
+			"overallMaxAudit": 74.38
+		},
+		{
+			"overallMaxAudit": 87.06
+		},
+		{
+			"overallMaxAudit": 83.65
+		},
+		{
+			"overallMaxAudit": 77.76
+		},
+		{
+			"overallMaxAudit": 83.46
+		},
+		{
+			"overallMaxAudit": 81.06
+		},
+		{
+			"overallMaxAudit": 83.25
+		},
+		{
+			"overallMaxAudit": 85.17
+		},
+		{
+			"overallMaxAudit": 77.48
+		},
+		{
+			"overallMaxAudit": 81.7
+		},
+		{
+			"overallMaxAudit": 80.84
+		},
+		{
+			"overallMaxAudit": 84.37
+		},
+		{
+			"overallMaxAudit": 82.05
+		},
+		{
+			"overallMaxAudit": 79.11
+		},
+		{
+			"overallMaxAudit": 82.1
+		},
+		{
+			"overallMaxAudit": 80.95
+		},
+		{
+			"overallMaxAudit": 83.22
+		},
+		{
+			"overallMaxAudit": 81.13
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 79.74
+		},
+		{
+			"overallMaxAudit": 88.89
+		},
+		{
+			"overallMaxAudit": 81.7
+		},
+		{
+			"overallMaxAudit": 80.68
+		},
+		{
+			"overallMaxAudit": 86.21
+		},
+		{
+			"overallMaxAudit": 83.56
+		},
+		{
+			"overallMaxAudit": 93.31
+		},
+		{
+			"overallMaxAudit": 84.31
+		},
+		{
+			"overallMaxAudit": 92.58
+		},
+		{
+			"overallMaxAudit": 87.95
+		},
+		{
+			"overallMaxAudit": 91.75
+		},
+		{
+			"overallMaxAudit": 84.36
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 95.43
+		},
+		{
+			"overallMaxAudit": 85.83
+		},
+		{
+			"overallMaxAudit": 91.85
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 90.7
+		},
+		{
+			"overallMaxAudit": 94.5
+		},
+		{
+			"overallMaxAudit": 90.83
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 86.4
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 91.89
+		},
+		{
+			"overallMaxAudit": 80.57
+		},
+		{
+			"overallMaxAudit": 85.78
+		},
+		{
+			"overallMaxAudit": 87.71
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 86.3
+		},
+		{
+			"overallMaxAudit": 86.85
+		},
+		{
+			"overallMaxAudit": 88.41
+		},
+		{
+			"overallMaxAudit": 84.26
+		},
+		{
+			"overallMaxAudit": 92.07
+		},
+		{
+			"overallMaxAudit": 86.37
+		},
+		{
+			"overallMaxAudit": 87.72
+		},
+		{
+			"overallMaxAudit": 86.59
+		},
+		{
+			"overallMaxAudit": 86.56
+		},
+		{
+			"overallMaxAudit": 89.57
+		},
+		{
+			"overallMaxAudit": 93.12
+		},
+		{
+			"overallMaxAudit": 90.08
+		},
+		{
+			"overallMaxAudit": 90.57
+		},
+		{
+			"overallMaxAudit": 96.47
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 78.09
+		},
+		{
+			"overallMaxAudit": 78.88
+		},
+		{
+			"overallMaxAudit": 79.12
+		},
+		{
+			"overallMaxAudit": 76.26
+		},
+		{
+			"overallMaxAudit": 77.01
+		},
+		{
+			"overallMaxAudit": 77.65
+		},
+		{
+			"overallMaxAudit": 77.75
+		},
+		{
+			"overallMaxAudit": 74.64
+		},
+		{
+			"overallMaxAudit": 76.25
+		},
+		{
+			"overallMaxAudit": 73.76
+		},
+		{
+			"overallMaxAudit": 78.2
+		},
+		{
+			"overallMaxAudit": 81.35
+		},
+		{
+			"overallMaxAudit": 79.4
+		},
+		{
+			"overallMaxAudit": 80.95
+		},
+		{
+			"overallMaxAudit": 79.82
+		},
+		{
+			"overallMaxAudit": 80.77
+		},
+		{
+			"overallMaxAudit": 80.7
+		},
+		{
+			"overallMaxAudit": 79.42
+		},
+		{
+			"overallMaxAudit": 85.75
+		},
+		{
+			"overallMaxAudit": 84.87
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 82.95
+		},
+		{
+			"overallMaxAudit": 88.3
+		},
+		{
+			"overallMaxAudit": 86.61
+		},
+		{
+			"overallMaxAudit": 81.42
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 87.11
+		},
+		{
+			"overallMaxAudit": 88.25
+		},
+		{
+			"overallMaxAudit": 88.5
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 73.05
+		},
+		{
+			"overallMaxAudit": 72.26
+		},
+		{
+			"overallMaxAudit": 72.6
+		},
+		{
+			"overallMaxAudit": 70.2
+		},
+		{
+			"overallMaxAudit": 72.05
+		},
+		{
+			"overallMaxAudit": 72.04
+		},
+		{
+			"overallMaxAudit": 74.33
+		},
+		{
+			"overallMaxAudit": 73.92
+		},
+		{
+			"overallMaxAudit": 72.86
+		},
+		{
+			"overallMaxAudit": 75.07
+		},
+		{
+			"overallMaxAudit": 71.77
+		},
+		{
+			"overallMaxAudit": 75.44
+		},
+		{
+			"overallMaxAudit": 71.47
+		},
+		{
+			"overallMaxAudit": 74.79
+		},
+		{
+			"overallMaxAudit": 83
+		},
+		{
+			"overallMaxAudit": 73.54
+		},
+		{
+			"overallMaxAudit": 75.67
+		},
+		{
+			"overallMaxAudit": 72.44
+		},
+		{
+			"overallMaxAudit": 71.24
+		},
+		{
+			"overallMaxAudit": 71.24
+		},
+		{
+			"overallMaxAudit": 75.18
+		},
+		{
+			"overallMaxAudit": 68.06
+		},
+		{
+			"overallMaxAudit": 74.08
+		},
+		{
+			"overallMaxAudit": 90.7
+		},
+		{
+			"overallMaxAudit": 73.57
+		},
+		{
+			"overallMaxAudit": 87.03
+		},
+		{
+			"overallMaxAudit": 75.1
+		},
+		{
+			"overallMaxAudit": 73.62
+		},
+		{
+			"overallMaxAudit": 71.67
+		},
+		{
+			"overallMaxAudit": 79.17
+		},
+		{
+			"overallMaxAudit": 78.81
+		},
+		{
+			"overallMaxAudit": 74.46
+		},
+		{
+			"overallMaxAudit": 73.05
+		},
+		{
+			"overallMaxAudit": 74.3
+		},
+		{
+			"overallMaxAudit": 79.42
+		},
+		{
+			"overallMaxAudit": 90.33
+		},
+		{
+			"overallMaxAudit": 74.69
+		},
+		{
+			"overallMaxAudit": 75
+		},
+		{
+			"overallMaxAudit": 96
+		},
+		{
+			"overallMaxAudit": 90.44
+		},
+		{
+			"overallMaxAudit": 89.33
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 89.6
+		},
+		{
+			"overallMaxAudit": 95.75
+		},
+		{
+			"overallMaxAudit": 95.25
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 97
+		},
+		{
+			"overallMaxAudit": 91.6
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 82.53
+		},
+		{
+			"overallMaxAudit": 89.08
+		},
+		{
+			"overallMaxAudit": 84.29
+		},
+		{
+			"overallMaxAudit": 85.63
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 78.28
+		},
+		{
+			"overallMaxAudit": 78.89
+		},
+		{
+			"overallMaxAudit": 79.66
+		},
+		{
+			"overallMaxAudit": 74.6
+		},
+		{
+			"overallMaxAudit": 76.92
+		},
+		{
+			"overallMaxAudit": 81.06
+		},
+		{
+			"overallMaxAudit": 77.55
+		},
+		{
+			"overallMaxAudit": 81.1
+		},
+		{
+			"overallMaxAudit": 78.71
+		},
+		{
+			"overallMaxAudit": 80.36
+		},
+		{
+			"overallMaxAudit": 76.24
+		},
+		{
+			"overallMaxAudit": 82.22
+		},
+		{
+			"overallMaxAudit": 77.63
+		},
+		{
+			"overallMaxAudit": 81.52
+		},
+		{
+			"overallMaxAudit": 84.6
+		},
+		{
+			"overallMaxAudit": 80.58
+		},
+		{
+			"overallMaxAudit": 87.92
+		},
+		{
+			"overallMaxAudit": 91.44
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 88.88
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 91.27
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 91.36
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 94
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 86.43
+		},
+		{
+			"overallMaxAudit": 82.75
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 88.25
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 87.07
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 89.2
+		},
+		{
+			"overallMaxAudit": 85.33
+		},
+		{
+			"overallMaxAudit": 86.27
+		},
+		{
+			"overallMaxAudit": 88.47
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 75.41
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 88.02
+		},
+		{
+			"overallMaxAudit": 86.87
+		},
+		{
+			"overallMaxAudit": 88.63
+		},
+		{
+			"overallMaxAudit": 88.67
+		},
+		{
+			"overallMaxAudit": 88.28
+		},
+		{
+			"overallMaxAudit": 85.27
+		},
+		{
+			"overallMaxAudit": 85.98
+		},
+		{
+			"overallMaxAudit": 82.46
+		},
+		{
+			"overallMaxAudit": 88.68
+		},
+		{
+			"overallMaxAudit": 87.38
+		},
+		{
+			"overallMaxAudit": 91.7
+		},
+		{
+			"overallMaxAudit": 88.78
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 90.5
+		},
+		{
+			"overallMaxAudit": 83.83
+		},
+		{
+			"overallMaxAudit": 82.1
+		},
+		{
+			"overallMaxAudit": 84.83
+		},
+		{
+			"overallMaxAudit": 92.3
+		},
+		{
+			"overallMaxAudit": 88.45
+		},
+		{
+			"overallMaxAudit": 89.54
+		},
+		{
+			"overallMaxAudit": 82.18
+		},
+		{
+			"overallMaxAudit": 86.43
+		},
+		{
+			"overallMaxAudit": 92.5
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 84.3
+		},
+		{
+			"overallMaxAudit": 77.01
+		},
+		{
+			"overallMaxAudit": 81.53
+		},
+		{
+			"overallMaxAudit": 86.35
+		},
+		{
+			"overallMaxAudit": 84.29
+		},
+		{
+			"overallMaxAudit": 86.81
+		},
+		{
+			"overallMaxAudit": 76.52
+		},
+		{
+			"overallMaxAudit": 79.8
+		},
+		{
+			"overallMaxAudit": 67.25
+		},
+		{
+			"overallMaxAudit": 76.09
+		},
+		{
+			"overallMaxAudit": 77.94
+		},
+		{
+			"overallMaxAudit": 78.61
+		},
+		{
+			"overallMaxAudit": 75.1
+		},
+		{
+			"overallMaxAudit": 79.26
+		},
+		{
+			"overallMaxAudit": 81.04
+		},
+		{
+			"overallMaxAudit": 80.32
+		},
+		{
+			"overallMaxAudit": 79.36
+		},
+		{
+			"overallMaxAudit": 79
+		},
+		{
+			"overallMaxAudit": 74.21
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 88.7
+		},
+		{
+			"overallMaxAudit": 87.57
+		},
+		{
+			"overallMaxAudit": 88.71
+		},
+		{
+			"overallMaxAudit": 86.79
+		},
+		{
+			"overallMaxAudit": 84.8
+		},
+		{
+			"overallMaxAudit": 85.2
+		},
+		{
+			"overallMaxAudit": 87.75
+		},
+		{
+			"overallMaxAudit": 81.89
+		},
+		{
+			"overallMaxAudit": 89.67
+		},
+		{
+			"overallMaxAudit": 90.71
+		},
+		{
+			"overallMaxAudit": 81.27
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 83.14
+		},
+		{
+			"overallMaxAudit": 91.43
+		},
+		{
+			"overallMaxAudit": 81.08
+		},
+		{
+			"overallMaxAudit": 81.67
+		},
+		{
+			"overallMaxAudit": 86.09
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 92.23
+		},
+		{
+			"overallMaxAudit": 88.11
+		},
+		{
+			"overallMaxAudit": 88.94
+		},
+		{
+			"overallMaxAudit": 87.45
+		},
+		{
+			"overallMaxAudit": 91.2
+		},
+		{
+			"overallMaxAudit": 91.82
+		},
+		{
+			"overallMaxAudit": 90.13
+		},
+		{
+			"overallMaxAudit": 90.62
+		},
+		{
+			"overallMaxAudit": 87
+		},
+		{
+			"overallMaxAudit": 90.09
+		},
+		{
+			"overallMaxAudit": 84.28
+		},
+		{
+			"overallMaxAudit": 90.89
+		},
+		{
+			"overallMaxAudit": 86.5
+		},
+		{
+			"overallMaxAudit": 87.06
+		},
+		{
+			"overallMaxAudit": 96.15
+		},
+		{
+			"overallMaxAudit": 93.4
+		},
+		{
+			"overallMaxAudit": 87.17
+		},
+		{
+			"overallMaxAudit": 86.92
+		},
+		{
+			"overallMaxAudit": 81.86
+		},
+		{
+			"overallMaxAudit": 94.56
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 92.88
+		},
+		{
+			"overallMaxAudit": 96.09
+		},
+		{
+			"overallMaxAudit": 93.82
+		},
+		{
+			"overallMaxAudit": 95
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 86.75
+		},
+		{
+			"overallMaxAudit": 80.15
+		},
+		{
+			"overallMaxAudit": 77.77
+		},
+		{
+			"overallMaxAudit": 79.72
+		},
+		{
+			"overallMaxAudit": 83.09
+		},
+		{
+			"overallMaxAudit": 82.61
+		},
+		{
+			"overallMaxAudit": 82.48
+		},
+		{
+			"overallMaxAudit": 79.18
+		},
+		{
+			"overallMaxAudit": 82.88
+		},
+		{
+			"overallMaxAudit": 81.13
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 79.84
+		},
+		{
+			"overallMaxAudit": 79.56
+		},
+		{
+			"overallMaxAudit": 78.27
+		},
+		{
+			"overallMaxAudit": 80.87
+		},
+		{
+			"overallMaxAudit": 79.42
+		},
+		{
+			"overallMaxAudit": 93.25
+		},
+		{
+			"overallMaxAudit": 80.85
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 87.83
+		},
+		{
+			"overallMaxAudit": 76
+		},
+		{
+			"overallMaxAudit": 82
+		},
+		{
+			"overallMaxAudit": 84.91
+		},
+		{
+			"overallMaxAudit": 89.76
+		},
+		{
+			"overallMaxAudit": 83.36
+		},
+		{
+			"overallMaxAudit": 87.08
+		},
+		{
+			"overallMaxAudit": 83.37
+		},
+		{
+			"overallMaxAudit": 84.68
+		},
+		{
+			"overallMaxAudit": 87.51
+		},
+		{
+			"overallMaxAudit": 84.46
+		},
+		{
+			"overallMaxAudit": 81.45
+		},
+		{
+			"overallMaxAudit": 86.57
+		},
+		{
+			"overallMaxAudit": 84.67
+		},
+		{
+			"overallMaxAudit": 86.62
+		},
+		{
+			"overallMaxAudit": 85.92
+		},
+		{
+			"overallMaxAudit": 86.59
+		},
+		{
+			"overallMaxAudit": 86.31
+		},
+		{
+			"overallMaxAudit": 83.3
+		},
+		{
+			"overallMaxAudit": 87.69
+		},
+		{
+			"overallMaxAudit": 88.47
+		},
+		{
+			"overallMaxAudit": 83.38
+		},
+		{
+			"overallMaxAudit": 85.97
+		},
+		{
+			"overallMaxAudit": 96.96
+		},
+		{
+			"overallMaxAudit": 98.98
+		},
+		{
+			"overallMaxAudit": 88.24
+		},
+		{
+			"overallMaxAudit": 84.55
+		},
+		{
+			"overallMaxAudit": 86.38
+		},
+		{
+			"overallMaxAudit": 92.08
+		},
+		{
+			"overallMaxAudit": 89.53
+		},
+		{
+			"overallMaxAudit": 95.11
+		},
+		{
+			"overallMaxAudit": 89.37
+		},
+		{
+			"overallMaxAudit": 88.85
+		},
+		{
+			"overallMaxAudit": 87.74
+		},
+		{
+			"overallMaxAudit": 87.6
+		},
+		{
+			"overallMaxAudit": 82.86
+		},
+		{
+			"overallMaxAudit": 93.33
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 87.9
+		},
+		{
+			"overallMaxAudit": 89.23
+		},
+		{
+			"overallMaxAudit": 89.7
+		},
+		{
+			"overallMaxAudit": 96.8
+		},
+		{
+			"overallMaxAudit": 87.5
+		},
+		{
+			"overallMaxAudit": 93.73
+		},
+		{
+			"overallMaxAudit": 92.83
+		},
+		{
+			"overallMaxAudit": 95.75
+		},
+		{
+			"overallMaxAudit": 92.78
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 84.5
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 90.57
+		},
+		{
+			"overallMaxAudit": 91.14
+		},
+		{
+			"overallMaxAudit": 90.84
+		},
+		{
+			"overallMaxAudit": 91.81
+		},
+		{
+			"overallMaxAudit": 90.67
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 90.38
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 87.44
+		},
+		{
+			"overallMaxAudit": 88.83
+		},
+		{
+			"overallMaxAudit": 85.9
+		},
+		{
+			"overallMaxAudit": 91.25
+		},
+		{
+			"overallMaxAudit": 92
+		},
+		{
+			"overallMaxAudit": 91.4
+		},
+		{
+			"overallMaxAudit": 92.39
+		},
+		{
+			"overallMaxAudit": 83.92
+		},
+		{
+			"overallMaxAudit": 87.43
+		},
+		{
+			"overallMaxAudit": 86.67
+		},
+		{
+			"overallMaxAudit": 87.39
+		},
+		{
+			"overallMaxAudit": 87.67
+		},
+		{
+			"overallMaxAudit": 93.2
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 95.09
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 94.36
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 89.29
+		},
+		{
+			"overallMaxAudit": 87.53
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 76.81
+		},
+		{
+			"overallMaxAudit": 82.08
+		},
+		{
+			"overallMaxAudit": 79.92
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 80.17
+		},
+		{
+			"overallMaxAudit": 76.1
+		},
+		{
+			"overallMaxAudit": 76.8
+		},
+		{
+			"overallMaxAudit": 74.98
+		},
+		{
+			"overallMaxAudit": 75.81
+		},
+		{
+			"overallMaxAudit": 68.24
+		},
+		{
+			"overallMaxAudit": 83.73
+		},
+		{
+			"overallMaxAudit": 79.67
+		},
+		{
+			"overallMaxAudit": 87.11
+		},
+		{
+			"overallMaxAudit": 77.84
+		},
+		{
+			"overallMaxAudit": 89.25
+		},
+		{
+			"overallMaxAudit": 91.73
+		},
+		{
+			"overallMaxAudit": 89.75
+		},
+		{
+			"overallMaxAudit": 90.9
+		},
+		{
+			"overallMaxAudit": 90.29
+		},
+		{
+			"overallMaxAudit": 94.7
+		},
+		{
+			"overallMaxAudit": 87.2
+		},
+		{
+			"overallMaxAudit": 88.4
+		},
+		{
+			"overallMaxAudit": 90
+		},
+		{
+			"overallMaxAudit": 94.25
+		},
+		{
+			"overallMaxAudit": 80.69
+		},
+		{
+			"overallMaxAudit": 88.67
+		},
+		{
+			"overallMaxAudit": 83.5
+		},
+		{
+			"overallMaxAudit": 84.35
+		},
+		{
+			"overallMaxAudit": 82.37
+		},
+		{
+			"overallMaxAudit": 81.31
+		},
+		{
+			"overallMaxAudit": 84.92
+		},
+		{
+			"overallMaxAudit": 60
+		},
+		{
+			"overallMaxAudit": 81.6
+		},
+		{
+			"overallMaxAudit": 86.13
+		},
+		{
+			"overallMaxAudit": 82.52
+		},
+		{
+			"overallMaxAudit": 92.15
+		},
+		{
+			"overallMaxAudit": 80.92
+		},
+		{
+			"overallMaxAudit": 79.82
+		},
+		{
+			"overallMaxAudit": 77.73
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 83.11
+		},
+		{
+			"overallMaxAudit": 83.06
+		},
+		{
+			"overallMaxAudit": 83.11
+		},
+		{
+			"overallMaxAudit": 83.06
+		},
+		{
+			"overallMaxAudit": 86.05
+		},
+		{
+			"overallMaxAudit": 93.05
+		},
+		{
+			"overallMaxAudit": 83.75
+		},
+		{
+			"overallMaxAudit": 84.85
+		},
+		{
+			"overallMaxAudit": 85.22
+		},
+		{
+			"overallMaxAudit": 80.21
+		},
+		{
+			"overallMaxAudit": 91.1
+		},
+		{
+			"overallMaxAudit": 95.2
+		},
+		{
+			"overallMaxAudit": 90.46
+		},
+		{
+			"overallMaxAudit": 82.46
+		},
+		{
+			"overallMaxAudit": 92.41
+		},
+		{
+			"overallMaxAudit": 87.13
+		},
+		{
+			"overallMaxAudit": 85.27
+		},
+		{
+			"overallMaxAudit": 87.13
+		},
+		{
+			"overallMaxAudit": 85.27
+		},
+		{
+			"overallMaxAudit": 88.25
+		},
+		{
+			"overallMaxAudit": 84.71
+		},
+		{
+			"overallMaxAudit": 89.83
+		},
+		{
+			"overallMaxAudit": 90.14
+		},
+		{
+			"overallMaxAudit": 78.08
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 77.44
+		},
+		{
+			"overallMaxAudit": 88.36
+		},
+		{
+			"overallMaxAudit": 90.39
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 88.57
+		},
+		{
+			"overallMaxAudit": 88
+		},
+		{
+			"overallMaxAudit": 88.57
+		},
+		{
+			"overallMaxAudit": 90.75
+		},
+		{
+			"overallMaxAudit": 91.5
+		},
+		{
+			"overallMaxAudit": 86
+		},
+		{
+			"overallMaxAudit": 85.5
+		},
+		{
+			"overallMaxAudit": 85.25
+		},
+		{
+			"overallMaxAudit": 89.23
+		},
+		{
+			"overallMaxAudit": 80.63
+		},
+		{
+			"overallMaxAudit": 89.5
+		},
+		{
+			"overallMaxAudit": 79.7
+		},
+		{
+			"overallMaxAudit": 80.74
+		},
+		{
+			"overallMaxAudit": 84.08
+		},
+		{
+			"overallMaxAudit": 78.47
+		},
+		{
+			"overallMaxAudit": 82.16
+		},
+		{
+			"overallMaxAudit": 77.89
+		},
+		{
+			"overallMaxAudit": 82.83
+		},
+		{
+			"overallMaxAudit": 74.92
+		},
+		{
+			"overallMaxAudit": 76.03
+		},
+		{
+			"overallMaxAudit": 76.61
+		},
+		{
+			"overallMaxAudit": 74.01
+		},
+		{
+			"overallMaxAudit": 81.28
+		},
+		{
+			"overallMaxAudit": 77.88
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 75.17
+		},
+		{
+			"overallMaxAudit": 80.11
+		},
+		{
+			"overallMaxAudit": 81.9
+		},
+		{
+			"overallMaxAudit": 79.29
+		},
+		{
+			"overallMaxAudit": 83.05
+		},
+		{
+			"overallMaxAudit": 79.33
+		},
+		{
+			"overallMaxAudit": 81.79
+		},
+		{
+			"overallMaxAudit": 79.94
+		},
+		{
+			"overallMaxAudit": 76.77
+		},
+		{
+			"overallMaxAudit": 82.29
+		},
+		{
+			"overallMaxAudit": 81.84
+		},
+		{
+			"overallMaxAudit": 81.57
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 81.33
+		},
+		{
+			"overallMaxAudit": 80.32
+		},
+		{
+			"overallMaxAudit": 78.29
+		},
+		{
+			"overallMaxAudit": 81.26
+		},
+		{
+			"overallMaxAudit": 78.32
+		},
+		{
+			"overallMaxAudit": 81.56
+		},
+		{
+			"overallMaxAudit": 81
+		},
+		{
+			"overallMaxAudit": 88.45
+		},
+		{
+			"overallMaxAudit": 80.79
+		},
+		{
+			"overallMaxAudit": 83.04
+		},
+		{
+			"overallMaxAudit": 79.94
+		},
+		{
+			"overallMaxAudit": 80
+		},
+		{
+			"overallMaxAudit": 88.33
+		},
+		{
+			"overallMaxAudit": 87.6
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 88.67
+		},
+		{
+			"overallMaxAudit": 72.94
+		},
+		{
+			"overallMaxAudit": 70.83
+		},
+		{
+			"overallMaxAudit": 71.64
+		},
+		{
+			"overallMaxAudit": 73.44
+		},
+		{
+			"overallMaxAudit": 89
+		},
+		{
+			"overallMaxAudit": 81.53
+		},
+		{
+			"overallMaxAudit": 82.1
+		},
+		{
+			"overallMaxAudit": 70.87
+		},
+		{
+			"overallMaxAudit": 69.86
+		},
+		{
+			"overallMaxAudit": 79.17
+		},
+		{
+			"overallMaxAudit": 78.76
+		},
+		{
+			"overallMaxAudit": 82.38
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 74.43
+		},
+		{
+			"overallMaxAudit": 77.45
+		},
+		{
+			"overallMaxAudit": 76.18
+		},
+		{
+			"overallMaxAudit": 80.4
+		},
+		{
+			"overallMaxAudit": 82.44
+		},
+		{
+			"overallMaxAudit": 84
+		},
+		{
+			"overallMaxAudit": 81.97
+		},
+		{
+			"overallMaxAudit": 81.76
+		},
+		{
+			"overallMaxAudit": 83.83
+		},
+		{
+			"overallMaxAudit": 79.75
+		},
+		{
+			"overallMaxAudit": 79.31
+		},
+		{
+			"overallMaxAudit": 77.33
+		},
+		{
+			"overallMaxAudit": 71.57
+		},
+		{
+			"overallMaxAudit": 78.89
+		},
+		{
+			"overallMaxAudit": 82.17
+		},
+		{
+			"overallMaxAudit": 76.62
+		},
+		{
+			"overallMaxAudit": 76.41
+		},
+		{
+			"overallMaxAudit": 81.9
+		},
+		{
+			"overallMaxAudit": 80.95
+		},
+		{
+			"overallMaxAudit": 79.55
+		},
+		{
+			"overallMaxAudit": 84.17
+		},
+		{
+			"overallMaxAudit": 80.64
+		},
+		{
+			"overallMaxAudit": 79.12
+		},
+		{
+			"overallMaxAudit": 92.71
+		},
+		{
+			"overallMaxAudit": 92
+		}
+	]
+}

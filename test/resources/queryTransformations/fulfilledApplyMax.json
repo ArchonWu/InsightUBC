@@ -1,0 +1,743 @@
+{
+	"title": "fulfilled apply max",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_audit": 3
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallMaxAudit"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallMaxAudit": {
+						"MAX": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "rsrch methdlgy",
+			"sections_dept": "aanb",
+			"overallMaxAudit": 9
+		},
+		{
+			"sections_title": "art 1600 to now",
+			"sections_dept": "arth",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "vis env mod&post",
+			"sections_dept": "arth",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "hist of photogry",
+			"sections_dept": "arth",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "northcoast peo",
+			"sections_dept": "arth",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intr trdtl asia",
+			"sections_dept": "asia",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "mod chin fct trn",
+			"sections_dept": "asia",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intntl finan env",
+			"sections_dept": "bafi",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "adv tpcs prot ch",
+			"sections_dept": "bioc",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "fund cell bio",
+			"sections_dept": "biol",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "vascular plants",
+			"sections_dept": "biol",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "bryophyta",
+			"sections_dept": "biol",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "plnt phyl 2:devt",
+			"sections_dept": "biol",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "pop & quant gene",
+			"sections_dept": "biol",
+			"overallMaxAudit": 12
+		},
+		{
+			"sections_title": "cmpt flwsh&fluid",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "proc synthesis",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 9
+		},
+		{
+			"sections_title": "coord chem",
+			"sections_dept": "chem",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "polymer chem",
+			"sections_dept": "chem",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "organic synthsis",
+			"sections_dept": "chem",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "basic chin i 1",
+			"sections_dept": "chin",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "in basic chin ii",
+			"sections_dept": "chin",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "cls chin poet 1",
+			"sections_dept": "chin",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "adv steel design",
+			"sections_dept": "civl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "adv conc design",
+			"sections_dept": "civl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "sesm&ses des par",
+			"sections_dept": "civl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "nonlin strct anl",
+			"sections_dept": "civl",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "adv tpcs stl str",
+			"sections_dept": "civl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "concrete structs",
+			"sections_dept": "civl",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "urbn trans systm",
+			"sections_dept": "civl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "schl counselling",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "family counsl ii",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "basic cnto 1",
+			"sections_dept": "cnto",
+			"overallMaxAudit": 13
+		},
+		{
+			"sections_title": "power & politics",
+			"sections_dept": "cohr",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "int quan dec mak",
+			"sections_dept": "comm",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "financial acctng",
+			"sections_dept": "comm",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "managerial econ",
+			"sections_dept": "comm",
+			"overallMaxAudit": 8
+		},
+		{
+			"sections_title": "intro marketing",
+			"sections_dept": "comm",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "business finance",
+			"sections_dept": "comm",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "corp finance",
+			"sections_dept": "comm",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "govt & business",
+			"sections_dept": "comm",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "int'l bus mngt",
+			"sections_dept": "comm",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intr gis frs&con",
+			"sections_dept": "cons",
+			"overallMaxAudit": 15
+		},
+		{
+			"sections_title": "comptn, progrmng",
+			"sections_dept": "cpsc",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "machine lrn mine",
+			"sections_dept": "cpsc",
+			"overallMaxAudit": 14
+		},
+		{
+			"sections_title": "machine learn i",
+			"sections_dept": "cpsc",
+			"overallMaxAudit": 21
+		},
+		{
+			"sections_title": "intr writ comdic",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "princpl macrecon",
+			"sections_dept": "econ",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "microeconomics",
+			"sections_dept": "econ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "money & banking",
+			"sections_dept": "econ",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "intro int trade",
+			"sections_dept": "econ",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "b-c anly&proj ev",
+			"sections_dept": "econ",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "process econ dev",
+			"sections_dept": "econ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "spc tpcs macroec",
+			"sections_dept": "econ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "labour economics",
+			"sections_dept": "econ",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "res des&polcy ev",
+			"sections_dept": "econ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "curr hist contxt",
+			"sections_dept": "edcp",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "",
+			"sections_dept": "educ",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "power syst anlys",
+			"sections_dept": "eece",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "comm networks",
+			"sections_dept": "eece",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "tech writing",
+			"sections_dept": "engl",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "prnc geomorphlgy",
+			"sections_dept": "eosc",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "circltn & plnktn",
+			"sections_dept": "eosc",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "exp des anl ed",
+			"sections_dept": "epse",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "mult des anal rs",
+			"sections_dept": "epse",
+			"overallMaxAudit": 9
+		},
+		{
+			"sections_title": "hier lin modelng",
+			"sections_dept": "epse",
+			"overallMaxAudit": 8
+		},
+		{
+			"sections_title": "intro film stdy",
+			"sections_dept": "fist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "int asian cinema",
+			"sections_dept": "fist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "nu met imp hlth",
+			"sections_dept": "fnh",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "beginner fren i",
+			"sections_dept": "fren",
+			"overallMaxAudit": 12
+		},
+		{
+			"sections_title": "beginner fren ii",
+			"sections_dept": "fren",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "intermed fren 1",
+			"sections_dept": "fren",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "fren lang&lit i",
+			"sections_dept": "fren",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "sustain forests",
+			"sections_dept": "frst",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intr biometrics",
+			"sections_dept": "frst",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "adv biometrics",
+			"sections_dept": "frst",
+			"overallMaxAudit": 10
+		},
+		{
+			"sections_title": "remote sensing",
+			"sections_dept": "frst",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "mult regres meth",
+			"sections_dept": "frst",
+			"overallMaxAudit": 19
+		},
+		{
+			"sections_title": "tec comm skls ii",
+			"sections_dept": "frst",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "geog inform sci",
+			"sections_dept": "geob",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "advanced gis",
+			"sections_dept": "geob",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "geog mod glob",
+			"sections_dept": "geog",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "clmt chng sc soc",
+			"sections_dept": "geog",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "begin germ i",
+			"sections_dept": "germ",
+			"overallMaxAudit": 8
+		},
+		{
+			"sections_title": "begin germ 2",
+			"sections_dept": "germ",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "inter germ i",
+			"sections_dept": "germ",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "inter germ ii",
+			"sections_dept": "germ",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "germ read know 1",
+			"sections_dept": "germ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "germ read know 2",
+			"sections_dept": "germ",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "2yr anc greek i",
+			"sections_dept": "grek",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "hist 1500 - 20 c",
+			"sections_dept": "hist",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "cont glbl issues",
+			"sections_dept": "hist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "hist of canada",
+			"sections_dept": "hist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "scie & society",
+			"sections_dept": "hist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "japan since 1800",
+			"sections_dept": "hist",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "1st yr italian i",
+			"sections_dept": "ital",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "1st yr ital ii",
+			"sections_dept": "ital",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "begin japn i",
+			"sections_dept": "japn",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "begin japn ii",
+			"sections_dept": "japn",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intm japn i a",
+			"sections_dept": "japn",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intns int japn 1",
+			"sections_dept": "japn",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "biomech ii",
+			"sections_dept": "kin",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "basic korean",
+			"sections_dept": "korn",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "fam serv & litcy",
+			"sections_dept": "libr",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "matrix algebra",
+			"sections_dept": "math",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "meas thry&integr",
+			"sections_dept": "math",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "mech materials",
+			"sections_dept": "mech",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "sens & actuators",
+			"sections_dept": "mech",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "heat vent air co",
+			"sections_dept": "mech",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "immunology",
+			"sections_dept": "micb",
+			"overallMaxAudit": 8
+		},
+		{
+			"sections_title": "adv immunology",
+			"sections_dept": "micb",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "micb eco genomic",
+			"sections_dept": "micb",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "intro to mining",
+			"sections_dept": "mine",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "undg min des",
+			"sections_dept": "mine",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "surf min des",
+			"sections_dept": "mine",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "flotation",
+			"sections_dept": "mine",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "rock mech",
+			"sections_dept": "mine",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "hvy oil snd mine",
+			"sections_dept": "mine",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "met thermodyn i",
+			"sections_dept": "mtrl",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "chrmtc hrmny&vce",
+			"sections_dept": "musc",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "cmp&anl ap m mod",
+			"sections_dept": "musc",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "cmp&anl ap p ton",
+			"sections_dept": "musc",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "hist of opera i",
+			"sections_dept": "musc",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "intro philosophy",
+			"sections_dept": "phil",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "cond matter ii",
+			"sections_dept": "phys",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "brain & behviour",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "eval src evidenc",
+			"sections_dept": "rhsc",
+			"overallMaxAudit": 23
+		},
+		{
+			"sections_title": "reas & dec-mking",
+			"sections_dept": "rhsc",
+			"overallMaxAudit": 19
+		},
+		{
+			"sections_title": "meas in practice",
+			"sections_dept": "rhsc",
+			"overallMaxAudit": 19
+		},
+		{
+			"sections_title": "dev rehab prog",
+			"sections_dept": "rhsc",
+			"overallMaxAudit": 20
+		},
+		{
+			"sections_title": "rehab learning",
+			"sections_dept": "rhsc",
+			"overallMaxAudit": 17
+		},
+		{
+			"sections_title": "anlyz quant data",
+			"sections_dept": "soci",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "beginner span i",
+			"sections_dept": "span",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "beginner span ii",
+			"sections_dept": "span",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "stats health sc",
+			"sections_dept": "spph",
+			"overallMaxAudit": 7
+		},
+		{
+			"sections_title": "an meth epid res",
+			"sections_dept": "spph",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "elem stat applic",
+			"sections_dept": "stat",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "int stats applic",
+			"sections_dept": "stat",
+			"overallMaxAudit": 6
+		},
+		{
+			"sections_title": "meths stat learn",
+			"sections_dept": "stat",
+			"overallMaxAudit": 4
+		},
+		{
+			"sections_title": "time srs forcast",
+			"sections_dept": "stat",
+			"overallMaxAudit": 5
+		},
+		{
+			"sections_title": "stat meth hd bio",
+			"sections_dept": "stat",
+			"overallMaxAudit": 4
+		}
+	]
+}

@@ -1,0 +1,97 @@
+{
+	"title": "fulfilled seats gt 300 type tiered large group",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				},
+				{
+					"IS": {
+						"rooms_type": "Tiered Large Group"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_shortname",
+				"rooms_number",
+				"rooms_address",
+				"rooms_type",
+				"rooms_furniture",
+				"rooms_seats"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "CIRS",
+			"rooms_fullname": "Centre for Interactive  Research on Sustainability",
+			"rooms_number": "1250",
+			"rooms_address": "2260 West Mall, V6T 1Z4",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tablets",
+			"rooms_seats": 426
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_fullname": "Earth Sciences Building",
+			"rooms_number": "1013",
+			"rooms_address": "2207 Main Mall",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tablets",
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_fullname": "Hebb",
+			"rooms_number": "100",
+			"rooms_address": "2045 East Mall",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs",
+			"rooms_seats": 375
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_fullname": "Life Sciences Centre",
+			"rooms_number": "1001",
+			"rooms_address": "2350 Health Sciences Mall",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_fullname": "Life Sciences Centre",
+			"rooms_number": "1002",
+			"rooms_address": "2350 Health Sciences Mall",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tables/Movable Chairs",
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_fullname": "Wesbrook",
+			"rooms_number": "100",
+			"rooms_address": "6174 University Boulevard",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tablets",
+			"rooms_seats": 325
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"rooms_number": "2",
+			"rooms_address": "2194 Health Sciences Mall",
+			"rooms_type": "Tiered Large Group",
+			"rooms_furniture": "Classroom-Fixed Tablets",
+			"rooms_seats": 503
+		}
+	]
+}

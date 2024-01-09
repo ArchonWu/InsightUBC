@@ -1,0 +1,100 @@
+{
+	"title": "Complicated",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"NOT": {
+						"OR": [
+							{
+								"GT": {
+									"sections_avg": 97
+								}
+							},
+							{
+								"GT": {
+									"sections_year": 1901
+								}
+							}
+						]
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "*z*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "zool",
+			"sections_avg": 85
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 86.25
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 87.2
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 87.7
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 87.75
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 88.08
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 89.27
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 89.45
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 89.5
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 89.56
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 89.57
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 90.45
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 91.67
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 92.1
+		},
+		{
+			"sections_dept": "zool",
+			"sections_avg": 92.71
+		}
+	]
+}

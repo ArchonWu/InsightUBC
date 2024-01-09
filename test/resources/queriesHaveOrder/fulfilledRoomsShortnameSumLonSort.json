@@ -1,0 +1,460 @@
+{
+	"title": "fulfilled rooms shortname sum lon sort",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*C*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"overallSumSeats",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"overallSumSeats",
+					"rooms_seats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_seats"
+			],
+			"APPLY": [
+				{
+					"overallSumSeats": {
+						"SUM": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "SRC",
+			"overallSumSeats": 897,
+			"rooms_seats": 299
+		},
+		{
+			"rooms_shortname": "LSC",
+			"overallSumSeats": 700,
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 440,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 440,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"overallSumSeats": 426,
+			"rooms_seats": 426
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 312,
+			"rooms_seats": 78
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 300,
+			"rooms_seats": 150
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 280,
+			"rooms_seats": 280
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 275,
+			"rooms_seats": 275
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumSeats": 265,
+			"rooms_seats": 265
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 260,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 250,
+			"rooms_seats": 250
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumSeats": 250,
+			"rooms_seats": 25
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumSeats": 240,
+			"rooms_seats": 240
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 240,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumSeats": 228,
+			"rooms_seats": 114
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 216,
+			"rooms_seats": 108
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumSeats": 216,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumSeats": 200,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 200,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 192,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 181,
+			"rooms_seats": 181
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumSeats": 180,
+			"rooms_seats": 90
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 176,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 154,
+			"rooms_seats": 154
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 150,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumSeats": 136,
+			"rooms_seats": 136
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 131,
+			"rooms_seats": 131
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 130,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "LSC",
+			"overallSumSeats": 125,
+			"rooms_seats": 125
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumSeats": 123,
+			"rooms_seats": 123
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumSeats": 120,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallSumSeats": 120,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallSumSeats": 120,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 112,
+			"rooms_seats": 112
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 100,
+			"rooms_seats": 100
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 99,
+			"rooms_seats": 99
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumSeats": 96,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 96,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 96,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumSeats": 94,
+			"rooms_seats": 94
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumSeats": 84,
+			"rooms_seats": 84
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 80,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumSeats": 80,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 80,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 74,
+			"rooms_seats": 74
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 72,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 72,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 64,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 62,
+			"rooms_seats": 62
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumSeats": 60,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 60,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumSeats": 60,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 56,
+			"rooms_seats": 56
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumSeats": 55,
+			"rooms_seats": 55
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 50,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 48,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumSeats": 48,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 48,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 48,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 47,
+			"rooms_seats": 47
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 45,
+			"rooms_seats": 45
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 42,
+			"rooms_seats": 42
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 40,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumSeats": 40,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 40,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 38,
+			"rooms_seats": 38
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 36,
+			"rooms_seats": 36
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 34,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumSeats": 34,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 31,
+			"rooms_seats": 31
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 30,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 26,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 26,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 24,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumSeats": 22,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "LASR",
+			"overallSumSeats": 20,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumSeats": 20,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumSeats": 18,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumSeats": 18,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 16,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 12,
+			"rooms_seats": 12
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumSeats": 12,
+			"rooms_seats": 6
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumSeats": 10,
+			"rooms_seats": 10
+		}
+	]
+}

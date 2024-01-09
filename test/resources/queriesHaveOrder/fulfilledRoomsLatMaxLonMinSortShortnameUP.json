@@ -1,0 +1,551 @@
+{
+	"title": "fulfilled rooms lat max lon min sort shortname UP",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*C*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"overallMaxLat",
+				"overallMinLon",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_shortname",
+					"overallMaxLat",
+					"overallMinLon"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_seats"
+			],
+			"APPLY": [
+				{
+					"overallMaxLat": {
+						"MAX": "rooms_lat"
+					}
+				},
+				{
+					"overallMinLon": {
+						"MIN": "rooms_lon"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 275
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 150
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 131
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 181
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 108
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 42
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 56
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 78
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallMaxLat": 49.26826,
+			"overallMinLon": -123.25468,
+			"rooms_seats": 31
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 100
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 62
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallMaxLat": 49.26273,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 45
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallMaxLat": 49.26228,
+			"overallMinLon": -123.24718,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallMaxLat": 49.26228,
+			"overallMinLon": -123.24718,
+			"rooms_seats": 94
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallMaxLat": 49.26228,
+			"overallMinLon": -123.24718,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallMaxLat": 49.2659,
+			"overallMinLon": -123.25308,
+			"rooms_seats": 265
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallMaxLat": 49.2659,
+			"overallMinLon": -123.25308,
+			"rooms_seats": 240
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallMaxLat": 49.2659,
+			"overallMinLon": -123.25308,
+			"rooms_seats": 90
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallMaxLat": 49.2659,
+			"overallMinLon": -123.25308,
+			"rooms_seats": 114
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"overallMaxLat": 49.26207,
+			"overallMinLon": -123.25314,
+			"rooms_seats": 426
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 250
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 99
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 36
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallMaxLat": 49.26044,
+			"overallMinLon": -123.24886,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 154
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 112
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 12
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 10
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallMaxLat": 49.26766,
+			"overallMinLon": -123.2521,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "LASR",
+			"overallMaxLat": 49.26767,
+			"overallMinLon": -123.25583,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "LSC",
+			"overallMaxLat": 49.26236,
+			"overallMinLon": -123.24494,
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "LSC",
+			"overallMaxLat": 49.26236,
+			"overallMinLon": -123.24494,
+			"rooms_seats": 125
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallMaxLat": 49.26176,
+			"overallMinLon": -123.24935,
+			"rooms_seats": 123
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallMaxLat": 49.26176,
+			"overallMinLon": -123.24935,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallMaxLat": 49.26176,
+			"overallMinLon": -123.24935,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallMaxLat": 49.26176,
+			"overallMinLon": -123.24935,
+			"rooms_seats": 136
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallMaxLat": 49.26176,
+			"overallMinLon": -123.24935,
+			"rooms_seats": 84
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 47
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 74
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 6
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallMaxLat": 49.26114,
+			"overallMinLon": -123.25027,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallMaxLat": 49.26048,
+			"overallMinLon": -123.24944,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallMaxLat": 49.26048,
+			"overallMinLon": -123.24944,
+			"rooms_seats": 25
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallMaxLat": 49.26048,
+			"overallMinLon": -123.24944,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallMaxLat": 49.26048,
+			"overallMinLon": -123.24944,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallMaxLat": 49.26048,
+			"overallMinLon": -123.24944,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallMaxLat": 49.264,
+			"overallMinLon": -123.2559,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallMaxLat": 49.264,
+			"overallMinLon": -123.2559,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 280
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 38
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallMaxLat": 49.26398,
+			"overallMinLon": -123.2531,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "SRC",
+			"overallMaxLat": 49.2683,
+			"overallMinLon": -123.24894,
+			"rooms_seats": 299
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallMaxLat": 49.26867,
+			"overallMinLon": -123.25692,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallMaxLat": 49.26867,
+			"overallMinLon": -123.25692,
+			"rooms_seats": 55
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallMaxLat": 49.26867,
+			"overallMinLon": -123.25692,
+			"rooms_seats": 48
+		}
+	]
+}

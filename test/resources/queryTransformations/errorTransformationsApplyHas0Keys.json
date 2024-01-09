@@ -1,0 +1,28 @@
+{
+	"title": "error transformations apply has 0 keys",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "cpsc"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept"
+			],
+			"APPLY": [
+				{}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

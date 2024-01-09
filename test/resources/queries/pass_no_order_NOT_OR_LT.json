@@ -1,0 +1,45 @@
+{
+	"title": "NO ORDER: NOT OR LT",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"OR": [
+					{
+						"LT": {
+							"sections_avg": 98.9
+						}
+					}
+				]
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "cnps",
+			"sections_avg": 99.19
+		},
+		{
+			"sections_dept": "math",
+			"sections_avg": 99.78
+		},
+		{
+			"sections_dept": "math",
+			"sections_avg": 99.78
+		},
+		{
+			"sections_dept": "spph",
+			"sections_avg": 98.98
+		},
+		{
+			"sections_dept": "spph",
+			"sections_avg": 98.98
+		}
+	]
+}

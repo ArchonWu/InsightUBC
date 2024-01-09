@@ -1,0 +1,23 @@
+{
+  "title": "pass validate 1 AND key in WHERE",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "sections_avg": 99
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_avg",
+        "sections_dept"
+      ],
+      "ORDER": "sections_dept"
+    }
+  },
+  "errorExpected": false,
+  "expected": true
+}

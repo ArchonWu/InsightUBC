@@ -1,0 +1,20 @@
+{
+	"title": "error validate 1 invalid OR key",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"ORDER": "sections_dept"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

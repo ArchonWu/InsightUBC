@@ -1,0 +1,357 @@
+{
+	"title": "fulfilled transformations apply 2 keys",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "cpsc"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallAvg",
+				"minPass"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallAvg": {
+						"AVG": "sections_avg"
+					}
+				},
+				{
+					"minPass": {
+						"MIN": "sections_pass"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "comptn, progrmng",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.41,
+			"minPass": 6
+		},
+		{
+			"sections_title": "model comptn",
+			"sections_dept": "cpsc",
+			"overallAvg": 75.54,
+			"minPass": 5
+		},
+		{
+			"sections_title": "sftwr constructn",
+			"sections_dept": "cpsc",
+			"overallAvg": 73.99,
+			"minPass": 7
+		},
+		{
+			"sections_title": "intro comp sys",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.04,
+			"minPass": 40
+		},
+		{
+			"sections_title": "basic alg&data",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.49,
+			"minPass": 25
+		},
+		{
+			"sections_title": "dta&alg elec eng",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.46,
+			"minPass": 119
+		},
+		{
+			"sections_title": "basics comp syst",
+			"sections_dept": "cpsc",
+			"overallAvg": 69.17,
+			"minPass": 104
+		},
+		{
+			"sections_title": "comptng life sci",
+			"sections_dept": "cpsc",
+			"overallAvg": 81.84,
+			"minPass": 28
+		},
+		{
+			"sections_title": "num comp alg prb",
+			"sections_dept": "cpsc",
+			"overallAvg": 75.51,
+			"minPass": 26
+		},
+		{
+			"sections_title": "num approx/discr",
+			"sections_dept": "cpsc",
+			"overallAvg": 72.76,
+			"minPass": 14
+		},
+		{
+			"sections_title": "intr rel databse",
+			"sections_dept": "cpsc",
+			"overallAvg": 76.3,
+			"minPass": 46
+		},
+		{
+			"sections_title": "intr sftwr eng",
+			"sections_dept": "cpsc",
+			"overallAvg": 78.25,
+			"minPass": 22
+		},
+		{
+			"sections_title": "programmng langs",
+			"sections_dept": "cpsc",
+			"overallAvg": 77.25,
+			"minPass": 28
+		},
+		{
+			"sections_title": "func & logic prg",
+			"sections_dept": "cpsc",
+			"overallAvg": 80.71,
+			"minPass": 48
+		},
+		{
+			"sections_title": "comp hard&os",
+			"sections_dept": "cpsc",
+			"overallAvg": 73.98,
+			"minPass": 34
+		},
+		{
+			"sections_title": "comp graphics",
+			"sections_dept": "cpsc",
+			"overallAvg": 76.78,
+			"minPass": 17
+		},
+		{
+			"sections_title": "internet comp",
+			"sections_dept": "cpsc",
+			"overallAvg": 72.57,
+			"minPass": 40
+		},
+		{
+			"sections_title": "softwr eng proj",
+			"sections_dept": "cpsc",
+			"overallAvg": 84.52,
+			"minPass": 34
+		},
+		{
+			"sections_title": "intr alg dsgn&an",
+			"sections_dept": "cpsc",
+			"overallAvg": 70.09,
+			"minPass": 52
+		},
+		{
+			"sections_title": "artificial intel",
+			"sections_dept": "cpsc",
+			"overallAvg": 73.11,
+			"minPass": 40
+		},
+		{
+			"sections_title": "machine lrn mine",
+			"sections_dept": "cpsc",
+			"overallAvg": 75.69,
+			"minPass": 36
+		},
+		{
+			"sections_title": "hum-com interact",
+			"sections_dept": "cpsc",
+			"overallAvg": 78.47,
+			"minPass": 24
+		},
+		{
+			"sections_title": "adv rel databse",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.32,
+			"minPass": 30
+		},
+		{
+			"sections_title": "adv software eng",
+			"sections_dept": "cpsc",
+			"overallAvg": 77.11,
+			"minPass": 74
+		},
+		{
+			"sections_title": "compiler constrc",
+			"sections_dept": "cpsc",
+			"overallAvg": 80.18,
+			"minPass": 11
+		},
+		{
+			"sections_title": "adv opertng sysm",
+			"sections_dept": "cpsc",
+			"overallAvg": 70.93,
+			"minPass": 24
+		},
+		{
+			"sections_title": "distrbt'd systms",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.9,
+			"minPass": 11
+		},
+		{
+			"sections_title": "parallel comput",
+			"sections_dept": "cpsc",
+			"overallAvg": 80.51,
+			"minPass": 37
+		},
+		{
+			"sections_title": "adv alg dsgn&anl",
+			"sections_dept": "cpsc",
+			"overallAvg": 72.24,
+			"minPass": 30
+		},
+		{
+			"sections_title": "theory comptg",
+			"sections_dept": "cpsc",
+			"overallAvg": 74.91,
+			"minPass": 16
+		},
+		{
+			"sections_title": "intel systems",
+			"sections_dept": "cpsc",
+			"overallAvg": 73.01,
+			"minPass": 22
+		},
+		{
+			"sections_title": "computer vision",
+			"sections_dept": "cpsc",
+			"overallAvg": 73.93,
+			"minPass": 44
+		},
+		{
+			"sections_title": "comptr & society",
+			"sections_dept": "cpsc",
+			"overallAvg": 77.39,
+			"minPass": 42
+		},
+		{
+			"sections_title": "hmn-cp interactn",
+			"sections_dept": "cpsc",
+			"overallAvg": 78.84,
+			"minPass": 13
+		},
+		{
+			"sections_title": "alg in bioin",
+			"sections_dept": "cpsc",
+			"overallAvg": 80.86,
+			"minPass": 16
+		},
+		{
+			"sections_title": "honours thesis",
+			"sections_dept": "cpsc",
+			"overallAvg": 90.38,
+			"minPass": 4
+		},
+		{
+			"sections_title": "student seminar",
+			"sections_dept": "cpsc",
+			"overallAvg": 89.77,
+			"minPass": 6
+		},
+		{
+			"sections_title": "fund alg dsgn&an",
+			"sections_dept": "cpsc",
+			"overallAvg": 83.96,
+			"minPass": 13
+		},
+		{
+			"sections_title": "thry of automata",
+			"sections_dept": "cpsc",
+			"overallAvg": 89.77,
+			"minPass": 4
+		},
+		{
+			"sections_title": "artif intell 1",
+			"sections_dept": "cpsc",
+			"overallAvg": 82.96,
+			"minPass": 14
+		},
+		{
+			"sections_title": "computl ling 1",
+			"sections_dept": "cpsc",
+			"overallAvg": 88.08,
+			"minPass": 6
+		},
+		{
+			"sections_title": "software eng",
+			"sections_dept": "cpsc",
+			"overallAvg": 87.44,
+			"minPass": 6
+		},
+		{
+			"sections_title": "prog lang princ",
+			"sections_dept": "cpsc",
+			"overallAvg": 86.02,
+			"minPass": 5
+		},
+		{
+			"sections_title": "intgrt sys desgn",
+			"sections_dept": "cpsc",
+			"overallAvg": 82.7,
+			"minPass": 3
+		},
+		{
+			"sections_title": "comput robotics",
+			"sections_dept": "cpsc",
+			"overallAvg": 81.8,
+			"minPass": 8
+		},
+		{
+			"sections_title": "para algs & arch",
+			"sections_dept": "cpsc",
+			"overallAvg": 85.06,
+			"minPass": 7
+		},
+		{
+			"sections_title": "artif intell 2",
+			"sections_dept": "cpsc",
+			"overallAvg": 85.16,
+			"minPass": 7
+		},
+		{
+			"sections_title": "comp comm protcl",
+			"sections_dept": "cpsc",
+			"overallAvg": 87.48,
+			"minPass": 9
+		},
+		{
+			"sections_title": "machine learn i",
+			"sections_dept": "cpsc",
+			"overallAvg": 85.87,
+			"minPass": 14
+		},
+		{
+			"sections_title": "phy user intfc",
+			"sections_dept": "cpsc",
+			"overallAvg": 85.78,
+			"minPass": 4
+		},
+		{
+			"sections_title": "hmn-cmpt intract",
+			"sections_dept": "cpsc",
+			"overallAvg": 84.31,
+			"minPass": 6
+		},
+		{
+			"sections_title": "info visualizatn",
+			"sections_dept": "cpsc",
+			"overallAvg": 88.58,
+			"minPass": 17
+		},
+		{
+			"sections_title": "m.sc major essay",
+			"sections_dept": "cpsc",
+			"overallAvg": 85.75,
+			"minPass": 1
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"title": "error keys in columns",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*c*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_seats",
+				"overallSumAudit",
+				"overallSumLon"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"overallSumLon",
+					"rooms_seats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_name"
+			],
+			"APPLY": [
+				{
+					"overallSumLon": {
+						"SUM": "rooms_lon"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

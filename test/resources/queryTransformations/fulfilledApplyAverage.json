@@ -1,0 +1,785 @@
+{
+	"title": "fulfilled apply average",
+	"input": {
+		"WHERE": {
+			"NOT": {
+				"EQ": {
+					"sections_year": 1900
+				}
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallAvgYear"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallAvgYear": {
+						"AVG": "sections_year"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "aanb",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "adhe",
+			"overallAvgYear": 2012.23
+		},
+		{
+			"sections_dept": "anat",
+			"overallAvgYear": 2012.33
+		},
+		{
+			"sections_dept": "anth",
+			"overallAvgYear": 2011.92
+		},
+		{
+			"sections_dept": "apbi",
+			"overallAvgYear": 2012.36
+		},
+		{
+			"sections_dept": "appp",
+			"overallAvgYear": 2015.25
+		},
+		{
+			"sections_dept": "apsc",
+			"overallAvgYear": 2010.96
+		},
+		{
+			"sections_dept": "arbc",
+			"overallAvgYear": 2014.5
+		},
+		{
+			"sections_dept": "arch",
+			"overallAvgYear": 2011.31
+		},
+		{
+			"sections_dept": "arcl",
+			"overallAvgYear": 2014.6
+		},
+		{
+			"sections_dept": "arst",
+			"overallAvgYear": 2011.85
+		},
+		{
+			"sections_dept": "arth",
+			"overallAvgYear": 2011.12
+		},
+		{
+			"sections_dept": "asia",
+			"overallAvgYear": 2011.71
+		},
+		{
+			"sections_dept": "asic",
+			"overallAvgYear": 2011.56
+		},
+		{
+			"sections_dept": "astr",
+			"overallAvgYear": 2011.61
+		},
+		{
+			"sections_dept": "astu",
+			"overallAvgYear": 2011.46
+		},
+		{
+			"sections_dept": "atsc",
+			"overallAvgYear": 2011.05
+		},
+		{
+			"sections_dept": "audi",
+			"overallAvgYear": 2011.09
+		},
+		{
+			"sections_dept": "ba",
+			"overallAvgYear": 2013.7
+		},
+		{
+			"sections_dept": "baac",
+			"overallAvgYear": 2011.75
+		},
+		{
+			"sections_dept": "babs",
+			"overallAvgYear": 2012.62
+		},
+		{
+			"sections_dept": "baen",
+			"overallAvgYear": 2012.37
+		},
+		{
+			"sections_dept": "bafi",
+			"overallAvgYear": 2011.48
+		},
+		{
+			"sections_dept": "bahr",
+			"overallAvgYear": 2011.76
+		},
+		{
+			"sections_dept": "bait",
+			"overallAvgYear": 2012.09
+		},
+		{
+			"sections_dept": "bala",
+			"overallAvgYear": 2011.44
+		},
+		{
+			"sections_dept": "bama",
+			"overallAvgYear": 2012.81
+		},
+		{
+			"sections_dept": "bams",
+			"overallAvgYear": 2011.94
+		},
+		{
+			"sections_dept": "bapa",
+			"overallAvgYear": 2012.67
+		},
+		{
+			"sections_dept": "basc",
+			"overallAvgYear": 2012.97
+		},
+		{
+			"sections_dept": "basm",
+			"overallAvgYear": 2011.58
+		},
+		{
+			"sections_dept": "baul",
+			"overallAvgYear": 2011.44
+		},
+		{
+			"sections_dept": "bioc",
+			"overallAvgYear": 2011.93
+		},
+		{
+			"sections_dept": "biof",
+			"overallAvgYear": 2011.91
+		},
+		{
+			"sections_dept": "biol",
+			"overallAvgYear": 2011.12
+		},
+		{
+			"sections_dept": "bmeg",
+			"overallAvgYear": 2013.24
+		},
+		{
+			"sections_dept": "bota",
+			"overallAvgYear": 2011.2
+		},
+		{
+			"sections_dept": "busi",
+			"overallAvgYear": 2011.16
+		},
+		{
+			"sections_dept": "caps",
+			"overallAvgYear": 2013.98
+		},
+		{
+			"sections_dept": "ccst",
+			"overallAvgYear": 2011
+		},
+		{
+			"sections_dept": "ceen",
+			"overallAvgYear": 2012.33
+		},
+		{
+			"sections_dept": "cell",
+			"overallAvgYear": 2011.21
+		},
+		{
+			"sections_dept": "cens",
+			"overallAvgYear": 2010.87
+		},
+		{
+			"sections_dept": "chbe",
+			"overallAvgYear": 2011.25
+		},
+		{
+			"sections_dept": "chem",
+			"overallAvgYear": 2012.44
+		},
+		{
+			"sections_dept": "chil",
+			"overallAvgYear": 2011.54
+		},
+		{
+			"sections_dept": "chin",
+			"overallAvgYear": 2011.88
+		},
+		{
+			"sections_dept": "cics",
+			"overallAvgYear": 2011.43
+		},
+		{
+			"sections_dept": "civl",
+			"overallAvgYear": 2011.32
+		},
+		{
+			"sections_dept": "clch",
+			"overallAvgYear": 2014.71
+		},
+		{
+			"sections_dept": "clst",
+			"overallAvgYear": 2011.59
+		},
+		{
+			"sections_dept": "cnps",
+			"overallAvgYear": 2011.52
+		},
+		{
+			"sections_dept": "cnrs",
+			"overallAvgYear": 2011.53
+		},
+		{
+			"sections_dept": "cnto",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "coec",
+			"overallAvgYear": 2015.18
+		},
+		{
+			"sections_dept": "cogs",
+			"overallAvgYear": 2011.16
+		},
+		{
+			"sections_dept": "cohr",
+			"overallAvgYear": 2011.44
+		},
+		{
+			"sections_dept": "comm",
+			"overallAvgYear": 2011.95
+		},
+		{
+			"sections_dept": "cons",
+			"overallAvgYear": 2011.31
+		},
+		{
+			"sections_dept": "cpen",
+			"overallAvgYear": 2015.04
+		},
+		{
+			"sections_dept": "cpsc",
+			"overallAvgYear": 2011.35
+		},
+		{
+			"sections_dept": "crwr",
+			"overallAvgYear": 2013.63
+		},
+		{
+			"sections_dept": "dani",
+			"overallAvgYear": 2014.38
+		},
+		{
+			"sections_dept": "dent",
+			"overallAvgYear": 2012.16
+		},
+		{
+			"sections_dept": "dhyg",
+			"overallAvgYear": 2011.5
+		},
+		{
+			"sections_dept": "eced",
+			"overallAvgYear": 2012.08
+		},
+		{
+			"sections_dept": "econ",
+			"overallAvgYear": 2011.38
+		},
+		{
+			"sections_dept": "edcp",
+			"overallAvgYear": 2012.58
+		},
+		{
+			"sections_dept": "edst",
+			"overallAvgYear": 2012.16
+		},
+		{
+			"sections_dept": "educ",
+			"overallAvgYear": 2011.82
+		},
+		{
+			"sections_dept": "eece",
+			"overallAvgYear": 2011.42
+		},
+		{
+			"sections_dept": "elec",
+			"overallAvgYear": 2015.03
+		},
+		{
+			"sections_dept": "ends",
+			"overallAvgYear": 2011.44
+		},
+		{
+			"sections_dept": "engl",
+			"overallAvgYear": 2011.26
+		},
+		{
+			"sections_dept": "enph",
+			"overallAvgYear": 2012.79
+		},
+		{
+			"sections_dept": "envr",
+			"overallAvgYear": 2011.89
+		},
+		{
+			"sections_dept": "eosc",
+			"overallAvgYear": 2011.28
+		},
+		{
+			"sections_dept": "epse",
+			"overallAvgYear": 2011.67
+		},
+		{
+			"sections_dept": "etec",
+			"overallAvgYear": 2011.63
+		},
+		{
+			"sections_dept": "fhis",
+			"overallAvgYear": 2014.5
+		},
+		{
+			"sections_dept": "fipr",
+			"overallAvgYear": 2011.87
+		},
+		{
+			"sections_dept": "fish",
+			"overallAvgYear": 2011.77
+		},
+		{
+			"sections_dept": "fist",
+			"overallAvgYear": 2011.6
+		},
+		{
+			"sections_dept": "fmst",
+			"overallAvgYear": 2011.41
+		},
+		{
+			"sections_dept": "fnel",
+			"overallAvgYear": 2015.1
+		},
+		{
+			"sections_dept": "fnh",
+			"overallAvgYear": 2011.29
+		},
+		{
+			"sections_dept": "fnis",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "food",
+			"overallAvgYear": 2011.79
+		},
+		{
+			"sections_dept": "fopr",
+			"overallAvgYear": 2011.3
+		},
+		{
+			"sections_dept": "fre",
+			"overallAvgYear": 2011.73
+		},
+		{
+			"sections_dept": "fren",
+			"overallAvgYear": 2011.94
+		},
+		{
+			"sections_dept": "frst",
+			"overallAvgYear": 2011.54
+		},
+		{
+			"sections_dept": "gbpr",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "geob",
+			"overallAvgYear": 2012.07
+		},
+		{
+			"sections_dept": "geog",
+			"overallAvgYear": 2011.2
+		},
+		{
+			"sections_dept": "germ",
+			"overallAvgYear": 2011.25
+		},
+		{
+			"sections_dept": "gpp",
+			"overallAvgYear": 2015.17
+		},
+		{
+			"sections_dept": "grek",
+			"overallAvgYear": 2014.71
+		},
+		{
+			"sections_dept": "grsj",
+			"overallAvgYear": 2014.16
+		},
+		{
+			"sections_dept": "gsat",
+			"overallAvgYear": 2012.64
+		},
+		{
+			"sections_dept": "hebr",
+			"overallAvgYear": 2014.67
+		},
+		{
+			"sections_dept": "hgse",
+			"overallAvgYear": 2014.29
+		},
+		{
+			"sections_dept": "hinu",
+			"overallAvgYear": 2011
+		},
+		{
+			"sections_dept": "hist",
+			"overallAvgYear": 2011.43
+		},
+		{
+			"sections_dept": "hunu",
+			"overallAvgYear": 2011.31
+		},
+		{
+			"sections_dept": "iar",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "igen",
+			"overallAvgYear": 2013.54
+		},
+		{
+			"sections_dept": "info",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "isci",
+			"overallAvgYear": 2011.92
+		},
+		{
+			"sections_dept": "ital",
+			"overallAvgYear": 2011.38
+		},
+		{
+			"sections_dept": "itst",
+			"overallAvgYear": 2012.1
+		},
+		{
+			"sections_dept": "iwme",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "japn",
+			"overallAvgYear": 2011.14
+		},
+		{
+			"sections_dept": "jrnl",
+			"overallAvgYear": 2010.95
+		},
+		{
+			"sections_dept": "kin",
+			"overallAvgYear": 2013.62
+		},
+		{
+			"sections_dept": "korn",
+			"overallAvgYear": 2011.66
+		},
+		{
+			"sections_dept": "lais",
+			"overallAvgYear": 2015.5
+		},
+		{
+			"sections_dept": "larc",
+			"overallAvgYear": 2011.61
+		},
+		{
+			"sections_dept": "laso",
+			"overallAvgYear": 2012
+		},
+		{
+			"sections_dept": "last",
+			"overallAvgYear": 2011.25
+		},
+		{
+			"sections_dept": "latn",
+			"overallAvgYear": 2014.7
+		},
+		{
+			"sections_dept": "law",
+			"overallAvgYear": 2011.84
+		},
+		{
+			"sections_dept": "lfs",
+			"overallAvgYear": 2012.43
+		},
+		{
+			"sections_dept": "libe",
+			"overallAvgYear": 2010.7
+		},
+		{
+			"sections_dept": "libr",
+			"overallAvgYear": 2011.83
+		},
+		{
+			"sections_dept": "ling",
+			"overallAvgYear": 2011.32
+		},
+		{
+			"sections_dept": "lled",
+			"overallAvgYear": 2012.09
+		},
+		{
+			"sections_dept": "math",
+			"overallAvgYear": 2011.18
+		},
+		{
+			"sections_dept": "mdvl",
+			"overallAvgYear": 2011.4
+		},
+		{
+			"sections_dept": "mech",
+			"overallAvgYear": 2011.31
+		},
+		{
+			"sections_dept": "medg",
+			"overallAvgYear": 2011
+		},
+		{
+			"sections_dept": "medi",
+			"overallAvgYear": 2011.29
+		},
+		{
+			"sections_dept": "micb",
+			"overallAvgYear": 2011.37
+		},
+		{
+			"sections_dept": "midw",
+			"overallAvgYear": 2012.78
+		},
+		{
+			"sections_dept": "mine",
+			"overallAvgYear": 2011.88
+		},
+		{
+			"sections_dept": "mrne",
+			"overallAvgYear": 2011.4
+		},
+		{
+			"sections_dept": "mtrl",
+			"overallAvgYear": 2011.22
+		},
+		{
+			"sections_dept": "musc",
+			"overallAvgYear": 2010.96
+		},
+		{
+			"sections_dept": "name",
+			"overallAvgYear": 2014
+		},
+		{
+			"sections_dept": "nest",
+			"overallAvgYear": 2011.27
+		},
+		{
+			"sections_dept": "nrsc",
+			"overallAvgYear": 2011.1
+		},
+		{
+			"sections_dept": "nurs",
+			"overallAvgYear": 2011.85
+		},
+		{
+			"sections_dept": "obst",
+			"overallAvgYear": 2011.57
+		},
+		{
+			"sections_dept": "onco",
+			"overallAvgYear": 2011
+		},
+		{
+			"sections_dept": "path",
+			"overallAvgYear": 2011.07
+		},
+		{
+			"sections_dept": "pcth",
+			"overallAvgYear": 2011.08
+		},
+		{
+			"sections_dept": "pers",
+			"overallAvgYear": 2012.96
+		},
+		{
+			"sections_dept": "phar",
+			"overallAvgYear": 2011.38
+		},
+		{
+			"sections_dept": "phil",
+			"overallAvgYear": 2011.13
+		},
+		{
+			"sections_dept": "phrm",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "phth",
+			"overallAvgYear": 2013.67
+		},
+		{
+			"sections_dept": "phys",
+			"overallAvgYear": 2011.87
+		},
+		{
+			"sections_dept": "plan",
+			"overallAvgYear": 2012.11
+		},
+		{
+			"sections_dept": "poli",
+			"overallAvgYear": 2011.81
+		},
+		{
+			"sections_dept": "pols",
+			"overallAvgYear": 2011.73
+		},
+		{
+			"sections_dept": "port",
+			"overallAvgYear": 2013.04
+		},
+		{
+			"sections_dept": "psyc",
+			"overallAvgYear": 2011.19
+		},
+		{
+			"sections_dept": "punj",
+			"overallAvgYear": 2011.16
+		},
+		{
+			"sections_dept": "relg",
+			"overallAvgYear": 2012.4
+		},
+		{
+			"sections_dept": "rgla",
+			"overallAvgYear": 2011.5
+		},
+		{
+			"sections_dept": "rhsc",
+			"overallAvgYear": 2011.16
+		},
+		{
+			"sections_dept": "rmes",
+			"overallAvgYear": 2011.53
+		},
+		{
+			"sections_dept": "rmst",
+			"overallAvgYear": 2011.6
+		},
+		{
+			"sections_dept": "rsot",
+			"overallAvgYear": 2011.24
+		},
+		{
+			"sections_dept": "russ",
+			"overallAvgYear": 2012.31
+		},
+		{
+			"sections_dept": "sans",
+			"overallAvgYear": 2011.8
+		},
+		{
+			"sections_dept": "scan",
+			"overallAvgYear": 2012.63
+		},
+		{
+			"sections_dept": "scie",
+			"overallAvgYear": 2012.93
+		},
+		{
+			"sections_dept": "soci",
+			"overallAvgYear": 2011.68
+		},
+		{
+			"sections_dept": "soil",
+			"overallAvgYear": 2013.09
+		},
+		{
+			"sections_dept": "sowk",
+			"overallAvgYear": 2011.74
+		},
+		{
+			"sections_dept": "span",
+			"overallAvgYear": 2011.85
+		},
+		{
+			"sections_dept": "spha",
+			"overallAvgYear": 2011.58
+		},
+		{
+			"sections_dept": "spph",
+			"overallAvgYear": 2012.01
+		},
+		{
+			"sections_dept": "stat",
+			"overallAvgYear": 2011.37
+		},
+		{
+			"sections_dept": "sts",
+			"overallAvgYear": 2013.33
+		},
+		{
+			"sections_dept": "surg",
+			"overallAvgYear": 2011.87
+		},
+		{
+			"sections_dept": "swed",
+			"overallAvgYear": 2014
+		},
+		{
+			"sections_dept": "thtr",
+			"overallAvgYear": 2011.72
+		},
+		{
+			"sections_dept": "udes",
+			"overallAvgYear": 2014.5
+		},
+		{
+			"sections_dept": "ufor",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "urst",
+			"overallAvgYear": 2011.5
+		},
+		{
+			"sections_dept": "ursy",
+			"overallAvgYear": 2015
+		},
+		{
+			"sections_dept": "vant",
+			"overallAvgYear": 2014.71
+		},
+		{
+			"sections_dept": "visa",
+			"overallAvgYear": 2011.52
+		},
+		{
+			"sections_dept": "wood",
+			"overallAvgYear": 2011.73
+		},
+		{
+			"sections_dept": "wrds",
+			"overallAvgYear": 2014.5
+		},
+		{
+			"sections_dept": "zool",
+			"overallAvgYear": 2010.24
+		}
+	]
+}

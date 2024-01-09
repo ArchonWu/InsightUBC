@@ -1,0 +1,306 @@
+{
+	"title": "fulfilled order audit (*)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "*e*"
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "*c*"
+					}
+				},
+				{
+					"GT": {
+						"sections_audit": 4
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_id",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit"
+			],
+			"ORDER": "sections_audit"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_uuid": "45689",
+			"sections_id": "457",
+			"sections_title": "proc synthesis",
+			"sections_instructor": "bagherzadeh hosseini, seyyed a",
+			"sections_dept": "chbe",
+			"sections_year": 2015,
+			"sections_avg": 80.81,
+			"sections_pass": 48,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "74383",
+			"sections_id": "355",
+			"sections_title": "intro int trade",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 73.46,
+			"sections_pass": 353,
+			"sections_fail": 18,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "11531",
+			"sections_id": "370",
+			"sections_title": "b-c anly&proj ev",
+			"sections_instructor": "chapple, clive",
+			"sections_dept": "econ",
+			"sections_year": 2014,
+			"sections_avg": 71.28,
+			"sections_pass": 128,
+			"sections_fail": 4,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "11532",
+			"sections_id": "370",
+			"sections_title": "b-c anly&proj ev",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 71.28,
+			"sections_pass": 128,
+			"sections_fail": 4,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "52337",
+			"sections_id": "370",
+			"sections_title": "b-c anly&proj ev",
+			"sections_instructor": "chapple, clive",
+			"sections_dept": "econ",
+			"sections_year": 2010,
+			"sections_avg": 70.86,
+			"sections_pass": 102,
+			"sections_fail": 4,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "52338",
+			"sections_id": "370",
+			"sections_title": "b-c anly&proj ev",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 70.86,
+			"sections_pass": 102,
+			"sections_fail": 4,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "64728",
+			"sections_id": "568",
+			"sections_title": "curr hist contxt",
+			"sections_instructor": "pinar, william",
+			"sections_dept": "edcp",
+			"sections_year": 2011,
+			"sections_avg": 94.17,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "64729",
+			"sections_id": "568",
+			"sections_title": "curr hist contxt",
+			"sections_instructor": "",
+			"sections_dept": "edcp",
+			"sections_year": 1900,
+			"sections_avg": 94.17,
+			"sections_pass": 6,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "40328",
+			"sections_id": "504",
+			"sections_title": "",
+			"sections_instructor": "kelly, deirdre",
+			"sections_dept": "educ",
+			"sections_year": 2010,
+			"sections_avg": 88.75,
+			"sections_pass": 4,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "40329",
+			"sections_id": "504",
+			"sections_title": "",
+			"sections_instructor": "",
+			"sections_dept": "educ",
+			"sections_year": 1900,
+			"sections_avg": 88.75,
+			"sections_pass": 4,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "10253",
+			"sections_id": "565",
+			"sections_title": "comm networks",
+			"sections_instructor": "wong, wai-shuen vincent",
+			"sections_dept": "eece",
+			"sections_year": 2009,
+			"sections_avg": 82.36,
+			"sections_pass": 11,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "10254",
+			"sections_id": "565",
+			"sections_title": "comm networks",
+			"sections_instructor": "",
+			"sections_dept": "eece",
+			"sections_year": 1900,
+			"sections_avg": 82.36,
+			"sections_pass": 11,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "45278",
+			"sections_id": "473",
+			"sections_title": "heat vent air co",
+			"sections_instructor": "",
+			"sections_dept": "mech",
+			"sections_year": 1900,
+			"sections_avg": 80,
+			"sections_pass": 46,
+			"sections_fail": 0,
+			"sections_audit": 5
+		},
+		{
+			"sections_uuid": "63616",
+			"sections_id": "376",
+			"sections_title": "cmpt flwsh&fluid",
+			"sections_instructor": "",
+			"sections_dept": "chbe",
+			"sections_year": 1900,
+			"sections_avg": 84.09,
+			"sections_pass": 75,
+			"sections_fail": 0,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "21907",
+			"sections_id": "102",
+			"sections_title": "princpl macrecon",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 68.98,
+			"sections_pass": 1827,
+			"sections_fail": 135,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "90960",
+			"sections_id": "345",
+			"sections_title": "money & banking",
+			"sections_instructor": "newman, geoffrey",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 67.26,
+			"sections_pass": 117,
+			"sections_fail": 13,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "90963",
+			"sections_id": "345",
+			"sections_title": "money & banking",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 70.77,
+			"sections_pass": 379,
+			"sections_fail": 29,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "11631",
+			"sections_id": "560",
+			"sections_title": "labour economics",
+			"sections_instructor": "green, david",
+			"sections_dept": "econ",
+			"sections_year": 2014,
+			"sections_avg": 93.33,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "11632",
+			"sections_id": "560",
+			"sections_title": "labour economics",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 93.33,
+			"sections_pass": 3,
+			"sections_fail": 0,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "87260",
+			"sections_id": "504",
+			"sections_title": "",
+			"sections_instructor": "metcalfe, amy",
+			"sections_dept": "educ",
+			"sections_year": 2013,
+			"sections_avg": 84.14,
+			"sections_pass": 7,
+			"sections_fail": 0,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "87261",
+			"sections_id": "504",
+			"sections_title": "",
+			"sections_instructor": "",
+			"sections_dept": "educ",
+			"sections_year": 1900,
+			"sections_avg": 84.14,
+			"sections_pass": 7,
+			"sections_fail": 0,
+			"sections_audit": 6
+		},
+		{
+			"sections_uuid": "45690",
+			"sections_id": "457",
+			"sections_title": "proc synthesis",
+			"sections_instructor": "",
+			"sections_dept": "chbe",
+			"sections_year": 1900,
+			"sections_avg": 80.81,
+			"sections_pass": 48,
+			"sections_fail": 0,
+			"sections_audit": 9
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"title": "error group rooms name",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "*c*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallSumAudit"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"overallSumAudit",
+					"sections_dept"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_name"
+			],
+			"APPLY": [
+				{
+					"overallSumAudit": {
+						"SUM": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

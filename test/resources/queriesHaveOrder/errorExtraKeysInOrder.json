@@ -1,0 +1,37 @@
+{
+	"title": "error extra keys in order",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "*c*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallSumAudit"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"hello": "hi",
+				"keys": [
+					"overallSumAudit"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallSumAudit": {
+						"SUM": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

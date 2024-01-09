@@ -1,0 +1,1679 @@
+{
+	"title": "fulfilled many columns 1 apply",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallMaxAudit",
+				"sections_instructor",
+				"sections_year",
+				"sections_fail"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept",
+				"sections_instructor",
+				"sections_year",
+				"sections_fail"
+			],
+			"APPLY": [
+				{
+					"overallMaxAudit": {
+						"MAX": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "dev wkshp/sem",
+			"sections_dept": "adhe",
+			"overallMaxAudit": 0,
+			"sections_instructor": "bishundayal, deonarine",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eng mtls lab",
+			"sections_dept": "apsc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wassink, berend",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eng mtls lab",
+			"sections_dept": "apsc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wassink, berend",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eng mtls lab",
+			"sections_dept": "apsc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wassink, berend",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "aud&non-txt arch",
+			"sections_dept": "arst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2008,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "aud&non-txt arch",
+			"sections_dept": "arst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "audi prctcm iv",
+			"sections_dept": "audi",
+			"overallMaxAudit": 0,
+			"sections_instructor": "adelman, sharon",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "audi prctcm iv",
+			"sections_dept": "audi",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "med tech project",
+			"sections_dept": "bmeg",
+			"overallMaxAudit": 0,
+			"sections_instructor": "hodgson, antony",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "med tech project",
+			"sections_dept": "bmeg",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thermodynamics",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gopaluni, bhushan",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thermodynamics",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "math operations",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gopaluni, bhushan",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "math operations",
+			"sections_dept": "chbe",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dynam struct 2",
+			"sections_dept": "civl",
+			"overallMaxAudit": 1,
+			"sections_instructor": "ventura, carlos estuardo",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dynam struct 2",
+			"sections_dept": "civl",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "schl counselling",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "owens, rhea",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "schl counselling",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "counsl adolescnt",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "weinberg, mark",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "counsl adolescnt",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "career planning",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "cox, daniel",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "career planning",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "neault, roberta a",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "career planning",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prgm devl cnsl",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "cox, daniel",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prgm devl cnsl",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "carter, john",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prgm devl cnsl",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "",
+			"sections_dept": "cnps",
+			"overallMaxAudit": 0,
+			"sections_instructor": "munteanu, mircea",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prep writ career",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "campbell, deborah",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prep writ career",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "medved, maureen",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "campbell, deborah",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "taylor, timothy",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "maillard, keith",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "galloway, steve",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "grady, albert wayne",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "maillard, keith",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thesis",
+			"sections_dept": "crwr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "maillard, keith",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ds tec ii sc c&p",
+			"sections_dept": "edcp",
+			"overallMaxAudit": 0,
+			"sections_instructor": "magee, theresa",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ds tec ii sc c&p",
+			"sections_dept": "edcp",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fn & educ change",
+			"sections_dept": "edst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "marker, michael",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fn & educ change",
+			"sections_dept": "edst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "adlt edu pract",
+			"sections_dept": "edst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "vanwynsberghe, robert",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "adlt edu pract",
+			"sections_dept": "edst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "res mthd in educ",
+			"sections_dept": "educ",
+			"overallMaxAudit": 0,
+			"sections_instructor": "morgan, tannis",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "res mthd in educ",
+			"sections_dept": "educ",
+			"overallMaxAudit": 0,
+			"sections_instructor": "adler, james douglas;scott, sandra",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "multimedia sys",
+			"sections_dept": "eece",
+			"overallMaxAudit": 0,
+			"sections_instructor": "coria, lino",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "multimedia sys",
+			"sections_dept": "eece",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tch'g hghly able",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "porath, marion",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tch'g hghly able",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro excp child",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "stockman, james",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro excp child",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro excp child",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gaster, sean",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro excp child",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "romero, amber",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tchg st visl imp",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2008,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tchg st visl imp",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ed prg hghly abl",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "porath, marion",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ed prg hghly abl",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "augmt&alt comm",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "mceachern hughes, tammy",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "augmt&alt comm",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tech for vis imp",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "levinson, tami",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tech for vis imp",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "assess lrn diffi",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "cole, kenneth",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "assess lrn diffi",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "assess lrn diffi",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "cole, kenneth",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "classroom mgmt",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "ervin, ruth",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "classroom mgmt",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "classroom mgmt",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "smith, gillian",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "surv bhvr dis ch",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "champion, kathleen",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "surv bhvr dis ch",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "grow, laura",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "grow, laura",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wilk, diana",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "educ stds autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "grow, laura",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intr stat rs edu",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "hn dev: inf-adlt",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "porath, marion",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "able&creatv lrnr",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "porath, marion",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "able&creatv lrnr",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dev el sk df&hrd",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "cannon, joanna",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dev el sk df&hrd",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cur dev e df&hrd",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2008,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cur dev e df&hrd",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "specific lrn dis",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "mcquarrie, maureen",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "specific lrn dis",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "basic princ meas",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "basic princ meas",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "basic princ meas",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "chan, eric",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "basic princ meas",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "acad assess schl",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "amaral, deborah;ford, laurie",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "acad assess schl",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "sem in autism",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "grow, laura",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thy cognt assess",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "ford, laurie",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "thy cognt assess",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dev neuropsych",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "weber, rachel",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "dev neuropsych",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "exp des anl ed",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wu, amery",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "exp des anl ed",
+			"sections_dept": "epse",
+			"overallMaxAudit": 1,
+			"sections_instructor": "wu, amery",
+			"sections_year": 2016,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "exp des anl ed",
+			"sections_dept": "epse",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "exp des anl ed",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cor des ed res",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cor des ed res",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishor, nand",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cor des ed res",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "coll&uni teachng",
+			"sections_dept": "epse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "porath, marion",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "indig, tech&ed",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "marker, michael",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "indig, tech&ed",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "indig, tech&ed",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "marker, michael",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "indig, tech&ed",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "marker, michael",
+			"sections_year": 2016,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "curric issu",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "feng, francis",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "curric issu",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "petrina, stephen",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tech math sci",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "milner-bolotin, marina",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tech math sci",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "tech math sci",
+			"sections_dept": "etec",
+			"overallMaxAudit": 0,
+			"sections_instructor": "milner-bolotin, marina",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "mo pict prod i",
+			"sections_dept": "fipr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wenzek, rob",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "mo pict prod i",
+			"sections_dept": "fipr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ds intl forstry",
+			"sections_dept": "frst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "timko, joleen",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ds intl forstry",
+			"sections_dept": "frst",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "islnd wild mgmt",
+			"sections_dept": "hgse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "islnd wild mgmt",
+			"sections_dept": "hgse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "islnd wild mgmt",
+			"sections_dept": "hgse",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2016,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "kin project",
+			"sections_dept": "kin",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "phyl asp phy act",
+			"sections_dept": "kin",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "phyl asp phy act",
+			"sections_dept": "kin",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "phyl asp phy act",
+			"sections_dept": "kin",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "acad libraries",
+			"sections_dept": "libr",
+			"overallMaxAudit": 1,
+			"sections_instructor": "farrell, adam",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "acad libraries",
+			"sections_dept": "libr",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algebra ii",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "karu, kalle",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algebra ii",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "functional analy",
+			"sections_dept": "math",
+			"overallMaxAudit": 1,
+			"sections_instructor": "murugan, mathav",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "functional analy",
+			"sections_dept": "math",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prt diff equa i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wei, juncheng",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "prt diff equa i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "diff geometry i",
+			"sections_dept": "math",
+			"overallMaxAudit": 1,
+			"sections_instructor": "fraser, ailana",
+			"sections_year": 2016,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "diff geometry i",
+			"sections_dept": "math",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algb topology i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gomez, jose",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algb topology i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algb geometry i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "karu, kalle",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "algb geometry i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "lie theory i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gordon, julia yulia",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "lie theory i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "harmonic anal i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "laba, izabella",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "harmonic anal i",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "probability ii",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "nachmias, asaf",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "probability ii",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "msc major essay",
+			"sections_dept": "math",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cnsl mat cr prov",
+			"sections_dept": "midw",
+			"overallMaxAudit": 0,
+			"sections_instructor": "mcrae, lorna",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cnsl mat cr prov",
+			"sections_dept": "midw",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "seminar",
+			"sections_dept": "mine",
+			"overallMaxAudit": 0,
+			"sections_instructor": "veiga, marcello",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "seminar",
+			"sections_dept": "mine",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "mgmt sc meth",
+			"sections_dept": "mine",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "mgmt sc meth",
+			"sections_dept": "mine",
+			"overallMaxAudit": 0,
+			"sections_instructor": "dunbar, w scott",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "mgmt sc meth",
+			"sections_dept": "mine",
+			"overallMaxAudit": 0,
+			"sections_instructor": "dunbar, w scott",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "hydrmtllgcl rctr",
+			"sections_dept": "mtrl",
+			"overallMaxAudit": 0,
+			"sections_instructor": "dixon, david",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "hydrmtllgcl rctr",
+			"sections_dept": "mtrl",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "orch repertoire",
+			"sections_dept": "musc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "girard, jonathan",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "orch repertoire",
+			"sections_dept": "musc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ubc chamb string",
+			"sections_dept": "musc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "girard, jonathan",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ubc chamb string",
+			"sections_dept": "musc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "brew, nancy",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "krist, jennifer",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "harding, jillian",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "krist, jennifer;mccuaig, fairleth",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "cl pro prim care",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "brew, nancy",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fam nrs pract",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "krist, jennifer",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fam nrs pract",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fam nrs pract",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fam nrs pract",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "fam nrs pract",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eth&profl issues",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "burrows, marlene",
+			"sections_year": 2016,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eth&profl issues",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eth&profl issues",
+			"sections_dept": "nurs",
+			"overallMaxAudit": 0,
+			"sections_instructor": "brew, nancy",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "ms thesis",
+			"sections_dept": "pcth",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "admn of injectns",
+			"sections_dept": "phar",
+			"overallMaxAudit": 0,
+			"sections_instructor": "lalji, fawziah;seto, katherine",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "log & crit think",
+			"sections_dept": "phil",
+			"overallMaxAudit": 0,
+			"sections_instructor": "jackson, howard",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "clin make iv",
+			"sections_dept": "phth",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "clin make iv",
+			"sections_dept": "phth",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "quant fld theory",
+			"sections_dept": "phys",
+			"overallMaxAudit": 0,
+			"sections_instructor": "stamp, philip c",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "quant fld theory",
+			"sections_dept": "phys",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "nat resrce mngmt",
+			"sections_dept": "plan",
+			"overallMaxAudit": 0,
+			"sections_instructor": "dorcey, anthony h j",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "nat resrce mngmt",
+			"sections_dept": "plan",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "health psych",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "de longis, anita",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "health psych",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eth & prof clin",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "sochting, ingrid",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "eth & prof clin",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro psychthrpy",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "wagner, john",
+			"sections_year": 2007,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "intro psychthrpy",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "masters thesis",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "masters thesis",
+			"sections_dept": "psyc",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "social analysis",
+			"sections_dept": "sowk",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gill, deana",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "social analysis",
+			"sections_dept": "sowk",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "social analysis",
+			"sections_dept": "sowk",
+			"overallMaxAudit": 0,
+			"sections_instructor": "bryson, stephanie;o'connor, deborah;stainton, timothy;sullivan, t richard;tester, frank",
+			"sections_year": 2012,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "hlth & soc care",
+			"sections_dept": "sowk",
+			"overallMaxAudit": 0,
+			"sections_instructor": "gill, deana",
+			"sections_year": 2014,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "sociocult determ",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "frankish, charles james",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "sociocult determ",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "work int health",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "frank, erica",
+			"sections_year": 2015,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "work int health",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "an meth epid res",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "sobolev, boris",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "survlnc&monitrng",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "kishchenko, svetlana",
+			"sections_year": 2010,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "survlnc&monitrng",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "math mdl com dis",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "pourbohloul, babak",
+			"sections_year": 2013,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "math mdl com dis",
+			"sections_dept": "spph",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "com hlth prom",
+			"sections_dept": "spph",
+			"overallMaxAudit": 1,
+			"sections_instructor": "frankish, charles james",
+			"sections_year": 2009,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "com hlth prom",
+			"sections_dept": "spph",
+			"overallMaxAudit": 1,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "scenery prod i",
+			"sections_dept": "thtr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "mclean, jayson",
+			"sections_year": 2011,
+			"sections_fail": 0
+		},
+		{
+			"sections_title": "scenery prod i",
+			"sections_dept": "thtr",
+			"overallMaxAudit": 0,
+			"sections_instructor": "",
+			"sections_year": 1900,
+			"sections_fail": 0
+		}
+	]
+}

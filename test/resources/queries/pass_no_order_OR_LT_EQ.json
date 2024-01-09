@@ -1,0 +1,102 @@
+{
+	"title": "NO ORDER: OR LT EQ",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"LT": {
+						"sections_avg": 1
+					}
+				},
+				{
+					"EQ": {
+						"sections_audit": 8
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_uuid",
+				"sections_id"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "comm",
+			"sections_avg": 73.86,
+			"sections_uuid": "57760",
+			"sections_id": "295"
+		},
+		{
+			"sections_dept": "epse",
+			"sections_avg": 90.8,
+			"sections_uuid": "76367",
+			"sections_id": "683"
+		},
+		{
+			"sections_dept": "epse",
+			"sections_avg": 90.8,
+			"sections_uuid": "76368",
+			"sections_id": "683"
+		},
+		{
+			"sections_dept": "frst",
+			"sections_avg": 0,
+			"sections_uuid": "89536",
+			"sections_id": "202"
+		},
+		{
+			"sections_dept": "frst",
+			"sections_avg": 82.95,
+			"sections_uuid": "89596",
+			"sections_id": "430"
+		},
+		{
+			"sections_dept": "germ",
+			"sections_avg": 79.45,
+			"sections_uuid": "17949",
+			"sections_id": "100"
+		},
+		{
+			"sections_dept": "germ",
+			"sections_avg": 78.54,
+			"sections_uuid": "31798",
+			"sections_id": "100"
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_avg": 0,
+			"sections_uuid": "56402",
+			"sections_id": "100"
+		},
+		{
+			"sections_dept": "lfs",
+			"sections_avg": 0,
+			"sections_uuid": "56403",
+			"sections_id": "100"
+		},
+		{
+			"sections_dept": "micb",
+			"sections_avg": 67.66,
+			"sections_uuid": "17474",
+			"sections_id": "302"
+		},
+		{
+			"sections_dept": "rhsc",
+			"sections_avg": 77,
+			"sections_uuid": "21798",
+			"sections_id": "505"
+		},
+		{
+			"sections_dept": "rhsc",
+			"sections_avg": 85.58,
+			"sections_uuid": "76500",
+			"sections_id": "505"
+		}
+	]
+}

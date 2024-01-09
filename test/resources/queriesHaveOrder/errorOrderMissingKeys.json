@@ -1,0 +1,33 @@
+{
+	"title": "error order missing keys",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "*c*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"overallSumAudit"
+			],
+			"ORDER": {
+				"dir": "UP"
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallSumAudit": {
+						"SUM": "sections_audit"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

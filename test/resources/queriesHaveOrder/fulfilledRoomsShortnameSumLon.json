@@ -1,0 +1,460 @@
+{
+	"title": "fulfilled rooms shortname sum lon",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"rooms_name": "*C*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"overallSumLon",
+				"rooms_seats"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"overallSumLon",
+					"rooms_seats"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_seats"
+			],
+			"APPLY": [
+				{
+					"overallSumLon": {
+						"SUM": "rooms_lon"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "LSC",
+			"overallSumLon": -123.24,
+			"rooms_seats": 125
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"overallSumLon": -123.25,
+			"rooms_seats": 426
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -123.25,
+			"rooms_seats": 280
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 275
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumLon": -123.25,
+			"rooms_seats": 265
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 250
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumLon": -123.25,
+			"rooms_seats": 240
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumLon": -123.25,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -123.25,
+			"rooms_seats": 200
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 181
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 154
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumLon": -123.25,
+			"rooms_seats": 136
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 131
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumLon": -123.25,
+			"rooms_seats": 123
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 112
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 100
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 99
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumLon": -123.25,
+			"rooms_seats": 94
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumLon": -123.25,
+			"rooms_seats": 84
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -123.25,
+			"rooms_seats": 74
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -123.25,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 62
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"overallSumLon": -123.25,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -123.25,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 56
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -123.25,
+			"rooms_seats": 47
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 45
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 42
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumLon": -123.25,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -123.25,
+			"rooms_seats": 38
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 36
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -123.25,
+			"rooms_seats": 34
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 31
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 26
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -123.25,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "CEME",
+			"overallSumLon": -123.25,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -123.25,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 18
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 12
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -123.25,
+			"rooms_seats": 10
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumLon": -123.26,
+			"rooms_seats": 55
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumLon": -123.26,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "LASR",
+			"overallSumLon": -123.26,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "LSC",
+			"overallSumLon": -246.49,
+			"rooms_seats": 350
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -246.5,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"overallSumLon": -246.5,
+			"rooms_seats": 60
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumLon": -246.5,
+			"rooms_seats": 48
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -246.5,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -246.5,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "FSC",
+			"overallSumLon": -246.5,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -246.5,
+			"rooms_seats": 6
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -246.51,
+			"rooms_seats": 150
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumLon": -246.51,
+			"rooms_seats": 114
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -246.51,
+			"rooms_seats": 108
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"overallSumLon": -246.51,
+			"rooms_seats": 90
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"overallSumLon": -246.51,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "SRC",
+			"overallSumLon": -369.75,
+			"rooms_seats": 299
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumLon": -369.75,
+			"rooms_seats": 72
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -369.76,
+			"rooms_seats": 50
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -369.76,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallSumLon": -369.77,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -493.01,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -493.01,
+			"rooms_seats": 20
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -493.02,
+			"rooms_seats": 78
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -493.02,
+			"rooms_seats": 65
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -493.02,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumLon": -616.25,
+			"rooms_seats": 16
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"overallSumLon": -616.28,
+			"rooms_seats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"overallSumLon": -739.51,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -739.53,
+			"rooms_seats": 32
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -986.04,
+			"rooms_seats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -986.04,
+			"rooms_seats": 22
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"overallSumLon": -1232.49,
+			"rooms_seats": 25
+		},
+		{
+			"rooms_shortname": "MCML",
+			"overallSumLon": -1232.5,
+			"rooms_seats": 8
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"overallSumLon": -1355.78,
+			"rooms_seats": 40
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"overallSumLon": -1355.8,
+			"rooms_seats": 40
+		}
+	]
+}

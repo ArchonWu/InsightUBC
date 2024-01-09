@@ -1,0 +1,109 @@
+{
+	"title": "fulfilled wildcards scomparison IS asterisk (front + end 2)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"LT": {
+						"sections_avg": 60
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "*en*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_id",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_uuid": "55864",
+			"sections_id": "358",
+			"sections_title": "18th cent genre",
+			"sections_instructor": "",
+			"sections_dept": "engl",
+			"sections_year": 2008,
+			"sections_avg": 53.5,
+			"sections_pass": 3,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "55865",
+			"sections_id": "358",
+			"sections_title": "18th cent genre",
+			"sections_instructor": "",
+			"sections_dept": "engl",
+			"sections_year": 1900,
+			"sections_avg": 53.5,
+			"sections_pass": 3,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "1180",
+			"sections_id": "352",
+			"sections_title": "physics lab tech",
+			"sections_instructor": "waltham, christopher",
+			"sections_dept": "enph",
+			"sections_year": 2015,
+			"sections_avg": 58,
+			"sections_pass": 5,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "1181",
+			"sections_id": "352",
+			"sections_title": "physics lab tech",
+			"sections_instructor": "",
+			"sections_dept": "enph",
+			"sections_year": 1900,
+			"sections_avg": 58,
+			"sections_pass": 5,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18845",
+			"sections_id": "321",
+			"sections_title": "traditnl grammar",
+			"sections_instructor": "bowers, fred;bowers, sarah",
+			"sections_dept": "engl",
+			"sections_year": 2012,
+			"sections_avg": 58.43,
+			"sections_pass": 23,
+			"sections_fail": 7,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "57102",
+			"sections_id": "112",
+			"sections_title": "strat univ writ",
+			"sections_instructor": "roberts, duff",
+			"sections_dept": "engl",
+			"sections_year": 2013,
+			"sections_avg": 58.73,
+			"sections_pass": 20,
+			"sections_fail": 6,
+			"sections_audit": 0
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"title": "reject empty options columns",
+	"input": {
+		"WHERE": {
+			"LT": {
+				"sections_avg": 30
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,28 @@
+{
+  "title": "pass validate wildcard only one asterisk",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "sections_avg": 97
+          }
+        },
+        {
+          "IS": {
+            "sections_dept": "*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": true
+}

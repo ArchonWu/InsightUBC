@@ -1,0 +1,35 @@
+{
+  "title": "error validate missing WHERE",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "sections_avg": 98
+          }
+        },
+        {
+          "AND": [
+            {
+              "IS": {
+                "sections_dept": "cnps"
+              },
+              "GT": {
+                "sections_avg": 98
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_avg",
+        "sections_dept"
+      ],
+      "ORDER": "sections_dept"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

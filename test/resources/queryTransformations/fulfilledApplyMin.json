@@ -1,0 +1,228 @@
+{
+	"title": "fulfilled apply min",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_dept": "*k"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallMinPass"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept"
+			],
+			"APPLY": [
+				{
+					"overallMinPass": {
+						"MIN": "sections_pass"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_title": "1yr anc greek i",
+			"sections_dept": "grek",
+			"overallMinPass": 18
+		},
+		{
+			"sections_title": "1yr anc greek ii",
+			"sections_dept": "grek",
+			"overallMinPass": 9
+		},
+		{
+			"sections_title": "2yr anc greek i",
+			"sections_dept": "grek",
+			"overallMinPass": 5
+		},
+		{
+			"sections_title": "2yr anc greek ii",
+			"sections_dept": "grek",
+			"overallMinPass": 8
+		},
+		{
+			"sections_title": "int anc grek prs",
+			"sections_dept": "grek",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "int anc grek vrs",
+			"sections_dept": "grek",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "intr soc welfare",
+			"sections_dept": "sowk",
+			"overallMinPass": 19
+		},
+		{
+			"sections_title": "intr soc work",
+			"sections_dept": "sowk",
+			"overallMinPass": 32
+		},
+		{
+			"sections_title": "sowk practice i",
+			"sections_dept": "sowk",
+			"overallMinPass": 25
+		},
+		{
+			"sections_title": "interviewing skl",
+			"sections_dept": "sowk",
+			"overallMinPass": 13
+		},
+		{
+			"sections_title": "int sem in sw th",
+			"sections_dept": "sowk",
+			"overallMinPass": 11
+		},
+		{
+			"sections_title": "intr sowk resrch",
+			"sections_dept": "sowk",
+			"overallMinPass": 24
+		},
+		{
+			"sections_title": "soc anl sowk",
+			"sections_dept": "sowk",
+			"overallMinPass": 27
+		},
+		{
+			"sections_title": "cult&race sowk",
+			"sections_dept": "sowk",
+			"overallMinPass": 26
+		},
+		{
+			"sections_title": "can soci plcy",
+			"sections_dept": "sowk",
+			"overallMinPass": 13
+		},
+		{
+			"sections_title": "sowk practice ii",
+			"sections_dept": "sowk",
+			"overallMinPass": 9
+		},
+		{
+			"sections_title": "adv int sem in sw th",
+			"sections_dept": "sowk",
+			"overallMinPass": 5
+		},
+		{
+			"sections_title": "first nat soc is",
+			"sections_dept": "sowk",
+			"overallMinPass": 9
+		},
+		{
+			"sections_title": "com mtl hlth prc",
+			"sections_dept": "sowk",
+			"overallMinPass": 18
+		},
+		{
+			"sections_title": "health care team",
+			"sections_dept": "sowk",
+			"overallMinPass": 56
+		},
+		{
+			"sections_title": "dis and justice",
+			"sections_dept": "sowk",
+			"overallMinPass": 18
+		},
+		{
+			"sections_title": "adv can soc plcy",
+			"sections_dept": "sowk",
+			"overallMinPass": 9
+		},
+		{
+			"sections_title": "sowk practice",
+			"sections_dept": "sowk",
+			"overallMinPass": 8
+		},
+		{
+			"sections_title": "communic skills",
+			"sections_dept": "sowk",
+			"overallMinPass": 8
+		},
+		{
+			"sections_title": "social analysis",
+			"sections_dept": "sowk",
+			"overallMinPass": 7
+		},
+		{
+			"sections_title": "fst ntns soc iss",
+			"sections_dept": "sowk",
+			"overallMinPass": 8
+		},
+		{
+			"sections_title": "fndtn msw seminr",
+			"sections_dept": "sowk",
+			"overallMinPass": 12
+		},
+		{
+			"sections_title": "sowk prac addict",
+			"sections_dept": "sowk",
+			"overallMinPass": 5
+		},
+		{
+			"sections_title": "fmly mdt&cnfl rs",
+			"sections_dept": "sowk",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "pr mental health",
+			"sections_dept": "sowk",
+			"overallMinPass": 3
+		},
+		{
+			"sections_title": "sowk prc fld age",
+			"sections_dept": "sowk",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "soc wrk & justce",
+			"sections_dept": "sowk",
+			"overallMinPass": 9
+		},
+		{
+			"sections_title": "hlth & soc care",
+			"sections_dept": "sowk",
+			"overallMinPass": 11
+		},
+		{
+			"sections_title": "adv int seminar",
+			"sections_dept": "sowk",
+			"overallMinPass": 7
+		},
+		{
+			"sections_title": "directed study",
+			"sections_dept": "sowk",
+			"overallMinPass": 3
+		},
+		{
+			"sections_title": "intl social dev",
+			"sections_dept": "sowk",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "soc work doc sem",
+			"sections_dept": "sowk",
+			"overallMinPass": 4
+		},
+		{
+			"sections_title": "socthry, id&ethc",
+			"sections_dept": "sowk",
+			"overallMinPass": 3
+		},
+		{
+			"sections_title": "adv qual inquiry",
+			"sections_dept": "sowk",
+			"overallMinPass": 4
+		}
+	]
+}

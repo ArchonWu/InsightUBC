@@ -1,0 +1,44 @@
+{
+	"title": "fulfilled transformations no result where",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 101
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_title",
+				"sections_dept",
+				"overallMaxAudit",
+				"sections_instructor",
+				"sections_year",
+				"sections_fail",
+				"overallMaxAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_dept",
+				"sections_instructor",
+				"sections_year",
+				"sections_fail"
+			],
+			"APPLY": [
+				{
+					"overallMaxAudit": {
+						"MAX": "sections_audit"
+					}
+				},
+				{
+					"overallMaxAvg": {
+						"MAX": "sections_avg"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": []
+}

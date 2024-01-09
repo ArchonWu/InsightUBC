@@ -1,0 +1,1035 @@
+{
+	"title": "fulfilled group by shortfullname avg seats",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"avgSeats"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_shortname",
+				"rooms_fullname",
+				"rooms_seats"
+			],
+			"APPLY": [
+				{
+					"avgSeats": {
+						"AVG": "rooms_seats"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_fullname": "Allard Hall (LAW)",
+			"avgSeats": 94
+		},
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_fullname": "Allard Hall (LAW)",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_fullname": "Allard Hall (LAW)",
+			"avgSeats": 50
+		},
+		{
+			"rooms_shortname": "ALRD",
+			"rooms_fullname": "Allard Hall (LAW)",
+			"avgSeats": 44
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_fullname": "Anthropology and Sociology",
+			"avgSeats": 26
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_fullname": "Anthropology and Sociology",
+			"avgSeats": 33
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_fullname": "Anthropology and Sociology",
+			"avgSeats": 37
+		},
+		{
+			"rooms_shortname": "ANSO",
+			"rooms_fullname": "Anthropology and Sociology",
+			"avgSeats": 90
+		},
+		{
+			"rooms_shortname": "AERL",
+			"rooms_fullname": "Aquatic Ecosystems Research Laboratory",
+			"avgSeats": 144
+		},
+		{
+			"rooms_shortname": "AUDX",
+			"rooms_fullname": "Auditorium Annex",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "AUDX",
+			"rooms_fullname": "Auditorium Annex",
+			"avgSeats": 21
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_fullname": "Biological Sciences",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_fullname": "Biological Sciences",
+			"avgSeats": 228
+		},
+		{
+			"rooms_shortname": "BIOL",
+			"rooms_fullname": "Biological Sciences",
+			"avgSeats": 76
+		},
+		{
+			"rooms_shortname": "BRKX",
+			"rooms_fullname": "Brock Hall Annex",
+			"avgSeats": 70
+		},
+		{
+			"rooms_shortname": "BRKX",
+			"rooms_fullname": "Brock Hall Annex",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 275
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 150
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 131
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 181
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 108
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 42
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 26
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 56
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 48
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 78
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 22
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 32
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 18
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 65
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 50
+		},
+		{
+			"rooms_shortname": "BUCH",
+			"rooms_fullname": "Buchanan",
+			"avgSeats": 31
+		},
+		{
+			"rooms_shortname": "CIRS",
+			"rooms_fullname": "Centre for Interactive  Research on Sustainability",
+			"avgSeats": 426
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"rooms_fullname": "Chemical and Biological Engineering Building",
+			"avgSeats": 200
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"rooms_fullname": "Chemical and Biological Engineering Building",
+			"avgSeats": 94
+		},
+		{
+			"rooms_shortname": "CHBE",
+			"rooms_fullname": "Chemical and Biological Engineering Building",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_fullname": "Chemistry",
+			"avgSeats": 265
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_fullname": "Chemistry",
+			"avgSeats": 240
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_fullname": "Chemistry",
+			"avgSeats": 90
+		},
+		{
+			"rooms_shortname": "CHEM",
+			"rooms_fullname": "Chemistry",
+			"avgSeats": 114
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 100
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 62
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 26
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 22
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 34
+		},
+		{
+			"rooms_shortname": "CEME",
+			"rooms_fullname": "Civil and Mechanical Engineering",
+			"avgSeats": 45
+		},
+		{
+			"rooms_shortname": "EOSM",
+			"rooms_fullname": "Earth and Ocean Sciences - Main",
+			"avgSeats": 50
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_fullname": "Earth Sciences Building",
+			"avgSeats": 150
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_fullname": "Earth Sciences Building",
+			"avgSeats": 350
+		},
+		{
+			"rooms_shortname": "ESB",
+			"rooms_fullname": "Earth Sciences Building",
+			"avgSeats": 80
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 12
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 28
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 27
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 54
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 43
+		},
+		{
+			"rooms_shortname": "FNH",
+			"rooms_fullname": "Food, Nutrition and Health",
+			"avgSeats": 99
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 65
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 250
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 99
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 18
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 36
+		},
+		{
+			"rooms_shortname": "FSC",
+			"rooms_fullname": "Forest Sciences Centre",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "FORW",
+			"rooms_fullname": "Frank Forward",
+			"avgSeats": 63
+		},
+		{
+			"rooms_shortname": "FORW",
+			"rooms_fullname": "Frank Forward",
+			"avgSeats": 44
+		},
+		{
+			"rooms_shortname": "FORW",
+			"rooms_fullname": "Frank Forward",
+			"avgSeats": 35
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_fullname": "Frederic Lasserre",
+			"avgSeats": 80
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_fullname": "Frederic Lasserre",
+			"avgSeats": 94
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_fullname": "Frederic Lasserre",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_fullname": "Frederic Lasserre",
+			"avgSeats": 51
+		},
+		{
+			"rooms_shortname": "LASR",
+			"rooms_fullname": "Frederic Lasserre",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "FRDM",
+			"rooms_fullname": "Friedman Building",
+			"avgSeats": 160
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 225
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 100
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 42
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 72
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 39
+		},
+		{
+			"rooms_shortname": "GEOG",
+			"rooms_fullname": "Geography",
+			"avgSeats": 21
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_fullname": "Hebb",
+			"avgSeats": 54
+		},
+		{
+			"rooms_shortname": "HEBB",
+			"rooms_fullname": "Hebb",
+			"avgSeats": 375
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_fullname": "Hennings",
+			"avgSeats": 257
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_fullname": "Hennings",
+			"avgSeats": 155
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_fullname": "Hennings",
+			"avgSeats": 150
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_fullname": "Hennings",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "HENN",
+			"rooms_fullname": "Hennings",
+			"avgSeats": 36
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 54
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 260
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 41
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 70
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 68
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 80
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 35
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 32
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 37
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 58
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 44
+		},
+		{
+			"rooms_shortname": "ANGU",
+			"rooms_fullname": "Henry Angus",
+			"avgSeats": 53
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_fullname": "Hugh Dempster Pavilion",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_fullname": "Hugh Dempster Pavilion",
+			"avgSeats": 120
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_fullname": "Hugh Dempster Pavilion",
+			"avgSeats": 80
+		},
+		{
+			"rooms_shortname": "DMP",
+			"rooms_fullname": "Hugh Dempster Pavilion",
+			"avgSeats": 160
+		},
+		{
+			"rooms_shortname": "IONA",
+			"rooms_fullname": "Iona Building",
+			"avgSeats": 100
+		},
+		{
+			"rooms_shortname": "IONA",
+			"rooms_fullname": "Iona Building",
+			"avgSeats": 50
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 50
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 154
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 8
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 112
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 12
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 10
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "IBLC",
+			"rooms_fullname": "Irving K Barber Learning Centre",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"avgSeats": 12
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"avgSeats": 68
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"avgSeats": 29
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"avgSeats": 31
+		},
+		{
+			"rooms_shortname": "SOWK",
+			"rooms_fullname": "Jack Bell Building for the School of Social Work",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+			"avgSeats": 205
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+			"avgSeats": 183
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+			"avgSeats": 75
+		},
+		{
+			"rooms_shortname": "LSK",
+			"rooms_fullname": "Leonard S. Klinck (also known as CSCI)",
+			"avgSeats": 42
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_fullname": "Life Sciences Centre",
+			"avgSeats": 350
+		},
+		{
+			"rooms_shortname": "LSC",
+			"rooms_fullname": "Life Sciences Centre",
+			"avgSeats": 125
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_fullname": "MacLeod",
+			"avgSeats": 123
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_fullname": "MacLeod",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_fullname": "MacLeod",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_fullname": "MacLeod",
+			"avgSeats": 136
+		},
+		{
+			"rooms_shortname": "MCLD",
+			"rooms_fullname": "MacLeod",
+			"avgSeats": 84
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 47
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 74
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 72
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 200
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 32
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 6
+		},
+		{
+			"rooms_shortname": "MCML",
+			"rooms_fullname": "MacMillan",
+			"avgSeats": 8
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_fullname": "Mathematics",
+			"avgSeats": 224
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_fullname": "Mathematics",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_fullname": "Mathematics",
+			"avgSeats": 48
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_fullname": "Mathematics",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "MATH",
+			"rooms_fullname": "Mathematics",
+			"avgSeats": 25
+		},
+		{
+			"rooms_shortname": "MATX",
+			"rooms_fullname": "Mathematics Annex",
+			"avgSeats": 106
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 280
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 38
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 34
+		},
+		{
+			"rooms_shortname": "SCRF",
+			"rooms_fullname": "Neville Scarfe",
+			"avgSeats": 60
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_fullname": "Orchard Commons",
+			"avgSeats": 72
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_fullname": "Orchard Commons",
+			"avgSeats": 25
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_fullname": "Orchard Commons",
+			"avgSeats": 48
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_fullname": "Orchard Commons",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "ORCH",
+			"rooms_fullname": "Orchard Commons",
+			"avgSeats": 20
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"avgSeats": 236
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"avgSeats": 167
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"avgSeats": 7
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"avgSeats": 14
+		},
+		{
+			"rooms_shortname": "PHRM",
+			"rooms_fullname": "Pharmaceutical Sciences Building",
+			"avgSeats": 72
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"rooms_fullname": "Ponderosa Commons: Oak House",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "PCOH",
+			"rooms_fullname": "Ponderosa Commons: Oak House",
+			"avgSeats": 24
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_fullname": "Robert F. Osborne Centre",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_fullname": "Robert F. Osborne Centre",
+			"avgSeats": 39
+		},
+		{
+			"rooms_shortname": "OSBO",
+			"rooms_fullname": "Robert F. Osborne Centre",
+			"avgSeats": 442
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 28
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 16
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 12
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 14
+		},
+		{
+			"rooms_shortname": "SPPH",
+			"rooms_fullname": "School of Population and Public Health",
+			"avgSeats": 66
+		},
+		{
+			"rooms_shortname": "SRC",
+			"rooms_fullname": "Student Recreation Centre",
+			"avgSeats": 299
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"rooms_fullname": "The Leon and Thea Koerner University Centre",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"rooms_fullname": "The Leon and Thea Koerner University Centre",
+			"avgSeats": 55
+		},
+		{
+			"rooms_shortname": "UCLL",
+			"rooms_fullname": "The Leon and Thea Koerner University Centre",
+			"avgSeats": 48
+		},
+		{
+			"rooms_shortname": "MGYM",
+			"rooms_fullname": "War Memorial Gymnasium",
+			"avgSeats": 25
+		},
+		{
+			"rooms_shortname": "MGYM",
+			"rooms_fullname": "War Memorial Gymnasium",
+			"avgSeats": 40
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_fullname": "Wesbrook",
+			"avgSeats": 325
+		},
+		{
+			"rooms_shortname": "WESB",
+			"rooms_fullname": "Wesbrook",
+			"avgSeats": 102
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_fullname": "West Mall Swing Space",
+			"avgSeats": 47
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_fullname": "West Mall Swing Space",
+			"avgSeats": 27
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_fullname": "West Mall Swing Space",
+			"avgSeats": 187
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_fullname": "West Mall Swing Space",
+			"avgSeats": 188
+		},
+		{
+			"rooms_shortname": "SWNG",
+			"rooms_fullname": "West Mall Swing Space",
+			"avgSeats": 190
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 120
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 503
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 88
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 181
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 30
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 21
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 14
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 10
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 12
+		},
+		{
+			"rooms_shortname": "WOOD",
+			"rooms_fullname": "Woodward (Instructional Resources Centre-IRC)",
+			"avgSeats": 16
+		}
+	]
+}

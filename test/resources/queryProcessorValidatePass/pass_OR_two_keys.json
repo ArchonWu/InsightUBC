@@ -1,0 +1,28 @@
+{
+	"title": "pass validate 2 OR keys",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 99
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "math"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"ORDER": "sections_dept"
+		}
+	},
+	"errorExpected": false,
+	"expected": true
+}

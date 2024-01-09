@@ -1,0 +1,141 @@
+{
+	"title": "NO ORDER: IS id",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_id": "600"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_avg",
+				"sections_uuid",
+				"sections_id"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "arst",
+			"sections_avg": 85.75,
+			"sections_uuid": "96983",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "arst",
+			"sections_avg": 85.75,
+			"sections_uuid": "96984",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 82.31,
+			"sections_uuid": "11648",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 82.31,
+			"sections_uuid": "11649",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 77.85,
+			"sections_uuid": "21632",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 77.85,
+			"sections_uuid": "21633",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 83.52,
+			"sections_uuid": "22109",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 83.52,
+			"sections_uuid": "22110",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 81.1,
+			"sections_uuid": "52448",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 81.1,
+			"sections_uuid": "52449",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 75.82,
+			"sections_uuid": "58504",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 75.82,
+			"sections_uuid": "58505",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 79.75,
+			"sections_uuid": "69968",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 79.75,
+			"sections_uuid": "69969",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 88.4,
+			"sections_uuid": "74507",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 88.4,
+			"sections_uuid": "74508",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 87,
+			"sections_uuid": "78556",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 87,
+			"sections_uuid": "78557",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 86.25,
+			"sections_uuid": "91099",
+			"sections_id": "600"
+		},
+		{
+			"sections_dept": "econ",
+			"sections_avg": 86.25,
+			"sections_uuid": "91100",
+			"sections_id": "600"
+		}
+	]
+}

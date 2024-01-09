@@ -1,0 +1,38 @@
+{
+	"title": "complex invalid reference",
+	"input": {
+		"WHERE": {
+			"OR": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"section_avg": 90
+							}
+						},
+						{
+							"IS": {
+								"section_dept": "adhe"
+							}
+						}
+					]
+				},
+				{
+					"EQ": {
+						"section_avg": 95
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"section_dept",
+				"section_id",
+				"section_avg"
+			],
+			"ORDER": "section_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

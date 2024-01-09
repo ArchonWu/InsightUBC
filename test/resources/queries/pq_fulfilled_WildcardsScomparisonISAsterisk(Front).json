@@ -1,0 +1,265 @@
+{
+	"title": "fulfilled wildcards scomparison IS asterisk (front)",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"LT": {
+						"sections_avg": 60
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "*c"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_id",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_uuid": "50477",
+			"sections_id": "172",
+			"sections_title": "language & curr",
+			"sections_instructor": "james, kedrick",
+			"sections_dept": "educ",
+			"sections_year": 2015,
+			"sections_avg": 39.03,
+			"sections_pass": 39,
+			"sections_fail": 34,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "50478",
+			"sections_id": "172",
+			"sections_title": "language & curr",
+			"sections_instructor": "",
+			"sections_dept": "educ",
+			"sections_year": 1900,
+			"sections_avg": 39.03,
+			"sections_pass": 39,
+			"sections_fail": 34,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "78618",
+			"sections_id": "314",
+			"sections_title": "health psycholgy",
+			"sections_instructor": "",
+			"sections_dept": "psyc",
+			"sections_year": 2008,
+			"sections_avg": 43.33,
+			"sections_pass": 2,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "78941",
+			"sections_id": "315",
+			"sections_title": "childhood & adol",
+			"sections_instructor": "king, mary ann",
+			"sections_dept": "psyc",
+			"sections_year": 2009,
+			"sections_avg": 50,
+			"sections_pass": 1,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "78622",
+			"sections_id": "315",
+			"sections_title": "childhood & adol",
+			"sections_instructor": "",
+			"sections_dept": "psyc",
+			"sections_year": 2008,
+			"sections_avg": 51.8,
+			"sections_pass": 17,
+			"sections_fail": 8,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30948",
+			"sections_id": "465",
+			"sections_title": "microsys design",
+			"sections_instructor": "cretu, edmond",
+			"sections_dept": "elec",
+			"sections_year": 2015,
+			"sections_avg": 52.67,
+			"sections_pass": 4,
+			"sections_fail": 2,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "30949",
+			"sections_id": "465",
+			"sections_title": "microsys design",
+			"sections_instructor": "",
+			"sections_dept": "elec",
+			"sections_year": 1900,
+			"sections_avg": 52.67,
+			"sections_pass": 4,
+			"sections_fail": 2,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "46528",
+			"sections_id": "320",
+			"sections_title": "psyc of gender",
+			"sections_instructor": "mcfarlane, jessica",
+			"sections_dept": "psyc",
+			"sections_year": 2013,
+			"sections_avg": 53.56,
+			"sections_pass": 12,
+			"sections_fail": 4,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "46529",
+			"sections_id": "320",
+			"sections_title": "psyc of gender",
+			"sections_instructor": "",
+			"sections_dept": "psyc",
+			"sections_year": 1900,
+			"sections_avg": 53.56,
+			"sections_pass": 12,
+			"sections_fail": 4,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "2018",
+			"sections_id": "320",
+			"sections_title": "psyc of gender",
+			"sections_instructor": "mcfarlane, jessica",
+			"sections_dept": "psyc",
+			"sections_year": 2011,
+			"sections_avg": 55.7,
+			"sections_pass": 7,
+			"sections_fail": 3,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "54688",
+			"sections_id": "218",
+			"sections_title": "analys beh data",
+			"sections_instructor": "hamson, dwayne",
+			"sections_dept": "psyc",
+			"sections_year": 2012,
+			"sections_avg": 56.85,
+			"sections_pass": 14,
+			"sections_fail": 6,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "79096",
+			"sections_id": "114",
+			"sections_title": "catastroph earth",
+			"sections_instructor": "ver, leah may",
+			"sections_dept": "eosc",
+			"sections_year": 2007,
+			"sections_avg": 57,
+			"sections_pass": 3,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18672",
+			"sections_id": "201",
+			"sections_title": "technical commun",
+			"sections_instructor": "berndt, annette",
+			"sections_dept": "apsc",
+			"sections_year": 2007,
+			"sections_avg": 57.68,
+			"sections_pass": 20,
+			"sections_fail": 8,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "18685",
+			"sections_id": "201",
+			"sections_title": "technical commun",
+			"sections_instructor": "berndt, annette",
+			"sections_dept": "apsc",
+			"sections_year": 2007,
+			"sections_avg": 57.81,
+			"sections_pass": 15,
+			"sections_fail": 12,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "31749",
+			"sections_id": "240",
+			"sections_title": "iss first ntns",
+			"sections_instructor": "",
+			"sections_dept": "educ",
+			"sections_year": 2011,
+			"sections_avg": 58,
+			"sections_pass": 5,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "40902",
+			"sections_id": "241",
+			"sections_title": "class piano ii",
+			"sections_instructor": "chen chai, susan m.c.",
+			"sections_dept": "musc",
+			"sections_year": 2007,
+			"sections_avg": 58.33,
+			"sections_pass": 5,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "78105",
+			"sections_id": "218",
+			"sections_title": "analys beh data",
+			"sections_instructor": "hamson, dwayne",
+			"sections_dept": "psyc",
+			"sections_year": 2015,
+			"sections_avg": 58.94,
+			"sections_pass": 24,
+			"sections_fail": 7,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "32366",
+			"sections_id": "103",
+			"sections_title": "intro musc thry",
+			"sections_instructor": "konoval, michael brandon",
+			"sections_dept": "musc",
+			"sections_year": 2009,
+			"sections_avg": 59,
+			"sections_pass": 2,
+			"sections_fail": 1,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "97877",
+			"sections_id": "201",
+			"sections_title": "technical commun",
+			"sections_instructor": "",
+			"sections_dept": "apsc",
+			"sections_year": 2008,
+			"sections_avg": 59.23,
+			"sections_pass": 12,
+			"sections_fail": 10,
+			"sections_audit": 0
+		}
+	]
+}

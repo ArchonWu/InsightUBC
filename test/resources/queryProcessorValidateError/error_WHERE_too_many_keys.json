@@ -1,0 +1,31 @@
+{
+	"title": "error validate WHERE too many keys",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"GT": {
+						"sections_avg": 98
+					}
+				}
+			],
+			"NOT": [
+				{
+					"IS": {
+						"sections_dept": "cnps"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg",
+				"sections_dept"
+			],
+			"ORDER": "sections_dept"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}
+

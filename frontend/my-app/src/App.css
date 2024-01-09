@@ -1,0 +1,54 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+	height: 100%;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	min-height: 90%;
+	height: max-content;
+	/*height: fit-content;*/
+}
+
+.content {
+	flex: 1;
+	background-color: lightgray;
+	min-height: 100%;
+	height: fit-content;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightsteelblue;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: ghostwhite;
+}
+
+tbody tr:hover {
+    background-color: lightcyan;
+}

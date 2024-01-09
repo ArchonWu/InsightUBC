@@ -1,0 +1,109 @@
+{
+	"title": "fulfilled order year",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"IS": {
+						"sections_dept": "*e*"
+					}
+				},
+				{
+					"IS": {
+						"sections_dept": "*f*"
+					}
+				},
+				{
+					"GT": {
+						"sections_avg": 87
+					}
+				},
+				{
+					"NOT": {
+						"EQ": {
+							"sections_year": 1900
+						}
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_uuid",
+				"sections_id",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg",
+				"sections_pass",
+				"sections_fail",
+				"sections_audit"
+			],
+			"ORDER": "sections_year"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_uuid": "5439",
+			"sections_id": "490",
+			"sections_title": "food&resrc econ",
+			"sections_instructor": "",
+			"sections_dept": "fre",
+			"sections_year": 2014,
+			"sections_avg": 88.47,
+			"sections_pass": 34,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "5445",
+			"sections_id": "515",
+			"sections_title": "agribus managemt",
+			"sections_instructor": "",
+			"sections_dept": "fre",
+			"sections_year": 2014,
+			"sections_avg": 88.13,
+			"sections_pass": 15,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "5451",
+			"sections_id": "525",
+			"sections_title": "env econ&policy",
+			"sections_instructor": "",
+			"sections_dept": "fre",
+			"sections_year": 2014,
+			"sections_avg": 87.32,
+			"sections_pass": 19,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "77675",
+			"sections_id": "215",
+			"sections_title": "oral fr practice",
+			"sections_instructor": "cortial, solenne",
+			"sections_dept": "fren",
+			"sections_year": 2014,
+			"sections_avg": 88.5,
+			"sections_pass": 14,
+			"sections_fail": 0,
+			"sections_audit": 0
+		},
+		{
+			"sections_uuid": "80546",
+			"sections_id": "201",
+			"sections_title": "intmed salish i",
+			"sections_instructor": "point, marny",
+			"sections_dept": "fnel",
+			"sections_year": 2016,
+			"sections_avg": 87.5,
+			"sections_pass": 13,
+			"sections_fail": 1,
+			"sections_audit": 0
+		}
+	]
+}
